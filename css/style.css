@@ -31,7 +31,20 @@ body {
 }
 
 .text-color-primary{
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
+}
+
+
+.text-color-secondary{
+    color: var(--secondary-color) !important;
+}
+
+.bg-color-accent{
+    background-color: var(--accent-color) !important;
+}
+
+.bg-color-secondary{
+    background-color: var(--secondary-color) !important;
 }
 
 /* Navbar Premium Styling */
@@ -677,7 +690,12 @@ body {
 
 /* =========================================
    Popular Courses Section
-   ========================================= */
+========================================= */
+
+.hc-swiper{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 .course-card {
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
@@ -763,3 +781,154 @@ body {
     opacity: 0.75;
 }
 
+/* =========================================
+   Program Categories Tabs Section
+========================================= */
+
+.premium-tabs {
+    border-bottom: 0;
+}
+
+.premium-tabs .nav-link {
+    border-radius: 50rem;
+    padding: 0.75rem 1.75rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--primary-color) !important;
+    background-color: var(--light-gray);
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: var(--transition);
+}
+
+.premium-tabs .nav-link:hover {
+    background-color: rgba(39, 81, 96, 0.05);
+    color: var(--primary-color) !important;
+    border-color: rgba(39, 81, 96, 0.1);
+    transform: translateY(-2px);
+}
+
+.premium-tabs .nav-link.active {
+    background-color: var(--primary-color) !important;
+    color: var(--white) !important;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    border-color: var(--accent-color);
+}
+
+/* Tab Content Layout */
+.program-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+@media (min-width: 576px) {
+    .program-stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.stat-card-mini {
+    transition: var(--transition);
+}
+
+.stat-card-mini:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color) !important;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05) !important;
+}
+
+.stat-card-mini .icon-circle-lg {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 0.5rem;
+}
+
+/* Premium Tab Pane Background & Glassmorphism */
+.premium-tab-pane-inner {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+}
+
+.premium-pane-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.premium-pane-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(39, 81, 96, 0.98) 0%, rgba(39, 81, 96, 0.85) 100%);
+    z-index: 1;
+}
+
+.masters-bg {
+    background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop');
+}
+
+.dba-bg {
+    background-image: url('https://images.unsplash.com/photo-1454165833767-027ffea9e61e?q=80&w=2070&auto=format&fit=crop');
+}
+
+.practitioners-bg {
+    background-image: url('https://images.unsplash.com/photo-1521737711867-e3b12850901e?q=80&w=2072&auto=format&fit=crop');
+}
+
+.honorary-bg {
+    background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop');
+}
+
+.certificate-bg {
+    background-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop');
+}
+
+.glass-card-premium {
+    background: rgba(255, 255, 255, 0.03) !important;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    transition: var(--transition);
+}
+
+.glass-card-premium:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+    transform: translateY(-5px);
+    border-color: var(--accent-color) !important;
+}
+
+.btn-outline-white {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--white);
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-outline-white:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.shadow-gold {
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+}
+
+.shadow-gold:hover {
+    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.4);
+}

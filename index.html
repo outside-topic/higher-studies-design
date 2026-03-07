@@ -9,6 +9,9 @@
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- google font -->
+
+    <!-- swiper.js cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
@@ -190,52 +193,6 @@
             </div>
         </section>
 
-        <!-- Features Highlights Section -->
-        <section class="features-highlight py-5 bg-white position-relative shadow-sm z-3">
-            <div class="container-fluid px-4 px-lg-5">
-                <div class="row g-4 justify-content-center">
-                    <!-- Feature 1 -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="feature-card d-flex align-items-center gap-3 p-3 rounded-4 transition-all">
-                            <div class="feature-icon-wrapper bg-primary-light text-navy rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
-                                <i class="fa-solid fa-wallet fs-4"></i>
-                            </div>
-                            <div>
-                                <h5 class="fw-bold text-navy mb-1 font-heading">Installment Facility</h5>
-                                <p class="text-muted font-sm mb-0">Flexible payment options available</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Feature 2 -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="feature-card d-flex align-items-center gap-3 p-3 rounded-4 transition-all">
-                            <div class="feature-icon-wrapper bg-gold-light text-gold rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
-                                <i class="fa-solid fa-laptop-code fs-4"></i>
-                            </div>
-                            <div>
-                                <h5 class="fw-bold text-navy mb-1 font-heading">Practical Focused Curriculum</h5>
-                                <p class="text-muted font-sm mb-0">Learn applicable real-world skills</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Feature 3 -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="feature-card d-flex align-items-center gap-3 p-3 rounded-4 transition-all">
-                            <div class="feature-icon-wrapper bg-primary-light text-navy rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
-                                <i class="fa-solid fa-mobile-screen fs-4"></i>
-                            </div>
-                            <div>
-                                <h5 class="fw-bold text-navy mb-1 font-heading">Mobile Friendly Learning</h5>
-                                <p class="text-muted font-sm mb-0">Access courses anytime, anywhere</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Programs Overview Section -->
         <section class="programs-section py-5 bg-light position-relative z-2">
             <div class="container-fluid px-4 px-lg-5">
@@ -344,6 +301,52 @@
             </div>
         </section>
 
+        <!-- Features Highlights Section -->
+        <section class="features-highlight py-5 bg-white position-relative shadow-sm z-3">
+            <div class="container-fluid px-4 px-lg-5">
+                <div class="row g-4 justify-content-center">
+                    <!-- Feature 1 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="feature-card d-flex align-items-center gap-3 p-3 rounded-4 transition-all">
+                            <div class="feature-icon-wrapper bg-primary-light text-navy rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
+                                <i class="fa-solid fa-wallet fs-4"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold text-navy mb-1 font-heading">Installment Facility</h5>
+                                <p class="text-muted font-sm mb-0">Flexible payment options available</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Feature 2 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="feature-card d-flex align-items-center gap-3 p-3 rounded-4 transition-all">
+                            <div class="feature-icon-wrapper bg-gold-light text-gold rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
+                                <i class="fa-solid fa-laptop-code fs-4"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold text-navy mb-1 font-heading">Practical Focused Curriculum</h5>
+                                <p class="text-muted font-sm mb-0">Learn applicable real-world skills</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Feature 3 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="feature-card d-flex align-items-center gap-3 p-3 rounded-4 transition-all">
+                            <div class="feature-icon-wrapper bg-primary-light text-navy rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
+                                <i class="fa-solid fa-mobile-screen fs-4"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold text-navy mb-1 font-heading">Mobile Friendly Learning</h5>
+                                <p class="text-muted font-sm mb-0">Access courses anytime, anywhere</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- About Programs Bento Grid Section -->
         <section class="about-programs-grid py-5 position-relative bg-white z-2 overflow-hidden border-top">
             <div class="container-fluid px-4 px-lg-5 my-lg-4">
@@ -438,10 +441,10 @@
                     <p class="text-muted font-sm mb-0">Explore our highly sought-after professional development programs tailored for ambitious learners.</p>
                 </div>
 
-                <div class="row g-4 justify-content-center">
-                    <!-- Course Card 1 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="course-card bg-white rounded-4 p-0 shadow-sm h-100 d-flex flex-column transition-all position-relative overflow-hidden border-0">
+                <div class="hc-swiper swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="course-card bg-white rounded-4 p-0 shadow-sm h-100 d-flex flex-column transition-all position-relative overflow-hidden border-0 swiper-slide">
                             <!-- Decorative Header Background -->
                             <div class="course-card-bg position-absolute w-100 top-0 start-0" style="height: 100px; z-index: 0; background-color: var(--primary-color);">
                                 <div class="position-absolute end-0 top-0 dcb"></div>
@@ -458,9 +461,9 @@
                                 </div>
                                 
                                 <h4 class="course-card-title fw-bold text-navy font-heading mb-2 mt-3" style="font-size: 1.4rem; line-height: 1.4;">Master of Science in Supply Chain Management [MSSCM]</h4>
-                                <p class="text-secondary-custom font-xs fw-semibold mb-4 pb-3 border-bottom border-light text-uppercase tracking-wider text-center">Validated, Quality Assured And Degree Awarded By EIU-PARIS</p>
+                                <p class="text-secondary-custom font-xs fw-semibold mb-2 pb-2 border-bottom border-light text-uppercase tracking-wider text-center">Validated, Quality Assured And Degree Awarded By EIU-PARIS</p>
 
-                                <div class="course-details d-flex flex-column gap-3 mb-4 flex-grow-1">
+                                <div class="course-details d-flex flex-column gap-2 mb-3 flex-grow-1">
                                     <div class="c-detail-item d-flex justify-content-between align-items-center bg-white border border-light rounded-3 p-3 shadow-sm transition-all hover-border-gold">
                                         <span class="text-muted font-sm d-flex align-items-center gap-2"><div class="icon-circle-sm bg-primary-light text-navy"><i class="fa-solid fa-tag"></i></div> Course Fee</span>
                                         <span class="fw-bold text-navy font-sm">£ 1999.00</span>
@@ -475,7 +478,7 @@
                                     </div>
                                 </div>
 
-                                <div class="course-actions d-flex flex-column gap-3 mt-auto pt-2">
+                                <div class="course-actions d-flex flex-wrap flex-column gap-2 mt-auto pt-0">
                                     <div class="d-flex gap-2">
                                         <a href="#" class="btn btn-outline-modern flex-grow-1 font-sm py-2 px-1 justify-content-center border-1 fw-semibold text-nowrap">Details</a>
                                         <a href="#" class="btn btn-outline-modern flex-grow-1 font-sm py-2 px-1 justify-content-center border-1 fw-semibold text-nowrap">Curriculum</a>
@@ -484,11 +487,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Course Card 2 -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="course-card bg-white rounded-4 p-0 shadow-sm h-100 d-flex flex-column transition-all position-relative overflow-hidden border-0">
+                        <div class="course-card bg-white rounded-4 p-0 shadow-sm h-100 d-flex flex-column transition-all position-relative overflow-hidden border-0 swiper-slide">
                             <!-- Decorative Header Background -->
                             <div class="course-card-bg position-absolute w-100 top-0 start-0" style="height: 100px; z-index: 0; background-color: var(--primary-color);">
                                 <div class="position-absolute end-0 top-0 dcb"></div>
@@ -497,20 +497,20 @@
                             <div class="p-4 p-lg-5 d-flex flex-column h-100 position-relative z-1 pt-4">
                                 <!-- Badge & Social floating on the bg -->
                                 <div class="d-flex justify-content-between align-items-center mb-4">
-                                    <span class="badge text-navy rounded-pill px-3 py-2 font-xs fw-bold shadow-sm" style="background-color: var(--accent-color);">MASTERS</span>
+                                    <span class="badge text-navy rounded-pill px-3 py-2 font-xs fw-bold shadow-sm" style="background-color: var(--accent-color);">MBA</span>
                                     <div class="social-share d-flex gap-2">
                                         <a href="#" class="text-white hover-text-gold transition-all"><i class="fa-brands fa-whatsapp fs-5"></i></a>
                                         <a href="#" class="text-white hover-text-gold transition-all"><i class="fa-regular fa-envelope fs-5"></i></a>
                                     </div>
                                 </div>
                                 
-                                <h4 class="course-card-title fw-bold text-navy font-heading mb-2 mt-3" style="font-size: 1.4rem; line-height: 1.4;">Master of Business Administration (MBA)</h4>
-                                <p class="text-secondary-custom font-xs fw-semibold mb-4 pb-3 border-bottom border-light text-uppercase tracking-wider text-center">Validated, Quality Assured And Degree Awarded By EIU-PARIS</p>
+                                <h4 class="course-card-title fw-bold text-navy font-heading mb-2 mt-3" style="font-size: 1.4rem; line-height: 1.4;">Master of Science in Supply Chain Management [MSSCM]</h4>
+                                <p class="text-secondary-custom font-xs fw-semibold mb-2 pb-2 border-bottom border-light text-uppercase tracking-wider text-center">Validated, Quality Assured And Degree Awarded By EIU-PARIS</p>
 
-                                <div class="course-details d-flex flex-column gap-3 mb-4 flex-grow-1">
+                                <div class="course-details d-flex flex-column gap-2 mb-3 flex-grow-1">
                                     <div class="c-detail-item d-flex justify-content-between align-items-center bg-white border border-light rounded-3 p-3 shadow-sm transition-all hover-border-gold">
                                         <span class="text-muted font-sm d-flex align-items-center gap-2"><div class="icon-circle-sm bg-primary-light text-navy"><i class="fa-solid fa-tag"></i></div> Course Fee</span>
-                                        <span class="fw-bold text-navy font-sm">£ 2199.00</span>
+                                        <span class="fw-bold text-navy font-sm">£ 1999.00</span>
                                     </div>
                                     <div class="c-detail-item d-flex justify-content-between align-items-center bg-white border border-light rounded-3 p-3 shadow-sm transition-all hover-border-gold">
                                         <span class="text-muted font-sm d-flex align-items-center gap-2"><div class="icon-circle-sm bg-primary-light text-navy"><i class="fa-solid fa-laptop-code"></i></div> Learning Mode</span>
@@ -522,7 +522,7 @@
                                     </div>
                                 </div>
 
-                                <div class="course-actions d-flex flex-column gap-3 mt-auto pt-2">
+                                <div class="course-actions d-flex flex-wrap flex-column gap-2 mt-auto pt-0">
                                     <div class="d-flex gap-2">
                                         <a href="#" class="btn btn-outline-modern flex-grow-1 font-sm py-2 px-1 justify-content-center border-1 fw-semibold text-nowrap">Details</a>
                                         <a href="#" class="btn btn-outline-modern flex-grow-1 font-sm py-2 px-1 justify-content-center border-1 fw-semibold text-nowrap">Curriculum</a>
@@ -531,11 +531,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Course Card 3 -->
-                     <div class="col-lg-4 col-md-6">
-                        <div class="course-card bg-white rounded-4 p-0 shadow-sm h-100 d-flex flex-column transition-all position-relative overflow-hidden border-0">
+                        <div class="course-card bg-white rounded-4 p-0 shadow-sm h-100 d-flex flex-column transition-all position-relative overflow-hidden border-0 swiper-slide">
                             <!-- Decorative Header Background -->
                             <div class="course-card-bg position-absolute w-100 top-0 start-0" style="height: 100px; z-index: 0; background-color: var(--primary-color);">
                                 <div class="position-absolute end-0 top-0 dcb"></div>
@@ -544,20 +541,20 @@
                             <div class="p-4 p-lg-5 d-flex flex-column h-100 position-relative z-1 pt-4">
                                 <!-- Badge & Social floating on the bg -->
                                 <div class="d-flex justify-content-between align-items-center mb-4">
-                                    <span class="badge text-navy rounded-pill px-3 py-2 font-xs fw-bold shadow-sm" style="background-color: var(--accent-color);">MASTERS</span>
+                                    <span class="badge text-navy rounded-pill px-3 py-2 font-xs fw-bold shadow-sm" style="background-color: var(--accent-color);">MBA</span>
                                     <div class="social-share d-flex gap-2">
                                         <a href="#" class="text-white hover-text-gold transition-all"><i class="fa-brands fa-whatsapp fs-5"></i></a>
                                         <a href="#" class="text-white hover-text-gold transition-all"><i class="fa-regular fa-envelope fs-5"></i></a>
                                     </div>
                                 </div>
                                 
-                                <h4 class="course-card-title fw-bold text-navy font-heading mb-2 mt-3" style="font-size: 1.4rem; line-height: 1.4;">Master of Science in Strategic Leadership</h4>
-                                <p class="text-secondary-custom font-xs fw-semibold mb-4 pb-3 border-bottom border-light text-uppercase tracking-wider text-center">Validated, Quality Assured And Degree Awarded By EIU-PARIS</p>
+                                <h4 class="course-card-title fw-bold text-navy font-heading mb-2 mt-3" style="font-size: 1.4rem; line-height: 1.4;">Master of Science in Supply Chain Management [MSSCM]</h4>
+                                <p class="text-secondary-custom font-xs fw-semibold mb-2 pb-2 border-bottom border-light text-uppercase tracking-wider text-center">Validated, Quality Assured And Degree Awarded By EIU-PARIS</p>
 
-                                <div class="course-details d-flex flex-column gap-3 mb-4 flex-grow-1">
+                                <div class="course-details d-flex flex-column gap-2 mb-3 flex-grow-1">
                                     <div class="c-detail-item d-flex justify-content-between align-items-center bg-white border border-light rounded-3 p-3 shadow-sm transition-all hover-border-gold">
                                         <span class="text-muted font-sm d-flex align-items-center gap-2"><div class="icon-circle-sm bg-primary-light text-navy"><i class="fa-solid fa-tag"></i></div> Course Fee</span>
-                                        <span class="fw-bold text-navy font-sm">£ 2099.00</span>
+                                        <span class="fw-bold text-navy font-sm">£ 1999.00</span>
                                     </div>
                                     <div class="c-detail-item d-flex justify-content-between align-items-center bg-white border border-light rounded-3 p-3 shadow-sm transition-all hover-border-gold">
                                         <span class="text-muted font-sm d-flex align-items-center gap-2"><div class="icon-circle-sm bg-primary-light text-navy"><i class="fa-solid fa-laptop-code"></i></div> Learning Mode</span>
@@ -569,7 +566,7 @@
                                     </div>
                                 </div>
 
-                                <div class="course-actions d-flex flex-column gap-3 mt-auto pt-2">
+                                <div class="course-actions d-flex flex-wrap flex-column gap-2 mt-auto pt-0">
                                     <div class="d-flex gap-2">
                                         <a href="#" class="btn btn-outline-modern flex-grow-1 font-sm py-2 px-1 justify-content-center border-1 fw-semibold text-nowrap">Details</a>
                                         <a href="#" class="btn btn-outline-modern flex-grow-1 font-sm py-2 px-1 justify-content-center border-1 fw-semibold text-nowrap">Curriculum</a>
@@ -578,10 +575,678 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="course-card bg-white rounded-4 p-0 shadow-sm h-100 d-flex flex-column transition-all position-relative overflow-hidden border-0 swiper-slide">
+                            <!-- Decorative Header Background -->
+                            <div class="course-card-bg position-absolute w-100 top-0 start-0" style="height: 100px; z-index: 0; background-color: var(--primary-color);">
+                                <div class="position-absolute end-0 top-0 dcb"></div>
+                            </div>
+                            
+                            <div class="p-4 p-lg-5 d-flex flex-column h-100 position-relative z-1 pt-4">
+                                <!-- Badge & Social floating on the bg -->
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <span class="badge text-navy rounded-pill px-3 py-2 font-xs fw-bold shadow-sm" style="background-color: var(--accent-color);">MBA</span>
+                                    <div class="social-share d-flex gap-2">
+                                        <a href="#" class="text-white hover-text-gold transition-all"><i class="fa-brands fa-whatsapp fs-5"></i></a>
+                                        <a href="#" class="text-white hover-text-gold transition-all"><i class="fa-regular fa-envelope fs-5"></i></a>
+                                    </div>
+                                </div>
+                                
+                                <h4 class="course-card-title fw-bold text-navy font-heading mb-2 mt-3" style="font-size: 1.4rem; line-height: 1.4;">Master of Science in Supply Chain Management [MSSCM]</h4>
+                                <p class="text-secondary-custom font-xs fw-semibold mb-2 pb-2 border-bottom border-light text-uppercase tracking-wider text-center">Validated, Quality Assured And Degree Awarded By EIU-PARIS</p>
+
+                                <div class="course-details d-flex flex-column gap-2 mb-3 flex-grow-1">
+                                    <div class="c-detail-item d-flex justify-content-between align-items-center bg-white border border-light rounded-3 p-3 shadow-sm transition-all hover-border-gold">
+                                        <span class="text-muted font-sm d-flex align-items-center gap-2"><div class="icon-circle-sm bg-primary-light text-navy"><i class="fa-solid fa-tag"></i></div> Course Fee</span>
+                                        <span class="fw-bold text-navy font-sm">£ 1999.00</span>
+                                    </div>
+                                    <div class="c-detail-item d-flex justify-content-between align-items-center bg-white border border-light rounded-3 p-3 shadow-sm transition-all hover-border-gold">
+                                        <span class="text-muted font-sm d-flex align-items-center gap-2"><div class="icon-circle-sm bg-primary-light text-navy"><i class="fa-solid fa-laptop-code"></i></div> Learning Mode</span>
+                                        <span class="fw-semibold text-dark font-sm">Self-Paced Learning</span>
+                                    </div>
+                                    <div class="c-detail-item d-flex justify-content-between align-items-center bg-white border border-light rounded-3 p-3 shadow-sm transition-all hover-border-gold">
+                                        <span class="text-muted font-sm d-flex align-items-center gap-2"><div class="icon-circle-sm bg-primary-light text-navy"><i class="fa-regular fa-clock"></i></div> Duration</span>
+                                        <span class="fw-semibold text-dark font-sm">12 to 18 Months</span>
+                                    </div>
+                                </div>
+
+                                <div class="course-actions d-flex flex-wrap flex-column gap-2 mt-auto pt-0">
+                                    <div class="d-flex gap-2">
+                                        <a href="#" class="btn btn-outline-modern flex-grow-1 font-sm py-2 px-1 justify-content-center border-1 fw-semibold text-nowrap">Details</a>
+                                        <a href="#" class="btn btn-outline-modern flex-grow-1 font-sm py-2 px-1 justify-content-center border-1 fw-semibold text-nowrap">Curriculum</a>
+                                    </div>
+                                    <a href="#" class="btn btn-primary-modern flex-grow-1 font-sm py-2 justify-content-center fw-semibold w-100 shadow-sm hover-lift">Request Info <i class="fa-solid fa-arrow-right ms-2 font-xs"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+                </div>
+
+               
+
+            </div>
+        </section>
+
+        <!-- Programs Tabs Section -->
+        <section class="programs-tabs-section py-5 position-relative z-2 bg-white">
+            <div class="container-fluid px-4 px-lg-5 my-lg-4">
+                <div class="text-center mb-5 mx-auto" style="max-width: 850px;">
+                    <div class="badge-premium-modern mb-3 d-inline-flex align-items-center gap-2">
+                        <span class="pulse-dot"></span>
+                        <span class="fw-semibold text-uppercase tracking-wider">Explore Options</span>
+                    </div>
+                    <h2 class="fw-bold text-navy font-heading display-6 mb-4">Program Categories</h2>
+                </div>
+
+                <!-- Tabs Nav -->
+                <ul class="nav nav-pills justify-content-center gap-2 gap-md-3 mb-5 premium-tabs" id="programsTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active premium-tab-btn" id="p-mba-tab" data-bs-toggle="pill" data-bs-target="#p-mba" type="button" role="tab" aria-controls="p-mba" aria-selected="true">MBA</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link premium-tab-btn" id="p-masters-tab" data-bs-toggle="pill" data-bs-target="#p-masters" type="button" role="tab" aria-controls="p-masters" aria-selected="false">Masters</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link premium-tab-btn" id="p-dba-tab" data-bs-toggle="pill" data-bs-target="#p-dba" type="button" role="tab" aria-controls="p-dba" aria-selected="false">DBA</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link premium-tab-btn" id="p-practitioners-tab" data-bs-toggle="pill" data-bs-target="#p-practitioners" type="button" role="tab" aria-controls="p-practitioners" aria-selected="false">Practitioners Doctorate</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link premium-tab-btn" id="p-honorary-tab" data-bs-toggle="pill" data-bs-target="#p-honorary" type="button" role="tab" aria-controls="p-honorary" aria-selected="false">Honorary Doctorate</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link premium-tab-btn" id="p-certificate-tab" data-bs-toggle="pill" data-bs-target="#p-certificate" type="button" role="tab" aria-controls="p-certificate" aria-selected="false">Professional Certificate</button>
+                    </li>
+                </ul>
+
+                <!-- Tabs Content -->
+                <div class="tab-content" id="programsTabContent">
+
+                    <div class="tab-pane fade show active" id="p-mba" role="tabpanel" aria-labelledby="p-mba-tab" tabindex="0">
+                        <div class="premium-tab-pane-inner p-4 p-lg-5 rounded-4 overflow-hidden position-relative shadow-lg">
+                            <!-- Background Overlay -->
+                            <div class="premium-pane-bg"></div>
+                            
+                            <div class="row g-4 align-items-center position-relative z-1">
+                                <!-- Left: Description & Features -->
+                                <div class="col-lg-7">
+                                    <div class="pe-lg-4">
+                                        <div class="badge bg-color-accent rounded-pill px-3 py-3 text-white font-xs fw-bold mb-3 shadow-sm text-navy">Master of Business Administration</div>
+                                        <h3 class="fw-bold text-white font-heading mb-3">Master of Business Administration (MBA)</h3>
+                                        <p class="text-white opacity-75 mb-4" style="line-height: 1.8;">
+                                            If you are interested in pursuing a Master's in Business Administration (MBA) degree, but you don't have the time or resources to attend a traditional program, you might consider a self-study based program. Self-study online is a flexible and convenient way to learn the core concepts and skills of business administration, such as accounting, finance, marketing, strategy, leadership, Entrepreneurship, Business Administration etc.
+                                        </p>
+                                        <p class="text-white opacity-75 mb-4" style="line-height: 1.8;">
+                                            You can study at your own pace, from anywhere in the world, and choose from 32 specialized areas. Whether you want to start your own business, move into a leadership role, or switch industries, this MBA degree can help you get there. This recognized credential will boost your resume and salary potential.
+                                        </p>
+                                        
+                                        <div class="row g-3 mb-5">
+                                            <div class="col-sm-6">
+                                                <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                                                    <li class="d-flex align-items-center gap-2 text-white fw-medium font-sm">
+                                                        <i class="fa-solid fa-circle-check text-gold"></i> Self-Paced
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2 text-white fw-medium font-sm">
+                                                        <i class="fa-solid fa-circle-check text-gold"></i> Distance Learning
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2 text-white fw-medium font-sm">
+                                                        <i class="fa-solid fa-circle-check text-gold"></i> 32 Specializations
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                                                    <li class="d-flex align-items-center gap-2 text-white fw-medium font-sm">
+                                                        <i class="fa-solid fa-circle-check text-gold"></i> Globally Recognized
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2 text-white fw-medium font-sm">
+                                                        <i class="fa-solid fa-circle-check text-gold"></i> Partial Scholarship Available
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex gap-3">
+                                            <a href="#" class="btn btn-primary-modern px-5 shadow-gold bg-white text-color-secondary">Apply Now</a>
+                                            <a href="#" class="btn btn-outline-white px-5 bg-color-accent">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Right: Stats Grid -->
+                                <div class="col-lg-5">
+                                    <div class="program-stats-grid glass-stats-grid">
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-gold mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-star fs-5 text-gold"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">Top Rated</h6>
+                                            <span class="font-xs text-white-50">Program</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-white mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-calendar-check fs-5"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">12-18</h6>
+                                            <span class="font-xs text-white-50">Months</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-gold mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-layer-group fs-5"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">32+</h6>
+                                            <span class="font-xs text-white-50">Specializations</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-white mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-clock fs-5"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">Flexible</h6>
+                                            <span class="font-xs text-white-50">Schedule</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-white mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-user-tie fs-5"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">Expert</h6>
+                                            <span class="font-xs text-white-50">Faculty</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-gold mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-briefcase fs-5"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">Career</h6>
+                                            <span class="font-xs text-white-50">Support</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="p-masters" role="tabpanel" aria-labelledby="p-masters-tab" tabindex="0">
+                        <div class="premium-tab-pane-inner p-4 p-lg-5 rounded-4 overflow-hidden position-relative shadow-lg masters-pane">
+                            <!-- Background Overlay -->
+                            <div class="premium-pane-bg masters-bg"></div>
+                            
+                            <div class="row g-4 align-items-center position-relative z-1">
+                                <!-- Left: Description & Features -->
+                                <div class="col-lg-7">
+                                    <div class="pe-lg-4">
+                                        <div class="badge bg-color-accent text-navy rounded-pill px-3 py-3 text-white font-xs fw-bold mb-3 shadow-sm">Master's programmes</div>
+                                        <h3 class="fw-bold text-white font-heading mb-3">Master's programmes</h3>
+                                        <p class="text-white opacity-75 mb-4" style="line-height: 1.8;">
+                                            If you are looking for a way to advance your career and learn new skills, you might want to consider pursuing a master's degree through distance learning. Distance learning or self-paced learning programmes allow you to study at your own pace, any time & from anywhere in the world with minimal costs. You can choose from 13 areas of specialization that we are currently offering (Master's/Master of Science).
+                                        </p>
+                                        <p class="text-white opacity-75 mb-4" style="line-height: 1.8;">
+                                            Self-study online programmes also offer flexibility and convenience, as you can access the course materials and assignments anytime and anywhere. And with the chat option, you will be assisted throughout the process. The program is ideally designed for professionals who want to enhance their knowledge and credentials, without sacrificing their work or personal commitments.
+                                        </p>
+                                        
+                                        <div class="row g-3 mb-5">
+                                            <div class="col-sm-6">
+                                                <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                                                    <li class="d-flex align-items-center gap-2 text-white fw-medium font-sm">
+                                                        <i class="fa-solid fa-circle-check text-gold"></i> Self-Paced Learning
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2 text-white fw-medium font-sm">
+                                                        <i class="fa-solid fa-circle-check text-gold"></i> Study Anywhere
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                                                    <li class="d-flex align-items-center gap-2 text-white fw-medium font-sm">
+                                                        <i class="fa-solid fa-circle-check text-gold"></i> Minimal Costs
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2 text-white fw-medium font-sm">
+                                                        <i class="fa-solid fa-circle-check text-gold"></i> Chat Support
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex gap-3">
+                                            <a href="#" class="btn btn-primary-modern px-5 shadow-gold bg-white text-color-secondary">Apply Now</a>
+                                            <a href="#" class="btn btn-outline-white px-5 bg-color-accent">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Right: Stats Grid -->
+                                <div class="col-lg-5">
+                                    <div class="program-stats-grid glass-stats-grid">
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-gold mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-star fs-5 text-gold"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">Flexible</h6>
+                                            <span class="font-xs text-white-50">Learning</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-white mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-graduation-cap fs-5"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">Master's</h6>
+                                            <span class="font-xs text-white-50">Programmes</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-gold mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-layer-group fs-5"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">13</h6>
+                                            <span class="font-xs text-white-50">Specializations</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-white mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-cloud fs-5"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">100%</h6>
+                                            <span class="font-xs text-white-50">Online</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-white mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-laptop-house fs-5"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">Distance</h6>
+                                            <span class="font-xs text-white-50">Learning</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-gold mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-user-tie fs-5 text-gold"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">Professional</h6>
+                                            <span class="font-xs text-white-50">Focus</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-gold mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-comments fs-5 text-gold"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">24/7 Chat</h6>
+                                            <span class="font-xs text-white-50">Support</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-white mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-balance-scale fs-5"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">Work-Life</h6>
+                                            <span class="font-xs text-white-50">Balance</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="p-dba" role="tabpanel" aria-labelledby="p-dba-tab" tabindex="0">
+                        <div class="premium-tab-pane-inner p-4 p-lg-5 rounded-4 overflow-hidden position-relative shadow-lg dba-pane">
+                            <div class="premium-pane-bg dba-bg"></div>
+                            <div class="row g-4 align-items-center position-relative z-1">
+                                <div class="col-lg-7">
+                                    <div class="pe-lg-4">
+                                        <div class="badge bg-color-accent text-navy rounded-pill px-3 py-3 font-xs fw-bold mb-3 shadow-sm">Research-Based Professional Degree</div>
+                                        <h3 class="fw-bold text-white font-heading mb-3">Doctorate in Business Administration (DBA)</h3>
+                                        <p class="text-white opacity-75 mb-4" style="line-height: 1.8;">
+                                            DBA Fully Online is a program that allows you to earn a Doctor of Business Administration degree from the comfort of your home or office. Interact with your supervisor through online discussion. This Research based professional degree is designed for working professionals who want to advance their careers, enhance their skills, and contribute to the field of business administration.
+                                        </p>
+                                        
+                                        <div class="row g-3 mb-5">
+                                            <div class="col-sm-6">
+                                                <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                                                    <li class="d-flex align-items-center gap-2 text-white fw-medium font-sm">
+                                                        <i class="fa-solid fa-circle-check text-gold"></i> Affordable Fees
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2 text-white fw-medium font-sm">
+                                                        <i class="fa-solid fa-circle-check text-gold"></i> Partial Scholarship Available
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2 text-white fw-medium font-sm">
+                                                        <i class="fa-solid fa-circle-check text-gold"></i> Instalment Payment Option
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                                                    <li class="d-flex align-items-center gap-2 text-white fw-medium font-sm">
+                                                        <i class="fa-solid fa-circle-check text-gold"></i> Connect with the Supervisor
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2 text-white fw-medium font-sm">
+                                                        <i class="fa-solid fa-circle-check text-gold"></i> Opportunity to Attend Convocation
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex gap-3">
+                                            <a href="#" class="btn btn-outline-white px-5 bg-color-accent">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="program-stats-grid glass-stats-grid">
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-gold mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-graduation-cap fs-5 text-gold"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">Doctoral</h6>
+                                            <span class="font-xs text-white-50">Degree</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-white mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-award fs-5"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">DBA</h6>
+                                            <span class="font-xs text-white-50">Program</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-gold mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-microscope fs-5"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">Research</h6>
+                                            <span class="font-xs text-white-50">Doctorate</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-white mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-cloud fs-5"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">100%</h6>
+                                            <span class="font-xs text-white-50">Online</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-white mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-users-viewfinder fs-5"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">1:1</h6>
+                                            <span class="font-xs text-white-50">Supervision</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-gold mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-book-open fs-5 text-gold"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">Research</h6>
+                                            <span class="font-xs text-white-50">Focus</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="p-practitioners" role="tabpanel" aria-labelledby="p-practitioners-tab" tabindex="0">
+                        <div class="premium-tab-pane-inner p-4 p-lg-5 rounded-4 overflow-hidden position-relative shadow-lg practitioners-pane">
+                            <div class="premium-pane-bg practitioners-bg"></div>
+                            <div class="row g-4 align-items-center position-relative z-1">
+                                <div class="col-lg-7">
+                                    <div class="pe-lg-4">
+                                        <div class="badge bg-color-accent text-navy rounded-pill px-3 py-3 font-xs fw-bold mb-3 shadow-sm">Practice-Based Research</div>
+                                        <h3 class="fw-bold text-white font-heading mb-3">Practitioners Doctorate</h3>
+                                        <p class="text-white opacity-75 mb-4" style="line-height: 1.8;">
+                                            Are you looking for a way to advance your career in the field of practice-based research? Do you want to earn a Practitioners Doctorate degree without compromising your work-life balance? If so, you might be interested in our fully online program that offers flexible and personalized learning opportunities.
+                                        </p>
+                                        <p class="text-white opacity-75 mb-4" style="line-height: 1.8;">
+                                            Your prior contribution of extensive research on a specific scholarly work such as publication, article, books or a book chapter shall be presented as thesis to external examiner for defense.
+                                        </p>
+                                        
+                                        <div class="row g-3 mb-5">
+                                            <div class="col-12">
+                                                <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                                                    <li class="d-flex align-items-center gap-2 text-white fw-medium font-sm">
+                                                        <i class="fa-solid fa-circle-check text-gold"></i> Affordable Fees
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2 text-white fw-medium font-sm">
+                                                        <i class="fa-solid fa-circle-check text-gold"></i> Partial Scholarship Available
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2 text-white fw-medium font-sm">
+                                                        <i class="fa-solid fa-circle-check text-gold"></i> Instalment Payment Option
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex gap-3">
+                                            <a href="#" class="btn btn-outline-white px-5 bg-color-accent">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="program-stats-grid glass-stats-grid">
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-gold mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-vials fs-5 text-gold"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">Practice</h6>
+                                            <span class="font-xs text-white-50">Based</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-white mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-user-graduate fs-5"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">Doctorate</h6>
+                                            <span class="font-xs text-white-50">Program</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-gold mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-magnifying-glass-chart fs-5"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">Prior</h6>
+                                            <span class="font-xs text-white-50">Research</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-white mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-cloud fs-5"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">100%</h6>
+                                            <span class="font-xs text-white-50">Online</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-white mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-shield-halved fs-5"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">External</h6>
+                                            <span class="font-xs text-white-50">Defense</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-gold mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-network-wired fs-5 text-gold"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">Multi</h6>
+                                            <span class="font-xs text-white-50">Disciplinary</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="p-honorary" role="tabpanel" aria-labelledby="p-honorary-tab" tabindex="0">
+                        <div class="premium-tab-pane-inner p-4 p-lg-5 rounded-4 overflow-hidden position-relative shadow-lg honorary-pane">
+                            <div class="premium-pane-bg honorary-bg"></div>
+                            <div class="row g-4 align-items-center position-relative z-1">
+                                <div class="col-lg-7">
+                                    <div class="pe-lg-4">
+                                        <div class="badge bg-color-accent text-navy rounded-pill px-3 py-3 font-xs fw-bold mb-3 shadow-sm">Recognition of Excellence</div>
+                                        <h3 class="fw-bold text-white font-heading mb-3">Honorary Doctorate for Scholars</h3>
+                                        <p class="text-white opacity-75 mb-4" style="line-height: 1.8;">
+                                            Are you looking for a way to advance your career in the field of scholarly excellence? Do you want to earn an Honorary Doctorate degree that recognizes your prestigious contributions and achievements? This recognition is awarded to individuals who have made significant impact in their respective fields through research, leadership, or social contribution.
+                                        </p>
+                                        <p class="text-white opacity-75 mb-4" style="line-height: 1.8;">
+                                            Your life-long dedication and contributions to the global community shall be evaluated through your portfolio of work. This prestigious award is a testament to your professional journey and scholarly excellence.
+                                        </p>
+                                        
+                                        <div class="row g-3 mb-5">
+                                            <div class="col-12">
+                                                <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                                                    <li class="d-flex align-items-center gap-2 text-white fw-medium font-sm">
+                                                        <i class="fa-solid fa-circle-check text-gold"></i> Affordable Fees
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2 text-white fw-medium font-sm">
+                                                        <i class="fa-solid fa-circle-check text-gold"></i> Partial Scholarship Available
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2 text-white fw-medium font-sm">
+                                                        <i class="fa-solid fa-circle-check text-gold"></i> Instalment Payment Option
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex gap-3">
+                                            <a href="#" class="btn btn-outline-white px-5 bg-color-accent">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="program-stats-grid glass-stats-grid">
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-gold mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-medal fs-5 text-gold"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">Prestigious</h6>
+                                            <span class="font-xs text-white-50">Honor</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-white mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-scroll fs-5"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">Honorary</h6>
+                                            <span class="font-xs text-white-50">Doctorate</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-gold mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-hand-holding-heart fs-5"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">Scholarly</h6>
+                                            <span class="font-xs text-white-50">Recognition</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-white mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-earth-americas fs-5"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">Global</h6>
+                                            <span class="font-xs text-white-50">Award</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-white mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-star-of-life fs-5"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">Honor</h6>
+                                            <span class="font-xs text-white-50">Based</span>
+                                        </div>
+                                        <div class="stat-card-mini glass-card-premium border-0 rounded-4 p-3 shadow-sm text-center">
+                                            <div class="icon-circle-lg bg-white bg-opacity-10 text-gold mx-auto mb-2 d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fa-solid fa-trophy fs-5 text-gold"></i>
+                                            </div>
+                                            <h6 class="fw-bold text-white mb-0">Excellence</h6>
+                                            <span class="font-xs text-white-50">Award</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="p-certificate" role="tabpanel" aria-labelledby="p-certificate-tab" tabindex="0">
+                        <div class="premium-tab-pane-inner p-4 p-lg-5 rounded-4 overflow-hidden position-relative shadow-lg certificate-pane">
+                            <div class="premium-pane-bg certificate-bg"></div>
+                            <div class="row g-4 align-items-center position-relative z-1">
+                                <div class="col-lg-7">
+                                    <div class="pe-lg-4">
+                                        <div class="badge bg-color-accent text-navy rounded-pill px-3 py-3 font-xs fw-bold mb-3 shadow-sm">Industry Expert Designed</div>
+                                        <h3 class="fw-bold text-white font-heading mb-3">Professional Certificate Courses</h3>
+                                        <p class="text-white opacity-75 mb-4" style="line-height: 1.8;">
+                                            The courses has been designed to gain specialized knowledge and training in a specific field or industry. You will find comprehensive curriculum, designed by industry expert, can help you gain competitive edge in the job market.
+                                        </p>
+                                        <p class="text-white opacity-75 mb-4" style="line-height: 1.8;">
+                                            To update your professional standards, or explore a new career path, a certificate course can help you achieve your goals and advance your career. Not only that, you will also become member of global professional community where you connect and be aware of the global practices.
+                                        </p>
+                                        
+                                        <div class="row g-3 mb-5">
+                                            <div class="col-12">
+                                                <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                                                    <li class="d-flex align-items-center gap-2 text-white fw-medium font-sm">
+                                                        <i class="fa-solid fa-circle-check text-gold"></i> Affordable Fees
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2 text-white fw-medium font-sm">
+                                                        <i class="fa-solid fa-circle-check text-gold"></i> Partial Scholarship Available
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-2 text-white fw-medium font-sm">
+                                                        <i class="fa-solid fa-circle-check text-gold"></i> Instalment Payment Option
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex gap-3">
+                                            <a href="#" class="btn btn-primary-modern px-5 shadow-gold bg-white text-color-secondary">Apply Now</a>
+                                            <a href="#" class="btn btn-outline-white px-5 bg-color-accent">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="glass-card-premium rounded-4 p-4 shadow-sm h-100">
+                                        <h5 class="fw-bold text-white mb-4 border-bottom border-white border-opacity-10 pb-2">
+                                            <i class="fa-solid fa-certificate text-gold me-2"></i> Certification Bodies
+                                        </h5>
+                                        <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                                            <li class="d-flex align-items-start gap-3">
+                                                <div class="icon-circle-sm bg-white bg-opacity-10 text-gold flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle">
+                                                    <i class="fa-solid fa-check fs-xs"></i>
+                                                </div>
+                                                <div>
+                                                    <h6 class="text-white font-sm fw-bold mb-0">ProfQual, UK</h6>
+                                                    <small class="text-white opacity-50">Professional Qualifications</small>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-start gap-3">
+                                                <div class="icon-circle-sm bg-white bg-opacity-10 text-gold flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle">
+                                                    <i class="fa-solid fa-check fs-xs"></i>
+                                                </div>
+                                                <div>
+                                                    <h6 class="text-white font-sm fw-bold mb-0">Cambridge Academy of Professionals, UK</h6>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-start gap-3">
+                                                <div class="icon-circle-sm bg-white bg-opacity-10 text-gold flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle">
+                                                    <i class="fa-solid fa-check fs-xs"></i>
+                                                </div>
+                                                <div>
+                                                    <h6 class="text-white font-sm fw-bold mb-0">Board of HR Certification, BHRC</h6>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-start gap-3">
+                                                <div class="icon-circle-sm bg-white bg-opacity-10 text-gold flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle">
+                                                    <i class="fa-solid fa-check fs-xs"></i>
+                                                </div>
+                                                <div>
+                                                    <h6 class="text-white font-sm fw-bold mb-0">IPAC, Singapore</h6>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-start gap-3">
+                                                <div class="icon-circle-sm bg-white bg-opacity-10 text-gold flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle">
+                                                    <i class="fa-solid fa-check fs-xs"></i>
+                                                </div>
+                                                <div>
+                                                    <h6 class="text-white font-sm fw-bold mb-0">IPMA, International Project Management Academy</h6>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-start gap-3">
+                                                <div class="icon-circle-sm bg-white bg-opacity-10 text-gold flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle">
+                                                    <i class="fa-solid fa-check fs-xs"></i>
+                                                </div>
+                                                <div>
+                                                    <h6 class="text-white font-sm fw-bold mb-0">Academy of Business English & Communication</h6>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
+
     </main>
 
     <!-- fontawesome js -->
@@ -592,6 +1257,10 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
     <!-- bootstrap cdn -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- swiper.js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
     <!-- js -->
     <script src="./js/main.js"></script>
 </body>

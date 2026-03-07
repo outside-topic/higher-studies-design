@@ -43,6 +43,37 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Search focused - implementing any specific active states if needed');
     });
 
+    // popular course swiper js
+    new Swiper('.hc-swiper', {
+        speed: 400,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+        },
+        effect: "coverflow",
+        grabCursor: true,
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+    })
+
     // GSAP Horizontal Scroll Logic
     gsap.registerPlugin(ScrollTrigger);
 
