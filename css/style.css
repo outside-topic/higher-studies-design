@@ -557,6 +557,40 @@ body {
     border-color: var(--accent-color) !important;
 }
 
+@media only screen and (max-width: 992px) {
+    .horizontal-scroll-wrapper{
+        height: auto !important;
+    }
+    .horizontal-scroll-container{
+        display: flex !important;
+        flex-direction: column;
+        height: auto !important;
+        padding: 0 !important;
+    }
+
+    .horizontal-scroll-item {
+        height: auto !important;
+    }
+
+    .left-prog-ov-block{
+        max-width: 100% !important;
+    }
+
+    .prog-ov-wrap{
+        max-height: none !important;
+    }
+
+    .horizontal-scroll-item{
+        min-width: 100vw !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .horizontal-scroll-item ul{
+        flex-direction: column;
+    }
+}
+
 .icon-circle {
     width: 32px;
     height: 32px;

@@ -5,9 +5,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.querySelector('.premium-navbar');
     const searchInput = document.querySelector('.unique-search');
 
+    const updateStickyOffset = () => {
+        const topNav = document.querySelector('.navbar-top');
+        if (!topNav || !navbar) return;
+        
+        if (window.innerWidth >= 992) {
+            // Push header up by the height of the top navigation + top padding
+            const style = window.getComputedStyle(navbar);
+            const pt = parseFloat(style.paddingTop) || 0;
+            navbar.style.top = `-${topNav.offsetHeight + pt}px`;
+        } else {
+            // On mobile, the button is in the top nav, so we keep the whole header visible
+            navbar.style.top = '0px';
+        }
+    };
+
+    window.addEventListener('resize', updateStickyOffset);
+    // Initialize offset
+    setTimeout(updateStickyOffset, 100);
+
     // Scroll effect
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
+        if (window.scrollY > 100) {
             navbar.style.padding = '0.5rem 2rem';
             navbar.style.background = 'rgba(255, 255, 255, 0.95)';
             navbar.style.backdropFilter = 'blur(10px)';
@@ -16,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             navbar.style.background = 'var(--white)';
             navbar.style.backdropFilter = 'none';
         }
+        updateStickyOffset();
     });
 
     // Search bar focus interaction
