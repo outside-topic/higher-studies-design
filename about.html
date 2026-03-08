@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+
+    <!-- swiper.js cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        
+    <header class="premium-navbar navbar navbar-expand-lg p-0 py-2">
+        <div class="container-fluid flex-lg-column px-0">
+            <!-- Top Section: Logos, Search, and Auth -->
+            <div class="navbar-top w-100 d-flex justify-content-between align-items-center px-3 px-lg-4 border-bottom-lg pb-lg-2">
+                <div class="logos-container d-flex align-items-center gap-2 gap-lg-3">
+                    <a href="index.html">
+                        <img src="images/WARD-Logo-Horizontal.png" alt="WARD Logo" class="logo-main">
+                    </a>
+                    <a href="#">
+                        <img src="images/MBA-Final-Logo.png" alt="MBA Logo" class="logo-affiliate">
+                    </a>
+                </div>
+
+                <div class="d-flex w-100 d-search-cont">
+                    <div class="search-bar-container mx-auto">
+                        <form action="/search" method="GET" class="position-relative">
+                            <input type="text" name="q" placeholder="Search for courses, degrees..." class="unique-search">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        </form>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBottom" aria-controls="navbarBottom" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Desktop Search and Auth -->
+                <div class="d-none d-lg-flex align-items-center gap-4">
+                    <div class="auth-links m-0 d-flex gap-3">
+                        <a href="#" class="btn-premium btn-login">Login</a>
+                        <a href="#" class="btn-premium btn-register">Register</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section: Navigation Links -->
+            <nav class="navbar-bottom collapse navbar-collapse w-100 justify-content-center mt-2 mt-lg-2" id="navbarBottom">
+                <ul class="nav-links navbar-nav gap-lg-4 pb-3 pb-lg-0 px-3 px-lg-0 w-100 justify-content-center">
+                    <li class="nav-item"><a href="index.html" class="nav-link px-0">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-0">About</a></li>
+                    
+                    <li class="nav-item dropdown has-dropdown">
+                        <a href="#" class="nav-link px-0 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+                        <ul class="dropdown-menu border-0 shadow-sm mt-0">
+                            <li><a href="#" class="dropdown-item">MBA</a></li>
+                            <li><a href="#" class="dropdown-item">Masters</a></li>
+                            <li><a href="#" class="dropdown-item">Doctorate</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown has-dropdown">
+                        <a href="#" class="nav-link px-0 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Affiliation</a>
+                        <ul class="dropdown-menu border-0 shadow-sm mt-0">
+                            <li><a href="#" class="dropdown-item">EIU - Paris</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="#" class="nav-link px-0">Contact</a></li>
+
+                    <li class="nav-item dropdown has-dropdown">
+                        <a href="#" class="nav-link px-0 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Verify</a>
+                        <ul class="dropdown-menu border-0 shadow-sm mt-0">
+                            <li><a href="#" class="dropdown-item">Certification Verification</a></li>
+                            <li><a href="#" class="dropdown-item">Verify LearnerID</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <!-- Mobile Search & Auth-->
+                <div class="d-lg-none px-3 pb-3 d-flex flex-column gap-3 mt-3 border-top pt-3">
+                    <div class="search-bar-container m-0 w-100">
+                        <form action="/search" method="GET" class="position-relative">
+                            <input type="text" name="q" placeholder="Search for courses..." class="unique-search w-100">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        </form>
+                    </div>
+                    <div class="auth-links m-0 w-100 d-flex justify-content-between">
+                        <a href="#" class="btn-premium btn-login px-2">Login</a>
+                        <a href="#" class="btn-premium btn-register px-2 flex-grow-1 justify-content-center d-flex align-items-center text-center ms-2">Register</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Page Hero - Option 2: Immersive Gateway -->
+        <section class="about-hero-v2">
+            <div class="mesh-bg"></div>
+            <div class="world-map-overlay"></div>
+            
+            <div class="container hero-container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        
+                        
+                        <h1 class="title-immersive" data-aos="fade-up">Empowering Excellence, <br>Global Ambition</h1>
+                        
+                        <p class="lead text-white opacity-75 mb-5 px-lg-5 mx-auto" style="max-width: 900px; font-size: 1.25rem;" data-aos="fade-up" data-aos-delay="100">
+                            Welcome to World Academy for Research and Development. We bridge the gap between ambition and success through globally recognized Higher Education programmes awarded by prestigious universities in France, USA, and Switzerland.
+                        </p>
+
+                         <p class="lead text-white opacity-75 mb-5 px-lg-5 mx-auto" style="max-width: 900px; font-size: 1.25rem;" data-aos="fade-up" data-aos-delay="100">
+                            Our commitment to excellence is reflected in our affiliations with esteemed international bodies. We are recognized as an academically aligned institution by the Society for Human Resource Management (SHRM) and are part of the Higher Education Network with the HR Certification Institute (HRCI). Additionally, many of our programs are acknowledged by the Association for Talent Development (ATD) for recertification credits, underscoring our dedication to maintaining high educational standards. World Academy is also affiliated with Cambridge Academy of Professionals UK, Board of HR Certifications UK, International Authority for Project Management Certifications UK, CPD Group UK.
+                        </p>
+
+                        
+                    </div>
+                </div>
+
+                <!-- Floating Glass Stat Badges -->
+                <div class="hero-stats-floating d-none d-lg-block">
+                    <div class="glass-stat-badge badge-1 text-white">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        <b>60+</b>
+                        <span>Countries Reach</span>
+                    </div>
+                    <div class="glass-stat-badge badge-2 text-white">
+                        <i class="fa-solid fa-users"></i>
+                        <b>80,000+</b>
+                        <span>Professionals</span>
+                    </div>
+                    <div class="glass-stat-badge badge-3 text-white">
+                        <i class="fa-solid fa-award"></i>
+                        <b>17+</b>
+                        <span>Years Impact</span>
+                    </div>
+                    <div class="glass-stat-badge badge-4 text-white">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <b>Prestige</b>
+                        <span>Worldwide Ranking</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Corporate Brochure Section -->
+        <section class="brochure-cta-section" data-aos="fade-up">
+            <div class="container">
+                <div class="brochure-glass-card">
+                    <div class="brochure-info">
+                        <h2>Get our Corporate Brochure</h2>
+                        <p>Click on the download button and register to discover our full vision.</p>
+                    </div>
+                    <div class="brochure-action">
+                        <a href="#" class="btn btn-brochure-download">
+                            Click Here to Download <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal fade" id="bdOfficeModal" tabindex="-1" aria-labelledby="officeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content office-modal-content">
+                    <div class="modal-header office-modal-header">
+                        <div class="modal-title-wrapper">
+                            <img loading="lazy" id="modalOfficeFlag" src="./images/bangladesh.png" alt="" class="modal-office-flag">
+                            <div>
+                                <h5 class="modal-title" id="officeModalLabel">Office Details</h5>
+                                <span class="modal-office-type" id="modalOfficeType"></span>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body office-modal-body">
+                        <div class="row">
+                            <!-- Office Information -->
+                            <div class="col-md-6">
+                                <div class="office-info-section">
+                                    <h6 class="info-section-title">
+                                        <i class="fas fa-building me-2"></i>
+                                        Office Information
+                                    </h6>
+                                    <div class="office-detail-list">
+                                        <div class="office-detail-item">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <div>
+                                                <a href="https://maps.app.goo.gl/UcYi9yqMAJzUi7K8A" class="detail-label">Address</a>
+                                                <span class="detail-value" id="modalOfficeAddress"></span>
+                                            </div>
+                                        </div>
+                                        <div class="office-detail-item">
+                                            <i class="fas fa-phone"></i>
+                                            <div>
+                                                <span class="detail-label">Phone</span>
+                                                <a href="#" class="detail-value detail-link" id="modalOfficePhone"></a>
+                                            </div>
+                                        </div>
+                                        <div class="office-detail-item">
+                                            <i class="fas fa-envelope"></i>
+                                            <div>
+                                                <span class="detail-label">Email</span>
+                                                <a href="#" class="detail-value detail-link" id="modalOfficeEmail"></a>
+                                            </div>
+                                        </div>
+                                        <div class="office-detail-item">
+                                            <i class="fas fa-clock"></i>
+                                            <div>
+                                                <span class="detail-label">Hours</span>
+                                                <span class="detail-value" id="modalOfficeHours"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Map Section -->
+                            <div class="col-md-6">
+                                <div class="office-map-section">
+                                    <h6 class="info-section-title">
+                                        <i class="fas fa-map me-2"></i>
+                                        Location Map
+                                    </h6>
+                                    <div class="office-map-container">
+                                        <div class="map-placeholder" id="officeMapPlaceholder">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d656.7371852103331!2d90.36597555465399!3d23.75512083991956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bfff7c2e40b5%3A0x369a168b3ff5a3bf!2sWorld%20Academy%20UK%20%5BSupport%20Office%5D!5e1!3m2!1sen!2sbd!4v1752047495002!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                                
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer office-modal-footer">
+                        <div class="modal-actions">
+                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                                <i class="fas fa-times me-1"></i>
+                                Close
+                            </button>
+                            <button type="button" class="btn btn-primary contact-office-btn" id="contactOfficeBtn">
+                                <i class="fas fa-phone me-1"></i>
+                                Contact Office
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <!-- Main Footer Content -->
+            <div class="footer-content">
+                <div class="container">
+                    <div class="row">
+                        <!-- Brand & About -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="footer-brand">
+                                <div class="brand-logo">
+                                    <div class="logo-symbol">
+                                        <img loading="lazy" src="./images/MBA-Final-Logo.png" alt="logo">
+                                    </div>
+                                    <div class="brand-text">
+                                        <h4>Master's & M.B.A</h4>
+                                        
+                                    </div>
+                                </div>
+                                <p class="brand-description">
+                                    Leading provider of Distance Learning MBA, Master's, and Doctorate programmes. We empower Graduates and working professionals with flexible, world-class education that fits their lifestyle.
+                                </p>
+                                <div class="achievement-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-number text-white">10K+</span>
+                                        <span class="stat-label text-white">Graduates</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number text-white">40+</span>
+                                        <span class="stat-label text-white">Specializations</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number text-white">17+</span>
+                                        <span class="stat-label text-white">Years Experience</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Academic Programs -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="footer-section">
+                                <h5 class="section-title">Academic programmes</h5>
+                                <ul class="footer-menu">
+                                    <li><a href="#mba">MBA programmes</a></li>
+                                    <li><a href="#master">Master's Degrees</a></li>
+                                    <li><a href="#dba">DBA programmes</a></li>
+                                    <li><a href="#practitioners-doctorate">Practitioners Doctorate</a></li>
+                                    <li><a href="#honorary-doctorate">Honorary Doctorate</a></li>
+                                    <li><a href="#professional-certificate">Professional Certificates</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Contact & Connect -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="footer-section">
+                                <h5 class="section-title">Get In Touch</h5>
+                                
+                                <!-- Contact Information -->
+                                <div class="contact-details">
+                                    <div class="contact-item">
+                                        <i class="fas fa-envelope"></i>
+                                        <div class="contact-info">
+                                            <span class="contact-label text-white">Email Us</span>
+                                            <a href="mailto:info@mba-edu.uk">info@mba-edu.uk</a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-phone"></i>
+                                        <div class="contact-info">
+                                            <span class="contact-label text-white">Call Us</span>
+                                            <a href="tel:+441234567890">+44 123 456 7890</a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-comments"></i>
+                                        <div class="contact-info">
+                                            <span class="contact-label text-white">Live Chat</span>
+                                            <span>Available 24/7</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Newsletter Signup -->
+                                <div class="newsletter-section">
+                                    <h6 class="newsletter-title">Stay Updated</h6>
+                                    <p class="newsletter-desc">Get the latest news about programmes and scholarships</p>
+                                    <form class="newsletter-form">
+                                        <div class="input-wrapper">
+                                            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                                            <button type="submit" class="newsletter-submit">
+                                                <i class="fas fa-paper-plane"></i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Footer Content -->
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="bottom-content">
+                        <div class="social-media">
+                            <span class="social-label">Follow Us:</span>
+                            <div class="social-links">
+                                <a href="#" class="social-link facebook" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="social-link instagram" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link youtube" aria-label="YouTube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="footer-legal">
+                            <div class="legal-links">
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Terms & Conditions</a>
+                                <a href="#">Cookie Policy</a>
+                                <a href="#">Accessibility</a>
+                            </div>
+                            <div class="copyright">
+                                <p>&copy; 2024 MBA-EDU. All Rights Reserved. | Empowering Education Worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+        </footer>
+
+    </main>
+
+    <!-- fontawesome js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js" integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- gsap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+    <!-- bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- swiper.js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- js -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1888,4 +1888,228 @@ body {
     box-shadow: none;
 }
 
-/* dcotorate page program curriculum ext design end */
+/* About Page Hero - Option 2: Immersive Gateway */
+.about-hero-v2 {
+    background: #0a0f14;
+    padding: 120px 0 100px;
+    position: relative;
+    overflow: hidden;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Mesh Background Animation */
+.about-hero-v2 .mesh-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 20% 30%, rgba(39, 81, 96, 0.4) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(133, 35, 67, 0.3) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
+    z-index: 1;
+    filter: blur(60px);
+}
+
+.about-hero-v2 .world-map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.transparenttextures.com/patterns/world-map.png'); /* Pattern overlay */
+    opacity: 0.05;
+    z-index: 2;
+}
+
+.about-hero-v2 .hero-container {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+}
+
+.title-immersive {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    background: linear-gradient(to right, #ffffff 30%, var(--accent-color) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-heading);
+}
+
+.hero-stats-floating {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 4;
+}
+
+.glass-stat-badge {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.2rem 2rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    animation: float-badge 6s ease-in-out infinite;
+    pointer-events: auto;
+}
+
+.glass-stat-badge i {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.glass-stat-badge b {
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: var(--font-heading);
+}
+
+.glass-stat-badge span {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* Positioning Badges */
+.badge-1 { top: 10%; left: 5%; animation-delay: 0s; }
+.badge-2 { top: 60%; left: 0%; animation-delay: 1s; }
+.badge-3 { top: 15%; right: 5%; animation-delay: 2s; }
+.badge-4 { top: 65%; right: 2%; animation-delay: 3s; }
+
+@keyframes float-badge {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.cta-group-center {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.btn-immersive {
+    padding: 1.2rem 3.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-immersive-primary {
+    background: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.btn-immersive-primary:hover {
+    transform: scale(1.05) translateY(-5px);
+    background: #fff;
+    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.3);
+}
+
+/* Corporate Brochure CTA Section */
+.brochure-cta-section {
+    background: #ffffff;
+    padding: 60px 0;
+    position: relative;
+}
+
+.brochure-glass-card {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1a3541 100%);
+    border-radius: 2rem;
+    padding: 3rem;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    box-shadow: 0 15px 40px rgba(39, 81, 96, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.brochure-glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.brochure-info h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-heading);
+}
+
+.brochure-info p {
+    font-size: 1.1rem;
+    opacity: 0.85;
+    margin-bottom: 0;
+}
+
+.btn-brochure-download {
+    background: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: var(--transition);
+    white-space: nowrap;
+}
+
+.btn-brochure-download:hover {
+    background: var(--white);
+    color: var(--secondary-color);
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn-brochure-download i {
+    font-size: 1.25rem;
+    animation: bounce-horizontal 2s infinite;
+}
+
+@keyframes bounce-horizontal {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(5px); }
+}
+
+@media (max-width: 991px) {
+    .brochure-glass-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 2.5rem;
+    }
+}
