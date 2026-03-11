@@ -3012,3 +3012,136 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* =========================================
+   Contact Page Styling
+========================================= */
+/* url("../images/contact-banner.jpg"), */
+.contact-hero {
+    background-color: #265367;
+}
+
+.unique-form-input {
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: #fcfcfc;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.unique-form-input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    background-color: var(--white);
+    box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.1);
+}
+
+.contact-form-card, .contact-info-card {
+    transition: var(--transition);
+}
+
+.contact-form-card:hover, .contact-info-card:hover {
+    box-shadow: 0 15px 35px rgba(39, 81, 96, 0.08) !important;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+}
+
+.contact-info-list a:hover {
+    color: var(--primary-color) !important;
+    padding-left: 5px;
+}
+
+.social-btn:hover {
+    background-color: var(--accent-color) !important;
+    color: var(--white) !important;
+}
+
+@media (max-width: 991px) {
+    .contact-hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* =========================================
+   Verification Page Styling
+========================================= */
+
+.verify-hero {
+    background-color: var(--primary-color);
+    background-image: 
+        radial-gradient(circle at 100% 0%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 0% 100%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+}
+
+.min-vh-50 {
+    min-height: 50vh;
+}
+
+.verify-card {
+    transition: var(--transition);
+    border: 1px solid rgba(0,0,0,0.08) !important;
+}
+
+.verify-card:hover {
+    box-shadow: 0 20px 40px rgba(39, 81, 96, 0.1) !important;
+    transform: translateY(-5px);
+}
+
+.verify-form .unique-form-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(39, 81, 96, 0.1);
+}
+
+/* =========================================
+   Affiliation Page Styling (EIU Paris)
+========================================= */
+
+.eiu-logo-card {
+    background-color: var(--white);
+    transition: var(--transition);
+}
+
+.eiu-logo-card:hover {
+    box-shadow: 0 15px 35px rgba(39, 81, 96, 0.08) !important;
+}
+
+.ranking-card {
+    background-color: var(--white);
+    transition: all 0.4s ease;
+    z-index: 1;
+}
+
+.ranking-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(39, 81, 96, 0.1) !important;
+}
+
+.active-ranking {
+    border-color: var(--primary-color) !important;
+}
+
+.membership-card {
+    transition: all 0.3s ease;
+}
+
+.membership-card:hover {
+    border-color: var(--accent-color) !important;
+    transform: scale(1.05);
+}
+
+.text-gold {
+    color: var(--accent-color) !important;
+}
+
+.opacity-10 {
+    opacity: 0.1 !important;
+}
+
+.ranking-img{
+    height: auto;
+    width: 150px;
+}

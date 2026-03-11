@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certification Validation Portal - World Academy</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>    
+    <header class="premium-navbar navbar navbar-expand-lg p-0 py-2">
+        <div class="container-fluid flex-lg-column px-0">
+            <!-- Top Section: Logos, Search, and Auth -->
+            <div class="navbar-top w-100 d-flex justify-content-between align-items-center px-3 px-lg-4 border-bottom-lg pb-lg-2">
+                <div class="logos-container d-flex align-items-center gap-2 gap-lg-3">
+                    <a href="index.html">
+                        <img src="images/WARD-Logo-Horizontal.png" alt="WARD Logo" class="logo-main">
+                    </a>
+                    <a href="#">
+                        <img src="images/MBA-Final-Logo.png" alt="MBA Logo" class="logo-affiliate">
+                    </a>
+                </div>
+
+                <div class="d-flex w-100 d-search-cont">
+                    <div class="search-bar-container mx-auto">
+                        <form action="/search" method="GET" class="position-relative">
+                            <input type="text" name="q" placeholder="Search for courses, degrees..." class="unique-search">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        </form>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBottom" aria-controls="navbarBottom" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Desktop Search and Auth -->
+                <div class="d-none d-lg-flex align-items-center gap-4">
+                    <div class="auth-links m-0 d-flex gap-3">
+                        <a href="#" class="btn-premium btn-login">Login</a>
+                        <a href="#" class="btn-premium btn-register">Register</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section: Navigation Links -->
+            <nav class="navbar-bottom collapse navbar-collapse w-100 justify-content-center mt-2 mt-lg-2" id="navbarBottom">
+                <ul class="nav-links navbar-nav gap-lg-4 pb-3 pb-lg-0 px-3 px-lg-0 w-100 justify-content-center">
+                    <li class="nav-item"><a href="index.html" class="nav-link px-0">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link px-0">About</a></li>
+                    
+                    <li class="nav-item dropdown has-dropdown">
+                        <a href="#" class="nav-link px-0 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+                        <ul class="dropdown-menu border-0 shadow-sm mt-0">
+                            <li><a href="#" class="dropdown-item">MBA</a></li>
+                            <li><a href="#" class="dropdown-item">Masters</a></li>
+                            <li><a href="#" class="dropdown-item">Doctorate</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown has-dropdown">
+                        <a href="#" class="nav-link px-0 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Affiliation</a>
+                        <ul class="dropdown-menu border-0 shadow-sm mt-0">
+                            <li><a href="eiu-paris.html" class="dropdown-item">EIU - Paris</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="contact.html" class="nav-link px-0">Contact</a></li>
+
+                    <li class="nav-item dropdown has-dropdown">
+                        <a href="#" class="nav-link px-0 dropdown-toggle active" data-bs-toggle="dropdown" aria-expanded="false">Verify</a>
+                        <ul class="dropdown-menu border-0 shadow-sm mt-0">
+                            <li><a href="verify.html" class="dropdown-item">Certification Verification</a></li>
+                            <li><a href="#" class="dropdown-item">Verify LearnerID</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <!-- Mobile Search & Auth-->
+                <div class="d-lg-none px-3 pb-3 d-flex flex-column gap-3 mt-3 border-top pt-3">
+                    <div class="search-bar-container m-0 w-100">
+                        <form action="/search" method="GET" class="position-relative">
+                            <input type="text" name="q" placeholder="Search for courses..." class="unique-search w-100">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        </form>
+                    </div>
+                    <div class="auth-links m-0 w-100 d-flex justify-content-between">
+                        <a href="#" class="btn-premium btn-login px-2">Login</a>
+                        <a href="#" class="btn-premium btn-register px-2 flex-grow-1 justify-content-center d-flex align-items-center text-center ms-2">Register</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- Verification Hero Section -->
+        <section class="verify-hero py-5 bg-navy text-white position-relative overflow-hidden">
+            <div class="container py-lg-5 position-relative z-1 text-center">
+                <div class="badge-premium-modern mb-4 d-inline-flex align-items-center gap-2 bg-white bg-opacity-10 border-white border-opacity-20 text-white">
+                    <span class="pulse-dot"></span>
+                    <span class="fw-semibold text-uppercase tracking-wider">Verification Portal</span>
+                </div>
+                <h1 class="display-4 fw-bold mb-3 font-heading">Certification Validation Portal</h1>
+                <p class="lead opacity-75 mx-auto" style="max-width: 600px;">
+                    Enter certificate details to verify official credentials and ensure the authenticity of your qualifications.
+                </p>
+            </div>
+            <div class="hero-shape-1 position-absolute opacity-10"></div>
+            <div class="hero-shape-2 position-absolute opacity-10"></div>
+        </section>
+
+        <!-- Verification Form Section -->
+        <section class="verify-section py-5 bg-light min-vh-50 d-flex align-items-center">
+            <div class="container py-lg-4">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="verify-card bg-white p-4 p-lg-5 rounded-4 shadow-sm border text-center">
+                            <div class="icon-circle-lg bg-primary-light text-navy rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4 shadow-sm" style="width: 80px; height: 80px;">
+                                <i class="fa-solid fa-shield fs-1 text-navy"></i>
+                            </div>
+                            <h3 class="fw-bold text-navy mb-4 font-heading">Verify Credentials</h3>
+                            <form action="#" class="verify-form">
+                                <div class="mb-4">
+                                    <label class="form-label fw-semibold text-navy d-block text-start ps-2 mb-2">Certificate ID / Number</label>
+                                    <div class="position-relative">
+                                        <input type="text" class="form-control unique-form-input ps-5" placeholder="e.g. WA-MBA-2024-XXXX" required style="height: 60px; font-size: 1.1rem; letter-spacing: 1px;">
+                                        <i class="fa-solid fa-hashtag position-absolute start-0 top-50 translate-middle-y ms-4 text-muted"></i>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary-modern w-100 py-3 fs-5 shadow-sm hover-lift d-flex align-items-center justify-content-center">
+                                    Validate Certificate <i class="fa-solid fa-magnifying-glass ms-2"></i>
+                                </button>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <!-- Main Footer Content -->
+            <div class="footer-content">
+                <div class="container">
+                    <div class="row">
+                        <!-- Brand & About -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="footer-brand">
+                                <div class="brand-logo">
+                                    <div class="logo-symbol">
+                                        <img loading="lazy" src="./images/MBA-Final-Logo.png" alt="logo">
+                                    </div>
+                                    <div class="brand-text">
+                                        <h4>Master's & M.B.A</h4>
+                                        
+                                    </div>
+                                </div>
+                                <p class="brand-description">
+                                    Leading provider of Distance Learning MBA, Master's, and Doctorate programmes. We empower Graduates and working professionals with flexible, world-class education that fits their lifestyle.
+                                </p>
+                                <div class="achievement-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-number text-white">10K+</span>
+                                        <span class="stat-label text-white">Graduates</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number text-white">40+</span>
+                                        <span class="stat-label text-white">Specializations</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number text-white">17+</span>
+                                        <span class="stat-label text-white">Years Experience</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Academic Programs -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="footer-section">
+                                <h5 class="section-title">Academic programmes</h5>
+                                <ul class="footer-menu">
+                                    <li><a href="#mba">MBA programmes</a></li>
+                                    <li><a href="#master">Master's Degrees</a></li>
+                                    <li><a href="#dba">DBA programmes</a></li>
+                                    <li><a href="#practitioners-doctorate">Practitioners Doctorate</a></li>
+                                    <li><a href="#honorary-doctorate">Honorary Doctorate</a></li>
+                                    <li><a href="#professional-certificate">Professional Certificates</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Contact & Connect -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="footer-section">
+                                <h5 class="section-title">Get In Touch</h5>
+                                
+                                <!-- Contact Information -->
+                                <div class="contact-details">
+                                    <div class="contact-item">
+                                        <i class="fas fa-envelope"></i>
+                                        <div class="contact-info">
+                                            <span class="contact-label text-white">Email Us</span>
+                                            <a href="mailto:info@mba-edu.uk">info@mba-edu.uk</a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-phone"></i>
+                                        <div class="contact-info">
+                                            <span class="contact-label text-white">Call Us</span>
+                                            <a href="tel:+441234567890">+44 123 456 7890</a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-comments"></i>
+                                        <div class="contact-info">
+                                            <span class="contact-label text-white">Live Chat</span>
+                                            <span>Available 24/7</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Newsletter Signup -->
+                                <div class="newsletter-section">
+                                    <h6 class="newsletter-title">Stay Updated</h6>
+                                    <p class="newsletter-desc">Get the latest news about programmes and scholarships</p>
+                                    <form class="newsletter-form">
+                                        <div class="input-wrapper">
+                                            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                                            <button type="submit" class="newsletter-submit">
+                                                <i class="fas fa-paper-plane"></i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="bottom-content">
+                        <div class="social-media">
+                            <span class="social-label">Follow Us:</span>
+                            <div class="social-links">
+                                <a href="#" class="social-link facebook" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="social-link instagram" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link youtube" aria-label="YouTube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="footer-legal">
+                            <div class="legal-links">
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Terms & Conditions</a>
+                                <a href="#">Cookie Policy</a>
+                                <a href="#">Accessibility</a>
+                            </div>
+                            <div class="copyright">
+                                <p>&copy; 2024 MBA-EDU. All Rights Reserved. | Empowering Education Worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- fontawesome js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js" integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- js -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

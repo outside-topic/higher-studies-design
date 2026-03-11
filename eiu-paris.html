@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affiliation: EIU Paris - World Academy</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>    
+    <header class="premium-navbar navbar navbar-expand-lg p-0 py-2">
+        <div class="container-fluid flex-lg-column px-0">
+            <!-- Top Section: Logos, Search, and Auth -->
+            <div class="navbar-top w-100 d-flex justify-content-between align-items-center px-3 px-lg-4 border-bottom-lg pb-lg-2">
+                <div class="logos-container d-flex align-items-center gap-2 gap-lg-3">
+                    <a href="index.html">
+                        <img src="images/WARD-Logo-Horizontal.png" alt="WARD Logo" class="logo-main">
+                    </a>
+                    <a href="#">
+                        <img src="images/MBA-Final-Logo.png" alt="MBA Logo" class="logo-affiliate">
+                    </a>
+                </div>
+
+                <div class="d-flex w-100 d-search-cont">
+                    <div class="search-bar-container mx-auto">
+                        <form action="/search" method="GET" class="position-relative">
+                            <input type="text" name="q" placeholder="Search for courses, degrees..." class="unique-search">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        </form>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBottom" aria-controls="navbarBottom" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Desktop Search and Auth -->
+                <div class="d-none d-lg-flex align-items-center gap-4">
+                    <div class="auth-links m-0 d-flex gap-3">
+                        <a href="#" class="btn-premium btn-login">Login</a>
+                        <a href="#" class="btn-premium btn-register">Register</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section: Navigation Links -->
+            <nav class="navbar-bottom collapse navbar-collapse w-100 justify-content-center mt-2 mt-lg-2" id="navbarBottom">
+                <ul class="nav-links navbar-nav gap-lg-4 pb-3 pb-lg-0 px-3 px-lg-0 w-100 justify-content-center">
+                    <li class="nav-item"><a href="index.html" class="nav-link px-0">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link px-0">About</a></li>
+                    
+                    <li class="nav-item dropdown has-dropdown">
+                        <a href="#" class="nav-link px-0 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+                        <ul class="dropdown-menu border-0 shadow-sm mt-0">
+                            <li><a href="#" class="dropdown-item">MBA</a></li>
+                            <li><a href="#" class="dropdown-item">Masters</a></li>
+                            <li><a href="#" class="dropdown-item">Doctorate</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown has-dropdown">
+                        <a href="#" class="nav-link px-0 dropdown-toggle active" data-bs-toggle="dropdown" aria-expanded="false">Affiliation</a>
+                        <ul class="dropdown-menu border-0 shadow-sm mt-0">
+                            <li><a href="eiu-paris.html" class="dropdown-item">EIU - Paris</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="contact.html" class="nav-link px-0">Contact</a></li>
+
+                    <li class="nav-item dropdown has-dropdown">
+                        <a href="#" class="nav-link px-0 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Verify</a>
+                        <ul class="dropdown-menu border-0 shadow-sm mt-0">
+                            <li><a href="verify.html" class="dropdown-item">Certification Verification</a></li>
+                            <li><a href="verify-learner.html" class="dropdown-item">Verify LearnerID</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <!-- Mobile Search & Auth-->
+                <div class="d-lg-none px-3 pb-3 d-flex flex-column gap-3 mt-3 border-top pt-3">
+                    <div class="search-bar-container m-0 w-100">
+                        <form action="/search" method="GET" class="position-relative">
+                            <input type="text" name="q" placeholder="Search for courses..." class="unique-search w-100">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        </form>
+                    </div>
+                    <div class="auth-links m-0 w-100 d-flex justify-content-between">
+                        <a href="#" class="btn-premium btn-login px-2">Login</a>
+                        <a href="#" class="btn-premium btn-register px-2 flex-grow-1 justify-content-center d-flex align-items-center text-center ms-2">Register</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- Affiliation Hero Section -->
+        <section class="affiliation-hero py-5 text-white position-relative overflow-hidden" style="background-color: #265367;">
+            <div class="container py-lg-5 position-relative z-1 text-center">
+                <div class="badge-premium-modern mb-4 d-inline-flex align-items-center gap-2 bg-white bg-opacity-10 border-white border-opacity-20 text-white">
+                    <span class="pulse-dot"></span>
+                    <span class="fw-semibold text-uppercase tracking-wider">Strategic Partnership</span>
+                </div>
+                <h1 class="display-3 fw-bold mb-3 font-heading">Our Affiliation with EIU Paris</h1>
+                <p class="lead opacity-75 mx-auto fs-4" style="max-width: 800px;">
+                    Excellence in Education Through Strategic Partnership
+                </p>
+                <p class="lead opacity-75 mx-auto mt-4" style="max-width: 700px;">
+                    We are proud to be affiliated with the prestigious European International University (EIU) Paris, bringing world-class education to our learners.
+                </p>
+            </div>
+            <div class="hero-shape-1 position-absolute opacity-10"></div>
+            <div class="hero-shape-2 position-absolute opacity-10"></div>
+        </section>
+
+        <!-- EIU Intro Section -->
+        <section class="eiu-intro py-5 bg-white">
+            <div class="container py-lg-4">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5 text-center order-lg-last">
+                        <div class="eiu-logo-card p-4 rounded-4 shadow-sm border bg-light">
+                            <img src="./images/EIU-Logo.webp" alt="EIU Paris Logo" class="img-fluid" style="max-height: 200px;">
+                            <h4 class="fw-bold text-navy mt-4 font-heading">European International University - Paris</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <h2 class="fw-bold text-navy mb-4 font-heading">Authorised Private Higher Education</h2>
+                        <p class="text-muted fs-5 mb-4" style="line-height: 1.8;">
+                            A private higher education establishment authorized by the French Ministry of National Education, Higher Education, Research, and Innovation, in accordance to and in compliance with the French Education Act: Code de l’Education Articles L 444-1 to 444-11 and R 444-1 to 444-28.
+                        </p>
+                        <p class="text-muted fs-5 mb-0" style="line-height: 1.8;">
+                            Our partnership with EIU Paris ensures that our students receive internationally recognized qualifications and access to world-class educational resources.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QS Rating Section -->
+        <section class="qs-rating py-5 bg-light">
+            <div class="container py-lg-4">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <div class="badge-premium-modern mb-3 d-inline-flex align-items-center gap-2">
+                            <span class="fw-semibold text-uppercase tracking-wider">QS Star Rating</span>
+                        </div>
+                        <h2 class="fw-bold text-navy display-5 mb-4 font-heading">5-Star Excellence</h2>
+                        <p class="text-muted fs-5 mb-4" style="line-height: 1.7;">
+                            We are proud to announce that after a rigorous independent data collection and analysis of performance metrics set out in the QS Stars™ methodology, EIU has been rated <strong>5 STAR in Teaching and Online Learning</strong> by QS Intelligence Unit.
+                        </p>
+                        <p class="text-muted fs-5 mb-0">
+                            A system which evaluates universities across a wide range of important performance indicators as set against pre-established international standards.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row g-4">
+                            <div class="col-6">
+                                <div class="bg-white p-4 rounded-4 shadow-sm border text-center h-100 d-flex align-items-center justify-content-center">
+                                    <img src="./images/qs-rating-1.webp" alt="QS Stars Log 1" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="bg-white p-4 rounded-4 shadow-sm border text-center h-100 d-flex align-items-center justify-content-center">
+                                    <img src="./images/qs-rating-2.webp" alt="QS Stars Logo 2" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business School Rankings Section -->
+        <section class="rankings-section py-5 bg-white overflow-hidden">
+            <div class="container py-lg-4">
+                <div class="d-flex justify-content-center">
+                    <img src="./images/logo-aw-b.webp" class="ranking-img mx-auto">
+                </div>
+                <div class="text-center mb-5 mx-auto" style="max-width: 800px;">
+                    <h2 class="fw-bold text-navy display-5 mb-3 font-heading">CEOWORLD Magazine Rankings</h2>
+                    <p class="text-muted fs-5">Consistently recognized among the world's best business schools</p>
+                </div>
+
+                <div class="ranking-timeline row g-4 justify-content-center">
+                    <!-- 2024 -->
+                    <div class="col-lg-4">
+                        <div class="ranking-card h-100 p-4 rounded-4 text-center border-top border-4 border-accent shadow-sm position-relative">
+                            <div class="ranking-year fw-bold display-4 text-navy opacity-10 position-absolute top-0 start-50 translate-middle-x mt-2">2024</div>
+                            <div class="ranking-icon mb-3 mt-4">
+                                <i class="fa-solid fa-award fs-1 text-gold"></i>
+                            </div>
+                            <h4 class="fw-bold text-navy mb-3">Ranked #51</h4>
+                            <p class="text-muted mb-0">The EUROPEAN INTERNATIONAL UNIVERSITY is ranked #51 WORLD'S BEST BUSINESS SCHOOLS FOR 2024 by CEOWORLD Magazine.</p>
+                        </div>
+                    </div>
+                    <!-- 2023 -->
+                    <div class="col-lg-4">
+                        <div class="ranking-card h-100 p-4 rounded-4 text-center border-top border-4 border-navy shadow-sm position-relative active-ranking" style="background: rgba(39, 81, 96, 0.02);">
+                            <div class="ranking-year fw-bold display-4 text-navy opacity-10 position-absolute top-0 start-50 translate-middle-x mt-2">2023</div>
+                            <div class="ranking-icon mb-3 mt-4">
+                                <i class="fa-solid fa-trophy fs-1 text-navy"></i>
+                            </div>
+                            <h4 class="fw-bold text-navy mb-3">Ranked #55</h4>
+                            <p class="text-muted mb-0">Ranked #55 WORLD'S BEST BUSINESS SCHOOL for 2023, alongside with MIT, Harvard, INSEAD, Wharton and London Business School.</p>
+                        </div>
+                    </div>
+                    <!-- 2022 -->
+                    <div class="col-lg-4">
+                        <div class="ranking-card h-100 p-4 rounded-4 text-center border-top border-4 border-accent shadow-sm position-relative">
+                            <div class="ranking-year fw-bold display-4 text-navy opacity-10 position-absolute top-0 start-50 translate-middle-x mt-2">2022</div>
+                            <div class="ranking-icon mb-3 mt-4">
+                                <i class="fa-solid fa-medal fs-1 text-gold"></i>
+                            </div>
+                            <h4 class="fw-bold text-navy mb-3">Ranked #65</h4>
+                            <p class="text-muted mb-0">The EUROPEAN INTERNATIONAL UNIVERSITY is ranked #65 WORLD'S BEST BUSINESS SCHOOLS FOR 2022 by CEOWORLD Magazine.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- International Accreditation Section -->
+        <section class="accreditation-section py-5 bg-navy text-white">
+            <div class="container py-lg-4">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-4 text-center">
+                        <div class="bg-white p-4 d-inline-block" style="width: 250px; height: 250px;">
+                            <div class="w-100 h-100 d-flex align-items-center justify-content-center">
+                                <img src="./images/premier-accr.webp" alt="ASIC Accreditation" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <h2 class="fw-bold text-navy display-5 mb-4 font-heading">ASIC International Accreditation</h2>
+                        <p class="fs-6 text-muted mb-4" style="line-height: 1.8;">
+                            "European International University is accredited by Accreditation Service for International Schools, Colleges and Universities (ASIC). The University has earned Premier status with ASIC for its commendable areas of operation. ASIC accreditation helps students and parents make a more informed choice and will also help a school, college, university, training provider or distance education provider, demonstrate to the international student body that they are a high-quality institution."
+                        </p>
+                        <p class="fs-6 text-muted" style="line-height: 1.7;">
+                            ASIC is recognized by UKVI in UK, is a member of the CHEA International Quality Group (CIQG) in USA and is listed in their International Directory, is a member of the BQF (British Quality Foundation), are affiliates of ENQA (European Network for Quality Assurance) and are institutional members of EDEN (European Distance and E-Learning Network).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Memberships Section -->
+        <section class="memberships-section py-5 bg-white">
+            <div class="container py-lg-4 text-center">
+                <h2 class="fw-bold text-navy display-5 mb-5 font-heading">Professional Memberships</h2>
+
+                <div class="d-flex justify-content-center">
+                    <img src="./images/acbsp.webp" alt="ACBSP" class="img-fluid mb-5">
+                </div>
+                
+                <div class="row g-4 row-cols-2 row-cols-md-3 row-cols-lg-5 justify-content-center">
+                    <!-- ACBSP -->
+                    <div class="col">
+                        <div class="membership-card p-3 rounded-4 bg-white shadow-sm border h-100 transition-all hover-lift">
+                            <h6 class="fw-bold text-navy font-sm mb-3">ACBSP</h6>
+                            <div class="membership-logo d-flex align-items-center justify-content-center">
+                                <p class="text-muted mb-0">Accreditation Council for Business Schools and Programs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BGA -->
+                    <div class="col">
+                        <div class="membership-card p-3 rounded-4 bg-white shadow-sm border h-100 transition-all hover-lift">
+                            <h6 class="fw-bold text-navy font-sm mb-3">BGA</h6>
+                            <div class="membership-logo d-flex align-items-center justify-content-center">
+                                <p class="text-muted mb-0">Business Graduates Association</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ATHEA -->
+                    <div class="col">
+                        <div class="membership-card p-3 rounded-4 bg-white shadow-sm border h-100 transition-all hover-lift">
+                            <h6 class="fw-bold text-navy font-sm mb-3">ATHEA</h6>
+                            <div class="membership-logo d-flex align-items-center justify-content-center">
+                                <p class="text-muted mb-0">Association for Transnational Higher Education Accreditation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ECBE -->
+                    <div class="col">
+                        <div class="membership-card p-3 rounded-4 bg-white shadow-sm border h-100 transition-all hover-lift">
+                            <h6 class="fw-bold text-navy font-sm mb-3">ECBE</h6>
+                            <div class="membership-logo d-flex align-items-center justify-content-center">
+                                <p class="text-muted mb-0">European Council for Business Education</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cambridge -->
+                    <div class="col">
+                        <div class="membership-card p-3 rounded-4 bg-white shadow-sm border h-100 transition-all hover-lift">
+                            <h6 class="fw-bold text-navy font-sm mb-3">Cambridge Int'l Academics</h6>
+                            <div class="membership-logo d-flex align-items-center justify-content-center">
+                                <p class="text-muted mb-0">Cambridge International Academics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <!-- Main Footer Content -->
+            <div class="footer-content">
+                <div class="container">
+                    <div class="row">
+                        <!-- Brand & About -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="footer-brand">
+                                <div class="brand-logo">
+                                    <div class="logo-symbol">
+                                        <img loading="lazy" src="./images/MBA-Final-Logo.png" alt="logo">
+                                    </div>
+                                    <div class="brand-text">
+                                        <h4>Master's & M.B.A</h4>
+                                        
+                                    </div>
+                                </div>
+                                <p class="brand-description">
+                                    Leading provider of Distance Learning MBA, Master's, and Doctorate programmes. We empower Graduates and working professionals with flexible, world-class education that fits their lifestyle.
+                                </p>
+                                <div class="achievement-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-number text-white">10K+</span>
+                                        <span class="stat-label text-white">Graduates</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number text-white">40+</span>
+                                        <span class="stat-label text-white">Specializations</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number text-white">17+</span>
+                                        <span class="stat-label text-white">Years Experience</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Academic Programs -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="footer-section">
+                                <h5 class="section-title">Academic programmes</h5>
+                                <ul class="footer-menu">
+                                    <li><a href="index.html#mba">MBA programmes</a></li>
+                                    <li><a href="index.html#master">Master's Degrees</a></li>
+                                    <li><a href="index.html#dba">DBA programmes</a></li>
+                                    <li><a href="index.html#practitioners-doctorate">Practitioners Doctorate</a></li>
+                                    <li><a href="index.html#honorary-doctorate">Honorary Doctorate</a></li>
+                                    <li><a href="index.html#professional-certificate">Professional Certificates</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Contact & Connect -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="footer-section">
+                                <h5 class="section-title">Get In Touch</h5>
+                                
+                                <!-- Contact Information -->
+                                <div class="contact-details">
+                                    <div class="contact-item">
+                                        <i class="fas fa-envelope"></i>
+                                        <div class="contact-info">
+                                            <span class="contact-label text-white">Email Us</span>
+                                            <a href="mailto:info@mba-edu.uk">info@mba-edu.uk</a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-phone"></i>
+                                        <div class="contact-info">
+                                            <span class="contact-label text-white">Call Us</span>
+                                            <a href="tel:+447478085900">+44 7478085900</a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-comments"></i>
+                                        <div class="contact-info">
+                                            <span class="contact-label text-white">Live Chat</span>
+                                            <span>Available 24/7</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="bottom-content">
+                        <div class="social-media">
+                            <span class="social-label">Follow Us:</span>
+                            <div class="social-links">
+                                <a href="#" class="social-link facebook" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-link instagram" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link twitter" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="footer-legal">
+                            <div class="legal-links">
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Terms & Conditions</a>
+                                <a href="#">Cookie Policy</a>
+                                <a href="#">Accessibility</a>
+                            </div>
+                            <div class="copyright">
+                                <p>&copy; 2024 MBA-EDU. All Rights Reserved. | Empowering Education Worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- fontawesome js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js" integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- js -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
