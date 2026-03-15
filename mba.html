@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBA Programmes - World Academy</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- google font -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>    
+    <header class="premium-navbar navbar navbar-expand-lg p-0 py-2">
+        <div class="container-fluid flex-lg-column px-0">
+            <!-- Top Section: Logos, Search, and Auth -->
+            <div class="navbar-top w-100 d-flex justify-content-between align-items-center px-3 px-lg-4 border-bottom-lg pb-lg-2">
+                <div class="logos-container d-flex align-items-center gap-2 gap-lg-3">
+                    <a href="index.html">
+                        <img src="images/WARD-Logo-Horizontal.png" alt="WARD Logo" class="logo-main">
+                    </a>
+                    <a href="#">
+                        <img src="images/MBA-Final-Logo.png" alt="MBA Logo" class="logo-affiliate">
+                    </a>
+                </div>
+
+                <div class="d-flex w-100 d-search-cont">
+                    <div class="search-bar-container mx-auto">
+                        <form action="/search" method="GET" class="position-relative">
+                            <input type="text" name="q" placeholder="Search for courses, degrees..." class="unique-search">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        </form>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBottom" aria-controls="navbarBottom" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Desktop Search and Auth -->
+                <div class="d-none d-lg-flex align-items-center gap-4">
+                    <div class="auth-links m-0 d-flex gap-3">
+                        <a href="#" class="btn-premium btn-login">Login</a>
+                        <a href="#" class="btn-premium btn-register">Register</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section: Navigation Links -->
+            <nav class="navbar-bottom collapse navbar-collapse w-100 justify-content-center mt-2 mt-lg-2" id="navbarBottom">
+                <ul class="nav-links navbar-nav gap-lg-4 pb-3 pb-lg-0 px-3 px-lg-0 w-100 justify-content-center">
+                    <li class="nav-item"><a href="index.html" class="nav-link px-0">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link px-0">About</a></li>
+                    
+                    <li class="nav-item dropdown has-dropdown">
+                        <a href="#" class="nav-link px-0 dropdown-toggle active" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+                        <ul class="dropdown-menu border-0 shadow-sm mt-0">
+                            <li><a href="mba.html" class="dropdown-item">MBA</a></li>
+                            <li><a href="#" class="dropdown-item">Masters</a></li>
+                            <li><a href="#" class="dropdown-item">Doctorate</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown has-dropdown">
+                        <a href="#" class="nav-link px-0 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Affiliation</a>
+                        <ul class="dropdown-menu border-0 shadow-sm mt-0">
+                            <li><a href="eiu-paris.html" class="dropdown-item">EIU - Paris</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="contact.html" class="nav-link px-0">Contact</a></li>
+
+                    <li class="nav-item dropdown has-dropdown">
+                        <a href="#" class="nav-link px-0 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Verify</a>
+                        <ul class="dropdown-menu border-0 shadow-sm mt-0">
+                            <li><a href="verify.html" class="dropdown-item">Certification Verification</a></li>
+                            <li><a href="verify-learner.html" class="dropdown-item">Verify LearnerID</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <!-- Mobile Search & Auth-->
+                <div class="d-lg-none px-3 pb-3 d-flex flex-column gap-3 mt-3 border-top pt-3">
+                    <div class="search-bar-container m-0 w-100">
+                        <form action="/search" method="GET" class="position-relative">
+                            <input type="text" name="q" placeholder="Search for courses..." class="unique-search w-100">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        </form>
+                    </div>
+                    <div class="auth-links m-0 w-100 d-flex justify-content-between">
+                        <a href="#" class="btn-premium btn-login px-2">Login</a>
+                        <a href="#" class="btn-premium btn-register px-2 flex-grow-1 justify-content-center d-flex align-items-center text-center ms-2">Register</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="swiper-container mba-info-swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="content" data-content="one">
+                        <h1>Investment</h1>
+                        <p>Understand financial markets, capital allocation, and risk management. Learn how smart investment decisions drive sustainable business growth.</p>
+                        <a href="#" class="btn-primary-modern px-5 py-3 shadow-sm rounded-pill mt-3 fs-5">Book a free Consult <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                    </div>
+                    <div class="background" data-item="one"></div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="content" data-content="two">
+                        <h1>Conslulting</h1>
+                        <p>Gain critical problem-solving skills and learn to navigate complex business challenges. Our MBA equips you to advise companies with confidence and clarity</p>
+                        <a href="#" class="btn-primary-modern px-5 py-3 shadow-sm rounded-pill mt-3 fs-5">Book a free Consult <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                    </div>
+                    <div class="background" data-item="two"></div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="content" data-content="three">
+                        <h1>Growth</h1>
+                        <p>Unlock business potential through innovation, leadership, and scalability. Our MBA helps you build a mindset focused on sustainable success.</p>
+                        <a href="#" class="btn-primary-modern px-5 py-3 shadow-sm rounded-pill mt-3 fs-5">Book a free Consult <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                    </div>
+                    <div class="background" data-item="three"></div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="content" data-content="four">
+                        <h1>Strategy</h1>
+                        <p>Master the art of strategic thinking and long-term planning. Develop the tools to lead organizations through change and competitive markets.</p>
+                        <a href="#" class="btn-primary-modern px-5 py-3 shadow-sm rounded-pill mt-3 fs-5">Book a free Consult <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                    </div>
+                    <div class="background" data-item="four"></div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <!-- Hero Stats Bar -->
+            <div class="hero-stats-bar d-flex justify-content-center flex-wrap gap-4 mt-5">
+                <div class="h-stat-item">
+                    <span class="d-block fs-4 fw-bold text-white">12-18 Months</span>
+                    <span class="opacity-75 small text-uppercase text-white">Duration</span>
+                </div>
+                            <div class="h-stat-divider d-none d-md-block"></div>
+                            <div class="h-stat-item">
+                                <span class="d-block fs-4 fw-bold text-white">Self Paced</span>
+                                <span class="opacity-75 small text-uppercase text-white">Learning System</span>
+                            </div>
+                <div class="h-stat-divider d-none d-md-block"></div>
+                <div class="h-stat-item">
+                    <span class="d-block fs-4 fw-bold text-white">Flexible Payment</span>
+                    <span class="opacity-75 small text-uppercase text-white">Full or Installment</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="mba-features-section">
+            <div class="container">
+                <div class="mba-feature-items">
+
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Section 1: MBA Hero -->
+        <!-- <section class="mba-hero-premium position-relative overflow-hidden">
+            <div class="hero-bg-parallax position-absolute w-100 h-100" style="background: linear-gradient(rgba(38, 83, 103, 0.9), rgba(38, 83, 103, 0.8)), url('./images/mba-student.jpg'); background-size: cover; background-position: center;"></div>
+            <div class="container py-lg-5 position-relative z-1 text-white">
+                <div class="row align-items-center min-vh-75 py-5">
+                    <div class="col-12 text-center">
+                        <div class="badge-premium-modern mb-4 d-inline-flex align-items-center gap-2 bg-white bg-opacity-10 border-white border-opacity-20 text-white">
+                            <span class="pulse-dot"></span>
+                            <span class="fw-semibold text-uppercase tracking-wider">Premier Leadership Program</span>
+                        </div>
+                        <h1 class="display-3 fw-bold mb-4 font-heading">World Class MBA Programmes for Global Career</h1>
+                        
+                        
+
+                        <div class="mt-5">
+                            <a href="#" class="btn bg-color-secondary text-white py-3 px-5 fs-5">Apply for MBA</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Section 2: Program Overview -->
+        <section class="mba-introduction py-5 bg-white">
+            <div class="container py-lg-5">
+                <div class="row g-5 align-items-center">
+                    
+                    <div class="col-12 text-center">
+                        <div class="badge-premium-modern mb-3 d-inline-flex align-items-center gap-2">
+                            <span class="pulse-dot"></span>
+                            <span class="fw-semibold text-uppercase tracking-wider">Program Overview</span>
+                        </div>
+                        <h2 class="fw-bold text-navy display-5 mb-4 font-heading">Empowering Global Professionals</h2>
+                        <p class="text-muted fs-5 mb-4" style="line-height: 1.8;">
+                            World Academy is offering the MBA program which is designed and provided to professionals who wants to equip themselves with skills, knowledge and experience needed to succeed in the global business environment.
+                        </p>
+                        <p class="text-muted fs-5 mb-4" style="line-height: 1.8;">
+                            We aim in develop business leaders with a strategic perspective, analytical skills, and an entrepreneurial mindset. The application-based curriculum will teach participants to think critically, manage complex projects, and communicate effectively with diverse stakeholders. Graduates of the program are prepared to take on leadership roles in a range of industries and sectors, from finance and consulting to technology and healthcare
+                        </p>
+                        <p class="text-muted fs-5 mb-0" style="line-height: 1.8;">World Academy is the global partner of European International University (EIU-Paris), which is globally acknowledged for its academic excellence and ensures that participants are provided with a conducive learning experience that fosters knowledge acquisition and skills development. EIU-Paris is ranked 55 among all the universities in 2023 according to the CEO world Magazine. In addition, EIU-Paris has a QS STAR rating of 5 stars for online learning and teaching quality and its graduates can obtain US and Canadian equivalency for their degrees. EIU-Paris graduates also have direct access to UK dual awards/qualifications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Course Discovery CTA -->
+        <section class="mba-courses-cta py-4 position-relative overflow-hidden bg-white">
+            <div class="container pb-lg-4 position-relative z-1">
+                <div class="inner-course-cta rounded-4 p-4 text-center shadow-sm position-relative overflow-hidden border border-gold border-opacity-50 transition-all hover-lift d-flex flex-column flex-md-row align-items-center justify-content-between gap-4">
+                    <!-- Decorative Background Elements -->
+                    <div class="position-absolute top-0 end-0 w-50 h-100" style="background: radial-gradient(circle at right, rgba(212, 175, 55, 0.2), transparent 70%); z-index: 0; pointer-events: none;"></div>
+                    
+                    <div class="position-relative z-1 d-flex flex-column flex-md-row align-items-center gap-4 text-start w-100">
+                        <div class="icon-circle-lg bg-navy text-gold d-flex align-items-center justify-content-center rounded-circle flex-shrink-0 shadow-sm" style="width: 70px; height: 70px;">
+                            <i class="fa-solid fa-graduation-cap fs-2"></i>
+                        </div>
+                        
+                        <div class="flex-grow-1 text-center text-md-start">
+                            <h3 class="text-white fw-bold mb-2 font-heading">Ready to Start Your Journey?</h3>
+                            <p class="text-white opacity-75 mb-0" style="font-size: 1.05rem;">
+                                Dive into our comprehensive list of MBA specializations and find the perfect fit to accelerate your global career. Your future starts here.
+                            </p>
+                        </div>
+                        
+                        <!-- Premium Animated CTA Button -->
+                        <div class="flex-shrink-0">
+                            <a href="#" class="btn inner-course-cta-btn text-gold px-4 py-3 fw-bold shadow-sm rounded-pill d-inline-flex align-items-center gap-3 transition-all shadow-sm" style="border: none;">
+                                <span>Explore All MBA Courses</span>
+                                <div class="icon-circle-sm bg-white text-navy d-flex align-items-center justify-content-center rounded-circle" style="width: 30px; height: 30px; transition: transform 0.3s ease;">
+                                    <i class="fa-solid fa-arrow-right fs-6"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <style>
+                .mba-courses-cta .btn-navy:hover .icon-circle-sm {
+                    transform: translateX(4px);
+                }
+                .mba-courses-cta .btn-navy:hover {
+                    box-shadow: 0 10px 20px rgba(39, 81, 96, 0.2) !important;
+                    transform: translateY(-2px);
+                }
+            </style>
+        </section>
+
+        <!-- Section: Programme Objectives -->
+        <section class="mba-objectives py-5 bg-light">
+            <div class="container py-lg-5">
+                <div class="row mb-5 text-center">
+                    <div class="col-12">
+                        <div class="badge-premium-modern mb-3 d-inline-flex align-items-center gap-2">
+                            <i class="fa-solid fa-bullseye text-navy"></i>
+                            <span class="fw-semibold text-uppercase tracking-wider">Programme Objective</span>
+                        </div>
+                        <h2 class="fw-bold text-navy display-5 mb-4 font-heading">Fueling Future Leaders With Real-World Business Mastery</h2>
+                        <p class="text-muted fs-5 mx-auto" style="max-width: 850px; line-height: 1.8;">
+                            Our MBA hones your mindset for strategic thinking, modern management, and confident decision-making. It’s designed to shape agile professionals ready to lead in dynamic global markets.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <!-- 1. Business centric mentality -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="objective-card-v3 p-4 rounded-4 bg-white shadow-sm h-100 border-top border-4 border-gold transition-all hover-lift">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="icon-box-sm rounded-circle bg-primary-light text-navy d-flex align-items-center justify-content-center" style="width: 45px; height: 45px; flex-shrink: 0;">
+                                    <i class="fa-solid fa-brain"></i>
+                                </div>
+                                <p class="mb-0 fw-semibold text-navy">To enable delegates for business centric mentality</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2. Business acumen and its application -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="objective-card-v3 p-4 rounded-4 bg-white shadow-sm h-100 border-top border-4 border-navy transition-all hover-lift">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="icon-box-sm rounded-circle bg-gold-light text-gold d-flex align-items-center justify-content-center" style="width: 45px; height: 45px; flex-shrink: 0;">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                </div>
+                                <p class="mb-0 fw-semibold text-navy">To ensure the learning of business acumen and its application</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3. Modern management technique -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="objective-card-v3 p-4 rounded-4 bg-white shadow-sm h-100 border-top border-4 border-gold transition-all hover-lift">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="icon-box-sm rounded-circle bg-secondary-light text-secondary-custom d-flex align-items-center justify-content-center" style="width: 45px; height: 45px; flex-shrink: 0;">
+                                    <i class="fa-solid fa-gears"></i>
+                                </div>
+                                <p class="mb-0 fw-semibold text-navy">To learn modern management technique</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4. Skills set for application -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="objective-card-v3 p-4 rounded-4 bg-white shadow-sm h-100 border-top border-4 border-navy transition-all hover-lift">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="icon-box-sm rounded-circle bg-primary-light text-navy d-flex align-items-center justify-content-center" style="width: 45px; height: 45px; flex-shrink: 0;">
+                                    <i class="fa-solid fa-user-gear"></i>
+                                </div>
+                                <p class="mb-0 fw-semibold text-navy">To enable the skills set of delegate for application of their learning</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5. Applying different tools -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="objective-card-v3 p-4 rounded-4 bg-white shadow-sm h-100 border-top border-4 border-gold transition-all hover-lift">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="icon-box-sm rounded-circle bg-gold-light text-gold d-flex align-items-center justify-content-center" style="width: 45px; height: 45px; flex-shrink: 0;">
+                                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                                </div>
+                                <p class="mb-0 fw-semibold text-navy">To equip delegates for applying different tools in their workplace</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6. Career acceleration -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="objective-card-v3 p-4 rounded-4 bg-white shadow-sm h-100 border-top border-4 border-navy transition-all hover-lift">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="icon-box-sm rounded-circle bg-secondary-light text-secondary-custom d-flex align-items-center justify-content-center" style="width: 45px; height: 45px; flex-shrink: 0;">
+                                    <i class="fa-solid fa-rocket"></i>
+                                </div>
+                                <p class="mb-0 fw-semibold text-navy">To accelerate individual career through globally recognized higher level certification</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 7. Analytical and business decisions -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="objective-card-v3 p-4 rounded-4 bg-white shadow-sm h-100 border-top border-4 border-gold transition-all hover-lift">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="icon-box-sm rounded-circle bg-primary-light text-navy d-flex align-items-center justify-content-center" style="width: 45px; height: 45px; flex-shrink: 0;">
+                                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                                </div>
+                                <p class="mb-0 fw-semibold text-navy">To make delegates more analytical and to make them capable for business decisions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Programme Goals -->
+        <section class="mba-goals py-5 bg-white">
+            <div class="container py-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <div class="goals-image-container position-relative">
+                            <div class="goals-bg-accent"></div>
+                            <img src="./images/mba-goals.png" alt="MBA Leadership Goals" class="img-fluid rounded-4 shadow-lg position-relative z-1">
+                            <div class="goals-badge position-absolute bottom-0 end-0 mb-4 me-4 bg-navy text-white p-3 rounded-3 shadow-lg z-2">
+                                <h5 class="mb-0 fw-bold">11+ Key Skills</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="badge-premium-modern mb-3 d-inline-flex align-items-center gap-2">
+                            <i class="fa-solid fa-graduation-cap text-navy"></i>
+                            <span class="fw-semibold text-uppercase tracking-wider">Programme Goals</span>
+                        </div>
+                        <h2 class="fw-bold text-navy display-5 mb-2 font-heading">Empowering Leaders for Global Excellence</h2>
+                        <p class="text-muted fs-5 mb-2" style="line-height: 1.8;">
+                            The M.B.A. program structure enables delegates to acquire the following knowledge and transferable skills:
+                        </p>
+                        
+                        <div class="goals-list-grid row g-3">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled d-flex flex-column gap-3">
+                                    <li class="d-flex align-items-start gap-3">
+                                        <i class="fa-solid fa-circle-check text-gold mt-1"></i>
+                                        <span class="text-navy fw-semibold small">Essential & modern management skills for playing role as managerial level</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-3">
+                                        <i class="fa-solid fa-circle-check text-gold mt-1"></i>
+                                        <span class="text-navy fw-semibold small">Adequate financial knowledge to play role in mid to senior level position</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-3">
+                                        <i class="fa-solid fa-circle-check text-gold mt-1"></i>
+                                        <span class="text-navy fw-semibold small">Essential knowledge on business acumen and its application for business analysis</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-3">
+                                        <i class="fa-solid fa-circle-check text-gold mt-1"></i>
+                                        <span class="text-navy fw-semibold small">Advanced supervisory and leadership skill to fit in the 21st century leader's filed</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-3">
+                                        <i class="fa-solid fa-circle-check text-gold mt-1"></i>
+                                        <span class="text-navy fw-semibold small">Essential Competency to deal with business crisis in the post Covid world</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-3">
+                                        <i class="fa-solid fa-circle-check text-gold mt-1"></i>
+                                        <span class="text-navy fw-semibold small">Essential Cost Management Skills for ensuring healthy bottom line</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled d-flex flex-column gap-3">
+                                    <li class="d-flex align-items-start gap-3">
+                                        <i class="fa-solid fa-circle-check text-gold mt-1"></i>
+                                        <span class="text-navy fw-semibold small">Capability to innovative idea and strengthen business expansion through these</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-3">
+                                        <i class="fa-solid fa-circle-check text-gold mt-1"></i>
+                                        <span class="text-navy fw-semibold small">Self-analysis, self-management and to Emotionally intelligent</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-3">
+                                        <i class="fa-solid fa-circle-check text-gold mt-1"></i>
+                                        <span class="text-navy fw-semibold small">Expertise on analytical thinking and reasoning skills</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-3">
+                                        <i class="fa-solid fa-circle-check text-gold mt-1"></i>
+                                        <span class="text-navy fw-semibold small">Critical thinking and problem-solving skills</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-3">
+                                        <i class="fa-solid fa-circle-check text-gold mt-1"></i>
+                                        <span class="text-navy fw-semibold small">Highly effective communication skills.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Programme Benefits -->
+        <section class="programme-benefits py-5 bg-navy position-relative overflow-hidden">
+            <!-- Decorative Background Elements -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 overflow-hidden" style="opacity: 0.05; pointer-events: none;">
+                <div class="position-absolute rounded-circle bg-white shadow-lg" style="width: 400px; height: 400px; top: -100px; right: -100px;"></div>
+                <div class="position-absolute rounded-circle bg-gold shadow-lg" style="width: 300px; height: 300px; bottom: -50px; left: -100px;"></div>
+            </div>
+
+            <div class="container py-lg-5 position-relative z-1">
+                <div class="row mb-5 text-center">
+                    <div class="col-12">
+                        <div class="badge-premium-modern mb-3 d-inline-flex align-items-center gap-2 bg-white bg-opacity-10 border-white border-opacity-25 border">
+                            <i class="fa-solid fa-gift text-gold"></i>
+                            <span class="fw-semibold text-uppercase tracking-wider">Why Choose Us</span>
+                        </div>
+                        <h2 class="fw-bold display-5 mb-4 font-heading">Programme Benefits</h2>
+                        <p class="text-navy fs-5 mx-auto" style="max-width: 800px;">
+                            Achieve excellence across every dimension of business management with our comprehensive outcome-oriented benefits.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bento-grid mt-5">
+                    
+                    <!-- Item 1: Critical Understanding (Large 2x2 Focus) -->
+                    <div class="bento-item bento-span-2x2">
+                        <i class="fa-solid fa-brain bento-bg-icon"></i>
+                        <div class="bento-content">
+                            <i class="fa-solid fa-brain bento-icon"></i>
+                            <h3 class="fw-bold text-white mb-3">Critical Understanding</h3>
+                            <p class="text-white-50 fs-5 mb-0">Demonstrate critical understanding of management theories, modern management practices and conceptual framework to apply those in the organization for smart management of organization.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Business & Finance (1x1) -->
+                    <div class="bento-item bento-span-1x1 border-gold border" style="border-color: rgba(212, 175, 55, 0.4) !important;">
+                        <i class="fa-solid fa-chart-line bento-bg-icon"></i>
+                        <div class="bento-content">
+                            <i class="fa-solid fa-chart-line bento-icon text-gold"></i>
+                            <h5 class="fw-bold text-white mb-2">Business & Finance Mastery</h5>
+                            <p class="text-white-50 small mb-0">Obtain a strong understanding of business and financial knowledge to apply those for better business decision in the VUCA world.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Modern Toolkit (1x1) -->
+                    <div class="bento-item bento-span-1x1">
+                        <i class="fa-solid fa-toolbox bento-bg-icon"></i>
+                        <div class="bento-content">
+                            <i class="fa-solid fa-toolbox bento-icon"></i>
+                            <h5 class="fw-bold text-white mb-2">Modern Toolkit</h5>
+                            <p class="text-white-50 small mb-0">Equip themselves with modern business management tools and techniques to ensure sustainable organizational grow.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Extraordinary Leadership (Wide 2x1) -->
+                    <div class="bento-item bento-span-2x1">
+                        <i class="fa-regular fa-star bento-bg-icon"></i>
+                        <div class="bento-content">
+                            <i class="fa-regular fa-star bento-icon"></i>
+                            <h4 class="fw-bold text-white mb-2">Extraordinary Leadership</h4>
+                            <p class="text-white-50 mb-0">Demonstrate extra ordinary leadership role in the organization to lead from the front.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 5: Customer Satisfaction (1x1) -->
+                    <div class="bento-item bento-span-1x1">
+                        <i class="fa-solid fa-people-arrows bento-bg-icon"></i>
+                        <div class="bento-content">
+                            <i class="fa-solid fa-people-arrows bento-icon"></i>
+                            <h5 class="fw-bold text-white mb-2">Customer Satisfaction</h5>
+                            <p class="text-white-50 small mb-0">Ensure end to end customer satisfaction to protect the interest of all stakeholders of the business.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 6: Shareholder Value (1x1) -->
+                    <div class="bento-item bento-span-1x1">
+                        <i class="fa-solid fa-hand-holding-dollar bento-bg-icon"></i>
+                        <div class="bento-content">
+                            <i class="fa-solid fa-hand-holding-dollar bento-icon"></i>
+                            <h5 class="fw-bold text-white mb-2">Shareholder Value</h5>
+                            <p class="text-white-50 small mb-0">Ensure shareholders interest through strengthening the bottom line of the business.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 7: Advanced Consulting (Wide 2x1) -->
+                    <div class="bento-item bento-span-2x1 border-color-secondary border border-2">
+                        <i class="fa-solid fa-lightbulb bento-bg-icon"></i>
+                        <div class="bento-content">
+                            <i class="fa-solid fa-lightbulb bento-icon text-white" style="color: var(--secondary-color) !important;"></i>
+                            <h4 class="fw-bold text-white mb-2">Advanced Consulting</h4>
+                            <p class="text-white-50 mb-0">Demonstrate advanced consulting capacity to apply organization development intervention for the growth and sustainability of the organization.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Diverse Pathways Slider -->
+        <section class="travel-tour-section">
+
+            <div id="travel-tsparticles"></div>
+
+            <div class="travel-wrapper">
+
+                <div class="travel-content">
+                    <h1>Diverse Pathways to Excellence!</h1>
+                    <p>
+                        Discover our wide range of globally recognized programmes designed to empower professionals across various stages of their careers.
+                    </p>
+
+                    <a href="#" class="travel-btn text-decoration-none text-color-secondary">Explore All Courses</a>
+                </div>
+
+                <div class="travel-swiper swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide travel-slide">
+
+                            <div class="travel-cost">MBA</div>
+
+                            <div class="travel-overlay">
+                                <h3><a href="#" class="text-white text-decoration-none">MBA in Project Management</a></h3>
+                                <p>Validated, Quality Assurance, Accredited by World Academy</p>
+                            </div>
+                            </div>
+
+                        <div class="swiper-slide travel-slide">
+                        
+
+                            <div class="travel-cost">MBA</div>
+
+                            <div class="travel-overlay">
+                                <h3><a href="#" class="text-white text-decoration-none">MBA in Organizational Development</a></h3>
+                                <p>Validated, Quality Assurance, Accredited by World Academy</p>
+                            </div>
+                            </div>
+
+                        <div class="swiper-slide travel-slide">
+
+                            <div class="travel-cost travel-dark">MBA</div>
+
+                            <div class="travel-overlay">
+                                <h3><a href="#" class="text-white text-decoration-none">MBA in Managing NGO</a></h3>
+                                <p>Validated, Quality Assurance, Accredited by World Academy</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Section: Entry Requirement -->
+        <section class="entry-requirements py-5 bg-light position-relative overflow-hidden">
+            <!-- Decorative Elements -->
+            <div class="position-absolute rounded-circle bg-navy opacity-10" style="width: 500px; height: 500px; top: -250px; left: -250px; pointer-events: none;"></div>
+            <div class="position-absolute rounded-circle bg-gold opacity-10" style="width: 300px; height: 300px; bottom: -150px; right: -150px; pointer-events: none;"></div>
+
+            <div class="container py-lg-5 position-relative z-1">
+                <div class="row align-items-center g-5">
+                    
+                    <!-- Left Column: Title & Text -->
+                    <div class="col-lg-5">
+                        <div class="badge-premium-modern mb-3 d-inline-flex align-items-center gap-2">
+                            <i class="fa-solid fa-door-open text-navy"></i>
+                            <span class="fw-semibold text-uppercase tracking-wider">Entry Requirement</span>
+                        </div>
+                        <h2 class="fw-bold text-navy display-5 mb-4 font-heading">Unlock Your Potential With Simple Essentials</h2>
+                        <p class="text-muted fs-5 mb-4" style="line-height: 1.8;">
+                            Designed for professionals from all fields—just bring your bachelor's degree, a year of experience, and the drive to grow. We also welcome mature learners through a personalized pathway, so anyone with ambition has a chance to thrive.
+                        </p>
+                        <a href="#admission-steps" class="btn btn-primary-modern px-5 py-3 shadow-sm rounded-pill mt-2">
+                            View Admission Steps <i class="fa-solid fa-arrow-down ms-2"></i>
+                        </a>
+                    </div>
+
+                    <!-- Right Column: Requirement Items -->
+                    <div class="col-lg-7">
+                        <div class="requirement-list d-flex flex-column gap-3">
+                            
+                            <!-- Req 1 -->
+                            <div class="requirement-item d-flex align-items-center p-4 bg-white rounded-4 shadow-sm hover-lift border-start border-4 border-navy">
+                                <div class="req-icon-box bg-primary-light text-navy me-4 flex-shrink-0">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold text-navy mb-1">Bachelor's Degree</h5>
+                                    <p class="text-muted mb-0 small">Recognized Bachelor degree in any field.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Req 2 -->
+                            <div class="requirement-item d-flex align-items-center p-4 bg-white rounded-4 shadow-sm hover-lift border-start border-4 border-gold">
+                                <div class="req-icon-box bg-gold-light text-gold me-4 flex-shrink-0">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold text-navy mb-1">Work Experience</h5>
+                                    <p class="text-muted mb-0 small">At least 1 year of working experience.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Req 3 -->
+                            <div class="requirement-item d-flex align-items-center p-4 bg-white rounded-4 shadow-sm hover-lift border-start border-4 border-color-secondary">
+                                <div class="req-icon-box bg-secondary-light text-secondary-custom me-4 flex-shrink-0">
+                                    <i class="fa-solid fa-language"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold text-navy mb-1">Language Proficiency</h5>
+                                    <p class="text-muted mb-0 small">Sufficient English language proficiency.</p>
+                                </div>
+                            </div>
+
+                            <!-- Req 4 -->
+                            <div class="requirement-item d-flex align-items-center p-4 bg-white rounded-4 shadow-sm hover-lift border-start border-4 border-navy">
+                                <div class="req-icon-box bg-primary-light text-navy me-4 flex-shrink-0">
+                                    <i class="fa-solid fa-laptop"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold text-navy mb-1">Device Access</h5>
+                                    <p class="text-muted mb-0 small">Candidates must have a smart phone, laptop, or computer to maintain activity.</p>
+                                </div>
+                            </div>
+
+                            <!-- Req 5 -->
+                            <div class="requirement-item d-flex align-items-center p-4 bg-white rounded-4 shadow-sm hover-lift border-start border-4 border-gold" style="border-color: rgba(212, 175, 55, 0.4) !important;">
+                                <div class="req-icon-box bg-gold-light text-gold me-4 flex-shrink-0">
+                                    <i class="fa-solid fa-users-viewfinder"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold text-navy mb-1">Mature Entry Route</h5>
+                                    <p class="text-muted mb-0 small">Done on case-by-case evaluation basis only.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Admission Steps -->
+        <section id="admission-steps" class="admission-steps py-5">
+            <div class="container py-lg-5">
+                <div class="row mb-5 text-center">
+                    <div class="col-12">
+                        <div class="badge-premium-modern mb-3 d-inline-flex align-items-center gap-2">
+                            <i class="fa-solid fa-clipboard-check text-navy"></i>
+                            <span class="fw-semibold text-uppercase tracking-wider">How to Apply</span>
+                        </div>
+                        <h2 class="fw-bold text-navy display-5 mb-4 font-heading">Application & Admission procedure at a Glance</h2>
+                        <p class="text-muted fs-5 mx-auto" style="max-width: 800px;">
+                            Follow these simple steps from selecting your desired MBA specialization to celebrating your graduation with us.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="premium-timeline mt-5">
+                    <!-- Step 01 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-icon bg-navy text-gold fw-bold">01</div>
+                        <div class="timeline-content hover-lift border-start border-4 border-navy">
+                            <h4 class="fw-bold text-navy mb-3"><i class="fa-solid fa-mouse-pointer fs-5 me-2 text-gold"></i>Select your program</h4>
+                            <p class="text-muted mb-0">Select any MBA from our wide variety of Specializations and submit the required documents via email to apply.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 02 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-icon bg-gold text-navy fw-bold">02</div>
+                        <div class="timeline-content hover-lift border-start border-4 border-gold">
+                            <h4 class="fw-bold text-navy mb-3"><i class="fa-solid fa-file-circle-check fs-5 me-2 text-navy"></i>Check Eligibility</h4>
+                            <p class="text-muted mb-0">The required documents submitted by candidates will be assessed by the Admission Committee to determine eligibility for the program along with the partial scholarship.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 03 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-icon border-color-secondary text-white fw-bold" style="background-color: var(--secondary-color);">03</div>
+                        <div class="timeline-content hover-lift border-start border-4 border-color-secondary">
+                            <h4 class="fw-bold text-navy mb-3"><i class="fa-solid fa-envelope-open-text fs-5 me-2" style="color: var(--secondary-color);"></i>Confirmation Email</h4>
+                            <p class="text-muted mb-0">An email confirmation will be sent regarding the decision of the admission committee.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 04 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-icon bg-navy text-gold fw-bold">04</div>
+                        <div class="timeline-content hover-lift border-start border-4 border-navy">
+                            <h4 class="fw-bold text-navy mb-3"><i class="fa-solid fa-file-invoice-dollar fs-5 me-2 text-gold"></i>Offer Letter & Invoice</h4>
+                            <p class="text-muted mb-0">Selected Candidates will receive an offer letter for the program applied, along with the invoice for the first payment.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 05 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-icon bg-gold text-navy fw-bold">05</div>
+                        <div class="timeline-content hover-lift border-start border-4 border-gold">
+                            <h4 class="fw-bold text-navy mb-3"><i class="fa-regular fa-credit-card fs-5 me-2 text-navy"></i>Make Payment</h4>
+                            <p class="text-muted mb-0">Pay the invoice amount and wait for the confirmation. Upon confirmation, new participants' profile will be activated on the portal within 24hrs.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 06 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-icon border-color-secondary text-white fw-bold" style="background-color: var(--secondary-color);">06</div>
+                        <div class="timeline-content hover-lift border-start border-4 border-color-secondary">
+                            <h4 class="fw-bold text-navy mb-3"><i class="fa-solid fa-envelope-circle-check fs-5 me-2" style="color: var(--secondary-color);"></i>Receive Acceptance Letter</h4>
+                            <p class="text-muted mb-0">From the day of payment, participants will get the Acceptance Letter within 7-10 working days.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 07 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-icon bg-navy text-gold fw-bold">07</div>
+                        <div class="timeline-content hover-lift border-start border-4 border-navy">
+                            <h4 class="fw-bold text-navy mb-3"><i class="fa-solid fa-laptop-file fs-5 me-2 text-gold"></i>Academic Orientation</h4>
+                            <p class="text-muted mb-0">The Virtual orientation will be conducted as soon as the enrollment is completed within 5 to 7 working days.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 08 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-icon bg-gold text-navy fw-bold">08</div>
+                        <div class="timeline-content hover-lift border-start border-4 border-gold">
+                            <h4 class="fw-bold text-navy mb-3"><i class="fa-solid fa-book-open-reader fs-5 me-2 text-navy"></i>Start the Course</h4>
+                            <p class="text-muted mb-0">After orientation participants will be fully prepared to begin the program. Participants will also be connected with our team for any assistance.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 09 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-icon border-color-secondary text-white fw-bold" style="background-color: var(--secondary-color);">09</div>
+                        <div class="timeline-content hover-lift border-start border-4 border-color-secondary">
+                            <h4 class="fw-bold text-navy mb-3"><i class="fa-solid fa-list-check fs-5 me-2" style="color: var(--secondary-color);"></i>Graduation Requirements</h4>
+                            <p class="text-muted mb-0">To earn a degree participants must complete all ECT reserved for the program, pass on all the assignments and the ARP (Action Research Paper) with a minimum 2.5 cumulative GPA and fulfill all financial obligations.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 10 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-icon bg-navy text-gold fw-bold">10</div>
+                        <div class="timeline-content hover-lift border-start border-4 border-navy">
+                            <h4 class="fw-bold text-navy mb-3"><i class="fa-solid fa-certificate fs-5 me-2 text-gold"></i>Certificate</h4>
+                            <p class="text-muted mb-0">Official Certificate and Transcript (Electronic and Printed version) shall be provided after successful completion of the program.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 11 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-icon bg-gold text-navy fw-bold">11</div>
+                        <div class="timeline-content hover-lift border-start border-4 border-gold">
+                            <h4 class="fw-bold text-navy mb-3"><i class="fa-solid fa-user-graduate fs-5 me-2 text-navy"></i>Convocation</h4>
+                            <p class="text-muted mb-0">After successful completion of the program, graduates can attend the convocation ceremony which requires separate registration. Graduates are encouraged but it is not mandatory.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Application Requirement -->
+        <section class="application-requirements py-5 position-relative overflow-hidden" style="background-color: #fff;">
+
+
+            <div class="container py-lg-5 position-relative z-1">
+                <div class="row justify-content-center mb-5 text-center">
+                    <div class="col-lg-8">
+                        <div class="badge-premium-modern mb-3 d-inline-flex align-items-center gap-2">
+                            <i class="fa-solid fa-list-check text-navy"></i>
+                            <span class="fw-semibold text-uppercase tracking-wider">Required Documents</span>
+                        </div>
+                        <h2 class="fw-bold text-navy display-5 mb-4 font-heading">Application Requirement</h2>
+                        <p class="text-muted fs-5">
+                            Please ensure you have the following documents ready in PDF or Image format before starting your application process.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row g-4 pt-3">
+                    
+                    <!-- Req 01 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="app-req-glass-card">
+                            <div class="app-req-header">
+                                <div class="app-req-num-stroke">01</div>
+                                <div class="app-req-icon-circle text-navy">
+                                    <div class="icon-inner"><i class="fa-solid fa-file"></i></div>
+                                </div>
+                            </div>
+                            <h4 class="fw-bold text-navy mb-3">Certificates</h4>
+                            <p class="text-muted small mb-0">Education Certificate (of Bachelor’s degree/graduate Diploma) & transcripts (PDF/image format).</p>
+                            <div class="app-req-accent bg-navy"></div>
+                        </div>
+                    </div>
+
+                    <!-- Req 02 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="app-req-glass-card">
+                            <div class="app-req-header">
+                                <div class="app-req-num-stroke">02</div>
+                                <div class="app-req-icon-circle text-gold">
+                                    <div class="icon-inner"><i class="fa-solid fa-file-pdf"></i></div>
+                                </div>
+                            </div>
+                            <h4 class="fw-bold text-navy mb-3">Latest CV / Resume</h4>
+                            <p class="text-muted small mb-0">Latest CV / Resume (PDF file format). Candidates need to submit a latest and complete CV including all the academic, personal and professional information.</p>
+                            <div class="app-req-accent bg-gold"></div>
+                        </div>
+                    </div>
+
+                    <!-- Req 03 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="app-req-glass-card">
+                            <div class="app-req-header">
+                                <div class="app-req-num-stroke">03</div>
+                                <div class="app-req-icon-circle text-secondary-custom" style="color: var(--secondary-color);">
+                                    <div class="icon-inner"><i class="fa-solid fa-id-badge"></i></div>
+                                </div>
+                            </div>
+                            <h4 class="fw-bold text-navy mb-3">Passport Sized Photo</h4>
+                            <p class="text-muted small mb-0">Passport Sized Photo (JPG or PNG file format). A passport sized/clear photo is needed for the application form.</p>
+                            <div class="app-req-accent" style="background-color: var(--secondary-color);"></div>
+                        </div>
+                    </div>
+
+                    <!-- Req 04 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="app-req-glass-card">
+                            <div class="app-req-header">
+                                <div class="app-req-num-stroke">04</div>
+                                <div class="app-req-icon-circle text-navy">
+                                    <div class="icon-inner"><i class="fa-solid fa-signature"></i></div>
+                                </div>
+                            </div>
+                            <h4 class="fw-bold text-navy mb-3">Reference Letter(s)</h4>
+                            <p class="text-muted small mb-0">Recommenders should provide their impressions of your intellectual ability, research or professional skills, character, past work quality, and potential for future scholarship.</p>
+                            <div class="app-req-accent bg-navy"></div>
+                        </div>
+                    </div>
+
+                    <!-- Req 05 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="app-req-glass-card">
+                            <div class="app-req-header">
+                                <div class="app-req-num-stroke">05</div>
+                                <div class="app-req-icon-circle text-gold">
+                                    <div class="icon-inner"><i class="fa-solid fa-address-card"></i></div>
+                                </div>
+                            </div>
+                            <h4 class="fw-bold text-navy mb-3">Identification Card</h4>
+                            <p class="text-muted small mb-0">Passport copy (image format) or National id card copy (PDF/image format).</p>
+                            <div class="app-req-accent bg-gold"></div>
+                        </div>
+                    </div>
+
+                    <!-- Req 06 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="app-req-glass-card">
+                            <div class="app-req-header">
+                                <div class="app-req-num-stroke">06</div>
+                                <div class="app-req-icon-circle text-secondary-custom" style="color: var(--secondary-color);">
+                                    <div class="icon-inner"><i class="fa-solid fa-pen-nib"></i></div>
+                                </div>
+                            </div>
+                            <h4 class="fw-bold text-navy mb-3">Personal Statement</h4>
+                            <p class="text-muted small mb-0">A minimum 500-word statement explaining how the program aligns with your career goals, what you hope to gain from it at this stage, and how you envision your career progressing over the next five years.</p>
+                            <div class="app-req-accent" style="background-color: var(--secondary-color);"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <!-- Main Footer Content -->
+            <div class="footer-content">
+                <div class="container">
+                    <div class="row">
+                        <!-- Brand & About -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="footer-brand">
+                                <div class="brand-logo">
+                                    <div class="logo-symbol">
+                                        <img loading="lazy" src="./images/MBA-Final-Logo.png" alt="logo">
+                                    </div>
+                                    <div class="brand-text">
+                                        <h4>Master's & M.B.A</h4>
+                                        
+                                    </div>
+                                </div>
+                                <p class="brand-description">
+                                    Leading provider of Distance Learning MBA, Master's, and Doctorate programmes. We empower Graduates and working professionals with flexible, world-class education that fits their lifestyle.
+                                </p>
+                                <div class="achievement-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-number text-white">10K+</span>
+                                        <span class="stat-label text-white">Graduates</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number text-white">40+</span>
+                                        <span class="stat-label text-white">Specializations</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number text-white">17+</span>
+                                        <span class="stat-label text-white">Years Experience</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Academic Programs -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="footer-section">
+                                <h5 class="section-title">Academic programmes</h5>
+                                <ul class="footer-menu">
+                                    <li><a href="mba.html">MBA programmes</a></li>
+                                    <li><a href="#">Master's Degrees</a></li>
+                                    <li><a href="#">DBA programmes</a></li>
+                                    <li><a href="#">Practitioners Doctorate</a></li>
+                                    <li><a href="#">Honorary Doctorate</a></li>
+                                    <li><a href="#">Professional Certificates</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Contact & Connect -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="footer-section">
+                                <h5 class="section-title">Get In Touch</h5>
+                                
+                                <!-- Contact Information -->
+                                <div class="contact-details">
+                                    <div class="contact-item">
+                                        <i class="fas fa-envelope"></i>
+                                        <div class="contact-info">
+                                            <span class="contact-label text-white">Email Us</span>
+                                            <a href="mailto:info@mba-edu.uk">info@mba-edu.uk</a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-phone"></i>
+                                        <div class="contact-info">
+                                            <span class="contact-label text-white">Call Us</span>
+                                            <a href="tel:+447478085900">+44 7478085900</a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-comments"></i>
+                                        <div class="contact-info">
+                                            <span class="contact-label text-white">Live Chat</span>
+                                            <span>Available 24/7</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="bottom-content">
+                        <div class="social-media">
+                            <span class="social-label">Follow Us:</span>
+                            <div class="social-links">
+                                <a href="#" class="social-link facebook" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-link instagram" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link twitter" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="footer-legal">
+                            <div class="legal-links">
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Terms & Conditions</a>
+                                <a href="#">Cookie Policy</a>
+                                <a href="#">Accessibility</a>
+                            </div>
+                            <div class="copyright">
+                                <p>&copy; 2024 MBA-EDU. All Rights Reserved. | Empowering Education Worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- fontawesome js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js" integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- gsap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+
+    <!-- particles cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/3.9.1/tsparticles.bundle.min.js" integrity="sha512-LGuO2AmmzgQ9Y2878Olrq8Om4F1EZLJRL6s3Y1XyJLCqRMe1435MnoVybPMnFC+ZwY9CSSj1rLlRcEVYG+MvVw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- js -->
+    <script src="./js/main.js"></script>
+
+    <script>
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     var programSlider = new Swiper(".programSlider", {
+        //         slidesPerView: 1,
+        //         spaceBetween: 30,
+        //         loop: true,
+        //         pagination: {
+        //             el: ".swiper-pagination",
+        //             clickable: true,
+        //         },
+        //         breakpoints: {
+        //             768: {
+        //                 slidesPerView: 2,
+        //             },
+        //             1024: {
+        //                 slidesPerView: 3,
+        //             },
+        //         },
+        //         autoplay: {
+        //             delay: 3000,
+        //             disableOnInteraction: false,
+        //         },
+        //     });
+        // });
+
+        new Swiper(".mba-info-swiper-container", {
+            direction: "vertical",
+            effect: "fade",
+            speed: 1200, // transition speed (1.2s)
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000, // stay 5 seconds
+                disableOnInteraction: false,
+            },
+            fadeEffect: {
+                crossFade: true
+            },
+            on: {
+                slideChange: function () {
+                    this.slides.forEach((slide) => {
+                        let background = slide.querySelector(".background");
+                        if (background) {
+                            background.classList.remove("animation");
+                        }
+                    });
+
+                    let activeSlide = this.slides[this.activeIndex];
+                    let background = activeSlide.querySelector(".background");
+                    if (background) {
+                        background.classList.add("animation");
+                    }
+                },
+            },
+        });
+
+        // from second coruse carousel section
+        new Swiper(".travel-swiper",{
+            effect:"cube",
+            grabCursor:true,
+            loop:true,
+            speed:1000,
+
+            cubeEffect:{
+                shadow:false,
+                slideShadows:true,
+                shadowOffset:10,
+                shadowScale:0.94,
+            },
+
+            autoplay:{
+                delay:2600,
+                pauseOnMouseEnter:true,
+            }
+
+        });
+
+        tsParticles.load("travel-tsparticles", {
+            fpsLimit: 60,
+            backgroundMode: {
+                enable: true,
+                zIndex: -1,
+            },
+            particles: {
+                number: {
+                value: 30,
+                density: {
+                    enable: true,
+                    area: 800,
+                },
+                },
+                color: {
+                value: [
+                    "#3998D0",
+                    "#2EB6AF",
+                    "#A9BD33",
+                    "#FEC73B",
+                    "#F89930",
+                    "#F45623",
+                    "#D62E32",
+                ],
+                },
+                destroy: {
+                mode: "split",
+                split: {
+                    count: 1,
+                    factor: {
+                    value: 5,
+                    random: {
+                        enable: true,
+                        minimumValue: 4,
+                    },
+                    },
+                    rate: {
+                    value: 10,
+                    random: {
+                        enable: true,
+                        minimumValue: 5,
+                    },
+                    },
+                    particles: {
+                    collisions: {
+                        enable: false,
+                    },
+                    destroy: {
+                        mode: "none",
+                    },
+                    life: {
+                        count: 1,
+                        duration: {
+                        value: 1,
+                        },
+                    },
+                    },
+                },
+                },
+                shape: {
+                type: "circle",
+                stroke: {
+                    width: 0,
+                    color: "#000000",
+                },
+                polygon: {
+                    sides: 5,
+                },
+                },
+                opacity: {
+                value: 1,
+                random: false,
+                animation: {
+                    enable: false,
+                    speed: 1,
+                    minimumValue: 0.1,
+                    sync: false,
+                },
+                },
+                size: {
+                value: 8,
+                random: {
+                    enable: true,
+                    minimumValue: 4,
+                },
+                animation: {
+                    enable: false,
+                    speed: 40,
+                    minimumValue: 0.1,
+                    sync: false,
+                },
+                },
+                collisions: {
+                enable: true,
+                mode: "destroy",
+                },
+                move: {
+                enable: true,
+                speed: 7,
+                direction: "none",
+                random: false,
+                straight: false,
+                out_mode: "out",
+                attract: {
+                    enable: false,
+                    rotateX: 600,
+                    rotateY: 1200,
+                },
+                },
+            },
+            detectRetina: true,
+            });
+
+
+    </script>
+</body>
+</html>
