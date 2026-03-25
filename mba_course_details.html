@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctorate Programmes - World Academy</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>    
+    <header class="premium-navbar navbar navbar-expand-lg p-0 py-2">
+        <div class="container-fluid flex-lg-column px-0">
+            <!-- Top Section: Logos, Search, and Auth -->
+            <div class="navbar-top w-100 d-flex justify-content-between align-items-center px-3 px-lg-4 border-bottom-lg pb-lg-2">
+                <div class="logos-container d-flex align-items-center gap-2 gap-lg-3">
+                    <a href="index.html">
+                        <img src="images/WARD-Logo-Horizontal.png" alt="WARD Logo" class="logo-main">
+                    </a>
+                    <a href="#">
+                        <img src="images/MBA-Final-Logo.png" alt="MBA Logo" class="logo-affiliate">
+                    </a>
+                </div>
+
+                <div class="d-flex w-100 d-search-cont">
+                    <div class="search-bar-container mx-auto">
+                        <form action="/search" method="GET" class="position-relative">
+                            <input type="text" name="q" placeholder="Search for courses, degrees..." class="unique-search">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        </form>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBottom" aria-controls="navbarBottom" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Desktop Search and Auth -->
+                <div class="d-none d-lg-flex align-items-center gap-4">
+                    <div class="auth-links m-0 d-flex gap-3">
+                        <a href="#" class="btn-premium btn-login">Login</a>
+                        <a href="#" class="btn-premium btn-register">Register</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section: Navigation Links -->
+            <nav class="navbar-bottom collapse navbar-collapse w-100 justify-content-center mt-2 mt-lg-2" id="navbarBottom">
+                <ul class="nav-links navbar-nav gap-lg-4 pb-3 pb-lg-0 px-3 px-lg-0 w-100 justify-content-center">
+                    <li class="nav-item"><a href="index.html" class="nav-link px-0">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link px-0">About</a></li>
+                    
+                    <li class="nav-item dropdown has-dropdown">
+                        <a href="#" class="nav-link px-0 dropdown-toggle active" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+                        <ul class="dropdown-menu border-0 shadow-sm mt-0">
+                            <li><a href="mba.html" class="dropdown-item">MBA</a></li>
+                            <li><a href="master.html" class="dropdown-item">Masters</a></li>
+                            <li><a href="doctorate.html" class="dropdown-item">Doctorate</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown has-dropdown">
+                        <a href="#" class="nav-link px-0 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Affiliation</a>
+                        <ul class="dropdown-menu border-0 shadow-sm mt-0">
+                            <li><a href="eiu-paris.html" class="dropdown-item">EIU - Paris</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="contact.html" class="nav-link px-0">Contact</a></li>
+
+                    <li class="nav-item dropdown has-dropdown">
+                        <a href="#" class="nav-link px-0 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Verify</a>
+                        <ul class="dropdown-menu border-0 shadow-sm mt-0">
+                            <li><a href="verify.html" class="dropdown-item">Certification Verification</a></li>
+                            <li><a href="verify-learner.html" class="dropdown-item">Verify LearnerID</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <!-- Mobile Search & Auth-->
+                <div class="d-lg-none px-3 pb-3 d-flex flex-column gap-3 mt-3 border-top pt-3">
+                    <div class="search-bar-container m-0 w-100">
+                        <form action="/search" method="GET" class="position-relative">
+                            <input type="text" name="q" placeholder="Search for courses..." class="unique-search w-100">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        </form>
+                    </div>
+                    <div class="auth-links m-0 w-100 d-flex justify-content-between">
+                        <a href="#" class="btn-premium btn-login px-2">Login</a>
+                        <a href="#" class="btn-premium btn-register px-2 flex-grow-1 justify-content-center d-flex align-items-center text-center ms-2">Register</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="course-details-main">
+        
+        <!-- ========================================== -->
+        <!-- 1. HERO SECTION & QUICK INFO BAR -->
+        <!-- ========================================== -->
+        <section class="course-hero-modern position-relative pt-5 pb-5 overflow-hidden" style="background-color: var(--navy-dark);">
+            <!-- Advanced Decorative Background Design -->
+            <!-- Soft Radial Glow -->
+            <div class="position-absolute top-0 end-0 w-100 h-100" style="background: radial-gradient(circle at 85% 50%, rgba(255,255,255,0.03) 0%, transparent 60%); pointer-events: none;"></div>
+            
+            <!-- Organic Floating Shapes -->
+            <div class="position-absolute d-none d-lg-block floating-element" style="width: 650px; height: 650px; border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; opacity: 0.04; background: linear-gradient(45deg, var(--accent-color), var(--primary-color)); top: -200px; right: -50px; pointer-events: none; transition: all 0.5s ease;"></div>
+            
+            <div class="position-absolute d-none d-lg-block floating-element" style="width: 450px; height: 450px; border-radius: 60% 40% 30% 70% / 50% 40% 50% 60%; opacity: 0.05; background: var(--secondary-color); bottom: -100px; right: 20%; pointer-events: none; animation-delay: 2.5s; transition: all 0.5s ease;"></div>
+            
+            <!-- Modern Dot Grid Texture -->
+            <div class="position-absolute top-0 end-0 h-100 w-50 d-none d-lg-block" style="background-image: radial-gradient(var(--accent-color) 1.5px, transparent 1.5px); background-size: 35px 35px; opacity: 0.15; mask-image: linear-gradient(to right, transparent, black 80%); -webkit-mask-image: linear-gradient(to right, transparent, black 80%); pointer-events: none;"></div>
+
+            <div class="container position-relative z-1 pt-5 pb-5 text-center text-lg-start">
+                <div class="row align-items-center mb-5 pb-5">
+                    <div class="col-lg-7">
+                        <div class="mb-4 d-inline-flex align-items-center px-4 py-2 text-uppercase fw-bold tracking-wider bg-white bg-opacity-10 shadow-sm" style="border-left: 4px solid var(--accent-color); color: var(--primary-color)">
+                            M.B.A. Programme
+                        </div>
+                        <h1 class="display-3 fw-bold font-heading mb-4" style="line-height: 1.15; color: var(--accent-color);">
+                            MBA in Tourism & Hospitality Management
+                        </h1>
+                        <h4 class="fw-normal mb-5 opacity-75" style="letter-spacing: 0.5px; border-left: 2px solid var(--accent-color); padding-left: 15px;">
+                            Validated, Quality Assured And Degree Awarded By EIU-PARIS
+                        </h4>
+                        <div class="d-flex align-items-center gap-4 justify-content-center justify-content-lg-start mt-4">
+                            <a href="#how-to-apply" class="btn btn-lg rounded-0 fw-bold px-4 py-3 hover-lift transition-all" style="background-color: var(--accent-color); color: var(--primary-color);">
+                                Apply Scholarship <i class="fa-solid fa-arrow-right-long ms-2"></i>
+                            </a>
+                            <a href="#course-overview" class="text-decoration-none shadow fw-bold px-4 py-3 hover-lift d-flex align-items-center gap-2" style="color: var(--secondary-color); background: rgba(255, 255, 255, 0.3); backdrop-filter: blur(10px);">
+                                <i class="fa-solid fa-book-open text-gold"></i> Request Information
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Quick Info Modern Grid -->
+        <div class="container position-relative z-2" style="margin-top: -80px; margin-bottom: 60px;">
+            <div class="row g-3 g-md-4 text-center justify-content-center">
+                <!-- Data Item 1 -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="bg-white p-4 h-100 shadow border-top border-4 hover-lift" style="border-top-color: var(--secondary-color) !important;">
+                        <div class="icon-square mx-auto mb-3 d-flex align-items-center justify-content-center text-white rounded-circle shadow-sm" style="width: 50px; height: 50px; background-color: var(--secondary-color);">
+                            <i class="fa-solid fa-tag fs-5"></i>
+                        </div>
+                        <div class="small text-muted text-uppercase fw-bold tracking-wider mb-1">Fee</div>
+                        <div class="fw-bold text-navy fs-5" style="color: var(--navy-dark);">$1999</div>
+                    </div>
+                </div>
+                <!-- Data Item 2 -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="bg-white p-4 h-100 shadow border-top border-4 hover-lift" style="border-top-color: var(--secondary-color) !important;">
+                        <div class="icon-square mx-auto mb-3 d-flex align-items-center justify-content-center text-white rounded-circle shadow-sm" style="width: 50px; height: 50px; background-color: var(--secondary-color);">
+                            <i class="fa-solid fa-clock fs-5"></i>
+                        </div>
+                        <div class="small text-muted text-uppercase fw-bold tracking-wider mb-1">Duration</div>
+                        <div class="fw-bold text-navy fs-5" style="color: var(--navy-dark);">12-18 Mos</div>
+                    </div>
+                </div>
+                <!-- Data Item 3 -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="bg-white p-4 h-100 shadow border-top border-4 hover-lift" style="border-top-color: var(--secondary-color) !important;">
+                        <div class="icon-square mx-auto mb-3 d-flex align-items-center justify-content-center text-white rounded-circle shadow-sm" style="width: 50px; height: 50px; background-color: var(--secondary-color);">
+                            <i class="fa-solid fa-laptop-house fs-5"></i>
+                        </div>
+                        <div class="small text-muted text-uppercase fw-bold tracking-wider mb-1">Mode</div>
+                        <div class="fw-bold text-navy fs-5" style="color: var(--navy-dark);">Self Paced</div>
+                    </div>
+                </div>
+                <!-- Data Item 4 -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="bg-white p-4 h-100 shadow border-top border-4 hover-lift" style="border-top-color: var(--secondary-color) !important;">
+                        <div class="icon-square mx-auto mb-3 d-flex align-items-center justify-content-center text-white rounded-circle shadow-sm" style="width: 50px; height: 50px; background-color: var(--secondary-color);">
+                            <i class="fa-solid fa-language fs-5"></i>
+                        </div>
+                        <div class="small text-muted text-uppercase fw-bold tracking-wider mb-1">Language</div>
+                        <div class="fw-bold text-navy fs-5" style="color: var(--navy-dark);">English</div>
+                    </div>
+                </div>
+                <!-- Data Item 5 -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="bg-white p-4 h-100 shadow border-top border-4 hover-lift" style="border-top-color: var(--secondary-color) !important;">
+                        <div class="icon-square mx-auto mb-3 d-flex align-items-center justify-content-center text-white rounded-circle shadow-sm" style="width: 50px; height: 50px; background-color: var(--secondary-color);">
+                            <i class="fa-solid fa-calendar-check fs-5"></i>
+                        </div>
+                        <div class="small text-muted text-uppercase fw-bold tracking-wider mb-1">Intake</div>
+                        <div class="fw-bold text-navy fs-5" style="color: var(--navy-dark);">Monthly</div>
+                    </div>
+                </div>
+                <!-- Data Item 6 -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="bg-white p-4 h-100 shadow border-top border-4 hover-lift" style="border-top-color: var(--secondary-color) !important;">
+                        <div class="icon-square mx-auto mb-3 d-flex align-items-center justify-content-center text-white rounded-circle shadow-sm" style="width: 50px; height: 50px; background-color: var(--secondary-color);">
+                            <i class="fa-solid fa-award fs-5"></i>
+                        </div>
+                        <div class="small text-muted text-uppercase fw-bold tracking-wider mb-1">Awarded By</div>
+                        <div class="fw-bold text-navy fs-5" style="color: var(--navy-dark);">EIU-Paris</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- 2. INTRODUCTION & OBJECTIVES -->
+        <!-- ========================================== -->
+        <section id="course-overview" class="course-intro-section py-5 bg-light">
+            <div class="container py-lg-5 mt-4">
+                <div class="row g-4 align-items-stretch">
+                    <!-- Left: Introduction -->
+                    <div class="col-lg-5">
+                        <div class="bg-color-primary p-4 p-md-5 h-100 rounded-0 d-flex flex-column justify-content-center position-relative overflow-hidden shadow-lg" style="color: white;">
+                            <!-- Accent Border -->
+                            <div class="position-absolute bottom-0 start-0 w-100" style="height: 6px; background-color: var(--secondary-color);"></div>
+                            <!-- Accent Graphic -->
+                            <div class="position-absolute end-0 top-0 w-50 h-50 d-none d-md-block" style="background-color: rgba(255,255,255,0.03); clip-path: circle(50% at 100% 0%); pointer-events: none;"></div>
+
+                            <div class="mb-3 d-inline-flex align-items-center text-uppercase fw-bold tracking-wider fs-6" style="color: var(--accent-color);">
+                                <i class="fa-solid fa-book-open-reader me-2"></i> Everything You Need To Know
+                            </div>
+                            <h2 class="display-5 fw-bold font-heading mb-4 text-white">Introduction</h2>
+                            <p class="text-white-50 mb-4" style="line-height: 1.8;">
+                                The Master of Business Administration (M.B.A.) program is designed to equip you with essential modern management knowledge, skills and tools to ensure your mindset, skill set and application ability for the business growth and sustainability.
+                            
+                                MBA program accredited by European International University is one of the best in class in the global education. Our MBA Graduates are highly confident on the business management along with the subject matter socialization to contribute to the organization for its growth. Corporates also appoint our MBA graduate with hope and confidence for their professional skill set and business centric mentality. The curriculum has been developed by a pool of industry expert on the particular area with their expert contribution in the respective field.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Right: Objectives Grid -->
+                    <div class="col-lg-7">
+                        <div class="bg-white p-4 p-md-5 h-100 rounded-0 shadow-sm border border-light position-relative">
+                            <h3 class="fw-bold text-navy mb-4 border-bottom pb-3">
+                                <i class="fa-solid fa-bullseye me-2" style="color: var(--secondary-color);"></i> Program Objectives
+                            </h3>
+                            <div class="row g-3">
+                                <!-- Dynamic Goal Item -->
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-start p-3 bg-light h-100 rounded-0 hover-lift transition-all" style="border-left: 4px solid var(--secondary-color);">
+                                        <i class="fa-solid fa-check mt-1 me-3" style="color: var(--secondary-color);"></i> 
+                                        <span class="text-muted fw-semibold">To enable delegates for business centric mentality</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-start p-3 bg-light h-100 rounded-0 hover-lift transition-all" style="border-left: 4px solid var(--secondary-color);">
+                                        <i class="fa-solid fa-check mt-1 me-3" style="color: var(--secondary-color);"></i> 
+                                        <span class="text-muted fw-semibold">To ensure the learning of business acumen and its application</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-start p-3 bg-light h-100 rounded-0 hover-lift transition-all" style="border-left: 4px solid var(--secondary-color);">
+                                        <i class="fa-solid fa-check mt-1 me-3" style="color: var(--secondary-color);"></i> 
+                                        <span class="text-muted fw-semibold">To learn modern management technique</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-start p-3 bg-light h-100 rounded-0 hover-lift transition-all" style="border-left: 4px solid var(--secondary-color);">
+                                        <i class="fa-solid fa-check mt-1 me-3" style="color: var(--secondary-color);"></i> 
+                                        <span class="text-muted fw-semibold">To enable the skills set of delegate for application of their learning</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-start p-3 bg-light h-100 rounded-0 hover-lift transition-all" style="border-left: 4px solid var(--secondary-color);">
+                                        <i class="fa-solid fa-check mt-1 me-3" style="color: var(--secondary-color);"></i> 
+                                        <span class="text-muted fw-semibold">To accelerate individual career through globally recognized certification</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-start p-3 bg-light h-100 rounded-0 hover-lift transition-all" style="border-left: 4px solid var(--secondary-color);">
+                                        <i class="fa-solid fa-check mt-1 me-3" style="color: var(--secondary-color);"></i> 
+                                        <span class="text-muted fw-semibold">To make delegates more analytical and capable for business decisions</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-start p-3 bg-light h-100 rounded-0 hover-lift transition-all" style="border-left: 4px solid var(--secondary-color);">
+                                        <i class="fa-solid fa-check mt-1 me-3" style="color: var(--secondary-color);"></i> 
+                                        <span class="text-muted fw-semibold">High effective communication skills & emotional intelligence</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-start p-3 bg-light h-100 rounded-0 hover-lift transition-all" style="border-left: 4px solid var(--secondary-color);">
+                                        <i class="fa-solid fa-check mt-1 me-3" style="color: var(--secondary-color);"></i> 
+                                        <span class="text-muted fw-semibold">Essential Cost Management Skills for ensuring healthy bottom line</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 3. ELIGIBILITY & ENTRY REQUIREMENTS -->
+        <!-- ========================================== -->
+        <section class="eligibility-section py-5 bg-light border-top border-bottom">
+            <div class="container py-lg-4">
+                <div class="row justify-content-center mb-5 pb-3">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="display-5 fw-bold text-navy font-heading mb-3">Eligibility &amp; Entry Requirements</h2>
+                        <p class="fs-5 text-muted">Clear pathways to begin your academic journey with us.</p>
+                    </div>
+                </div>
+
+                <div class="row g-4 align-items-stretch">
+                    <!-- Standard Entry -->
+                    <div class="col-lg-6">
+                        <div class="bg-white p-5 rounded-4 shadow-sm h-100 hover-lift d-flex flex-column" style="border-top: 5px solid var(--primary-color);">
+                            <div class="d-flex align-items-center gap-3 mb-4">
+                                <div class="icon-wrap bg-light d-flex align-items-center justify-content-center rounded-circle" style="width: 60px; height: 60px; font-size: 1.5rem; color: var(--primary-color);">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <h3 class="fw-bold text-navy mb-0">Standard Entry Route</h3>
+                            </div>
+                            <ul class="list-unstyled mb-0 d-flex flex-column gap-3 mt-2 flex-grow-1">
+                                <li class="d-flex align-items-start">
+                                    <i class="fa-regular fa-circle-check text-gold mt-1 me-3 fs-5"></i>
+                                    <span class="text-muted fs-5">Recognized Bachelor Degree in any field or Recognized Post Graduate Diploma (PGD)</span>
+                                </li>
+                                <li class="d-flex align-items-start">
+                                    <i class="fa-regular fa-circle-check text-gold mt-1 me-3 fs-5"></i>
+                                    <span class="text-muted fs-5">Sufficient English language proficiency.</span>
+                                </li>
+                                <li class="d-flex align-items-start">
+                                    <i class="fa-regular fa-circle-check text-gold mt-1 me-3 fs-5"></i>
+                                    <span class="text-muted fs-5">At least 1 year of working experience.</span>
+                                </li>
+                                <li class="d-flex align-items-start">
+                                    <i class="fa-regular fa-circle-check text-gold mt-1 me-3 fs-5"></i>
+                                    <span class="text-muted fs-5">Participants must have smart phone, laptop or computer access to maintain program activity.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Mature Entry -->
+                    <div class="col-lg-6">
+                        <div class="bg-white p-5 rounded-4 shadow-sm h-100 hover-lift d-flex flex-column" style="border-top: 5px solid var(--accent-color);">
+                            <div class="d-flex align-items-center gap-3 mb-4">
+                                <div class="icon-wrap bg-light d-flex align-items-center justify-content-center rounded-circle" style="width: 60px; height: 60px; font-size: 1.5rem; color: var(--accent-color);">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                </div>
+                                <h3 class="fw-bold text-navy mb-0">Mature Entry Route</h3>
+                            </div>
+                            <p class="small text-uppercase text-muted fw-bold tracking-wider mb-4"><i class="fa-regular fa-clock me-1"></i> Evaluated on a case-by-case basis</p>
+                            <ul class="list-unstyled mb-0 d-flex flex-column gap-3 flex-grow-1">
+                                <li class="d-flex align-items-start">
+                                    <i class="fa-solid fa-caret-right text-gold mt-1 me-3 fs-5"></i>
+                                    <span class="text-muted fs-6">Candidates without any prior tertiary education and qualification should possess at least 10 years of professional working experience in the field of Business, Management, or related areas of work.</span>
+                                </li>
+                                <li class="d-flex align-items-start">
+                                    <i class="fa-solid fa-caret-right text-gold mt-1 me-3 fs-5"></i>
+                                    <span class="text-muted fs-6">Candidates  who have completed HND Level 4 (Diploma) should possess at least 7 years of professional working experience in the field of Business, Management, or related areas of work.</span>
+                                </li>
+                                <li class="d-flex align-items-start">
+                                    <i class="fa-solid fa-caret-right text-gold mt-1 me-3 fs-5"></i>
+                                    <span class="text-muted fs-6">Candidates who have completed HND Level 5 (Higher Diploma) should possess at least 4 years of professional working experience in the field of Business, Management, or related areas of working experience.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- PROGRAM GOALS -->
+        <!-- ========================================== -->
+        <section class="program-goals-section py-5 bg-color-primary position-relative overflow-hidden border-top border-4" style="border-color: var(--accent-color) !important;">
+            <!-- Decorative Background Element -->
+            <div class="position-absolute end-0 bottom-0 opacity-10 d-none d-lg-block" style="width: 500px; height: 500px; background: radial-gradient(circle, var(--accent-color) 0%, transparent 70%); pointer-events: none;"></div>
+            
+            <div class="container py-lg-4 position-relative z-1">
+                <div class="row mb-5">
+                    <div class="col-lg-8">
+                        <div class="d-inline-flex align-items-center gap-2 mb-3 px-3 py-1 rounded-pill" style="background-color: rgba(255,255,255,0.1); color: var(--accent-color);">
+                            <i class="fa-solid fa-bullseye"></i> <span class="fw-bold tracking-wider fs-6 text-uppercase">Program Goals</span>
+                        </div>
+                        <h2 class="display-5 fw-bold text-white font-heading mb-3">Knowledge &amp; Transferable Skills</h2>
+                        <p class="fs-5 text-white-50 mb-0">The M.B.A. program structure enables delegates to acquire the following capabilities:</p>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Goal Item -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="d-flex align-items-start p-4 h-100 rounded-0 hover-lift transition-all shadow-sm" style="background-color: rgba(255,255,255,0.05); border-top: 4px solid var(--accent-color);">
+                            <i class="fa-solid fa-circle-check mt-1 me-3 fs-3" style="color: var(--accent-color);"></i>
+                            <span class="text-white fs-6">Essential &amp; modern management skills for playing role as managerial level</span>
+                        </div>
+                    </div>
+                    <!-- Goal Item -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="d-flex align-items-start p-4 h-100 rounded-0 hover-lift transition-all shadow-sm" style="background-color: rgba(255,255,255,0.05); border-top: 4px solid var(--accent-color);">
+                            <i class="fa-solid fa-circle-check mt-1 me-3 fs-3" style="color: var(--accent-color);"></i>
+                            <span class="text-white fs-6">Adequate financial knowledge to play role in mid to senior level position</span>
+                        </div>
+                    </div>
+                    <!-- Goal Item -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="d-flex align-items-start p-4 h-100 rounded-0 hover-lift transition-all shadow-sm" style="background-color: rgba(255,255,255,0.05); border-top: 4px solid var(--accent-color);">
+                            <i class="fa-solid fa-circle-check mt-1 me-3 fs-3" style="color: var(--accent-color);"></i>
+                            <span class="text-white fs-6">Essential knowledge on business acumen and its application for business analysis</span>
+                        </div>
+                    </div>
+                    <!-- Goal Item -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="d-flex align-items-start p-4 h-100 rounded-0 hover-lift transition-all shadow-sm" style="background-color: rgba(255,255,255,0.05); border-top: 4px solid var(--accent-color);">
+                            <i class="fa-solid fa-circle-check mt-1 me-3 fs-3" style="color: var(--accent-color);"></i>
+                            <span class="text-white fs-6">Advanced supervisory and leadership skill to fit in the 21st century leaders’ field</span>
+                        </div>
+                    </div>
+                    <!-- Goal Item -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="d-flex align-items-start p-4 h-100 rounded-0 hover-lift transition-all shadow-sm" style="background-color: rgba(255,255,255,0.05); border-top: 4px solid var(--accent-color);">
+                            <i class="fa-solid fa-circle-check mt-1 me-3 fs-3" style="color: var(--accent-color);"></i>
+                            <span class="text-white fs-6">Essential Competency to deal with business crisis in the post covid world</span>
+                        </div>
+                    </div>
+                    <!-- Goal Item -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="d-flex align-items-start p-4 h-100 rounded-0 hover-lift transition-all shadow-sm" style="background-color: rgba(255,255,255,0.05); border-top: 4px solid var(--accent-color);">
+                            <i class="fa-solid fa-circle-check mt-1 me-3 fs-3" style="color: var(--accent-color);"></i>
+                            <span class="text-white fs-6">Essential Cost Management Skills for ensuring healthy bottom line</span>
+                        </div>
+                    </div>
+                    <!-- Goal Item -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="d-flex align-items-start p-4 h-100 rounded-0 hover-lift transition-all shadow-sm" style="background-color: rgba(255,255,255,0.05); border-top: 4px solid var(--accent-color);">
+                            <i class="fa-solid fa-circle-check mt-1 me-3 fs-3" style="color: var(--accent-color);"></i>
+                            <span class="text-white fs-6">Adequate capacity to ensure competitive advantage for the organization to sustain</span>
+                        </div>
+                    </div>
+                    <!-- Goal Item -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="d-flex align-items-start p-4 h-100 rounded-0 hover-lift transition-all shadow-sm" style="background-color: rgba(255,255,255,0.05); border-top: 4px solid var(--accent-color);">
+                            <i class="fa-solid fa-circle-check mt-1 me-3 fs-3" style="color: var(--accent-color);"></i>
+                            <span class="text-white fs-6">Capability to innovative idea and strengthen business expansion through these</span>
+                        </div>
+                    </div>
+                    <!-- Goal Item -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="d-flex align-items-start p-4 h-100 rounded-0 hover-lift transition-all shadow-sm" style="background-color: rgba(255,255,255,0.05); border-top: 4px solid var(--accent-color);">
+                            <i class="fa-solid fa-circle-check mt-1 me-3 fs-3" style="color: var(--accent-color);"></i>
+                            <span class="text-white fs-6">Self-analysis, self-management and Emotional intelligence</span>
+                        </div>
+                    </div>
+                    <!-- Goal Item -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="d-flex align-items-start p-4 h-100 rounded-0 hover-lift transition-all shadow-sm" style="background-color: rgba(255,255,255,0.05); border-top: 4px solid var(--accent-color);">
+                            <i class="fa-solid fa-circle-check mt-1 me-3 fs-3" style="color: var(--accent-color);"></i>
+                            <span class="text-white fs-6">Expertise on analytical thinking and reasoning skills</span>
+                        </div>
+                    </div>
+                    <!-- Goal Item -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="d-flex align-items-start p-4 h-100 rounded-0 hover-lift transition-all shadow-sm" style="background-color: rgba(255,255,255,0.05); border-top: 4px solid var(--accent-color);">
+                            <i class="fa-solid fa-circle-check mt-1 me-3 fs-3" style="color: var(--accent-color);"></i>
+                            <span class="text-white fs-6">Critical thinking and problem-solving skills</span>
+                        </div>
+                    </div>
+                    <!-- Goal Item -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="d-flex align-items-start p-4 h-100 rounded-0 hover-lift transition-all shadow-sm" style="background-color: rgba(255,255,255,0.05); border-top: 4px solid var(--accent-color);">
+                            <i class="fa-solid fa-circle-check mt-1 me-3 fs-3" style="color: var(--accent-color);"></i>
+                            <span class="text-white fs-6">Highly effective communication skills</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- PROGRAM MODULES CURRICULUM -->
+        <!-- ========================================== -->
+        <section class="program-modules-section py-5 position-relative overflow-hidden" style="background-color: #f8f9fa;">
+            <!-- Subtle Background Texture -->
+            <div class="position-absolute start-0 top-0 w-100 h-100 opacity-25" style="background-image: radial-gradient(var(--secondary-color) 1px, transparent 1px); background-size: 40px 40px; pointer-events: none; mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent); -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);"></div>
+
+            <div class="container py-lg-4 position-relative z-1">
+                <div class="row mb-5 pb-2">
+                    <div class="col-lg-7">
+                        <div class="d-inline-flex align-items-center gap-2 mb-3 px-3 py-1 rounded-pill bg-white shadow-sm border" style="color: var(--navy-dark); border-color: rgba(0,0,0,0.06) !important;">
+                            <i class="fa-solid fa-layer-group" style="color:var(--accent-color);"></i> <span class="fw-bold tracking-wider fs-6 text-uppercase">Curriculum</span>
+                        </div>
+                        <h2 class="display-5 fw-bold text-navy font-heading mb-3">Program Modules</h2>
+                        <p class="text-muted fs-5 mb-0">12 subject modules plus a capstone Action Research Paper. Click any row to explore the learning outcomes.</p>
+                    </div>
+                    <div class="col-lg-5 d-flex align-items-center justify-content-lg-end mt-4 mt-lg-0">
+                        <div class="d-flex gap-3 flex-wrap">
+                            <div class="px-4 py-3 bg-white rounded-3 shadow-sm text-center">
+                                <div class="fw-bold fs-2 text-navy font-heading">13</div>
+                                <div class="text-muted small">Modules</div>
+                            </div>
+                            <div class="px-4 py-3 bg-white rounded-3 shadow-sm text-center">
+                                <div class="fw-bold fs-2 font-heading" style="color:var(--accent-color);">90</div>
+                                <div class="text-muted small">Total ECT</div>
+                            </div>
+                            <div class="px-4 py-3 bg-white rounded-3 shadow-sm text-center">
+                                <div class="fw-bold fs-2 text-navy font-heading">1 Yr</div>
+                                <div class="text-muted small">Duration</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="accordion module-accordion" id="modulesAccordion">
+
+                            <!-- MBA 501 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mod501">
+                                        <span class="module-code me-3">MBA 501</span>
+                                        <span class="flex-grow-1">Marketing Management</span>
+                                        <span class="ect-badge bg-color-primary text-white ms-3">6 ECT</span>
+                                    </button>
+                                </h2>
+                                <div id="mod501" class="accordion-collapse collapse" data-bs-parent="#modulesAccordion">
+                                    <div class="accordion-body"><i class="fa-solid fa-circle-dot me-2" style="color:var(--accent-color);"></i>Thorough exploration of foundational marketing principles, strategy development, and consumer behavior analysis in contemporary business settings.</div>
+                                </div>
+                            </div>
+
+                            <!-- MBA 502 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mod502">
+                                        <span class="module-code me-3">MBA 502</span>
+                                        <span class="flex-grow-1">Supply Chain Management</span>
+                                        <span class="ect-badge bg-color-primary text-white ms-3">6 ECT</span>
+                                    </button>
+                                </h2>
+                                <div id="mod502" class="accordion-collapse collapse" data-bs-parent="#modulesAccordion">
+                                    <div class="accordion-body"><i class="fa-solid fa-circle-dot me-2" style="color:var(--accent-color);"></i>Insights into logistical operations, supplier coordination, value creation, and enhancing operational efficiencies on a global scale.</div>
+                                </div>
+                            </div>
+
+                            <!-- MBA 503 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mod503">
+                                        <span class="module-code me-3">MBA 503</span>
+                                        <span class="flex-grow-1">People Management</span>
+                                        <span class="ect-badge bg-color-primary text-white ms-3">6 ECT</span>
+                                    </button>
+                                </h2>
+                                <div id="mod503" class="accordion-collapse collapse" data-bs-parent="#modulesAccordion">
+                                    <div class="accordion-body"><i class="fa-solid fa-circle-dot me-2" style="color:var(--accent-color);"></i>Analyzing principles of human resources, organizational design, talent retention, and motivating a complex global workforce.</div>
+                                </div>
+                            </div>
+
+                            <!-- MBA 504 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mod504">
+                                        <span class="module-code me-3">MBA 504</span>
+                                        <span class="flex-grow-1">Project Management</span>
+                                        <span class="ect-badge bg-color-primary text-white ms-3">6 ECT</span>
+                                    </button>
+                                </h2>
+                                <div id="mod504" class="accordion-collapse collapse" data-bs-parent="#modulesAccordion">
+                                    <div class="accordion-body"><i class="fa-solid fa-circle-dot me-2" style="color:var(--accent-color);"></i>Master the lifecycle methodologies of leading, executing, and finalizing internal and external projects effectively and efficiently.</div>
+                                </div>
+                            </div>
+
+                            <!-- MBA 505 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mod505">
+                                        <span class="module-code me-3">MBA 505</span>
+                                        <span class="flex-grow-1">Financial Management</span>
+                                        <span class="ect-badge bg-color-primary text-white ms-3">6 ECT</span>
+                                    </button>
+                                </h2>
+                                <div id="mod505" class="accordion-collapse collapse" data-bs-parent="#modulesAccordion">
+                                    <div class="accordion-body"><i class="fa-solid fa-circle-dot me-2" style="color:var(--accent-color);"></i>Essential skills for budget forecasting, asset allocation, capital investments, and reading modern corporate financial statements.</div>
+                                </div>
+                            </div>
+
+                            <!-- MBA 506 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mod506">
+                                        <span class="module-code me-3">MBA 506</span>
+                                        <span class="flex-grow-1">Total Quality Management</span>
+                                        <span class="ect-badge bg-color-primary text-white ms-3">6 ECT</span>
+                                    </button>
+                                </h2>
+                                <div id="mod506" class="accordion-collapse collapse" data-bs-parent="#modulesAccordion">
+                                    <div class="accordion-body"><i class="fa-solid fa-circle-dot me-2" style="color:var(--accent-color);"></i>A comprehensive study of continuous quality improvement and creating a holistic culture of organizational excellence.</div>
+                                </div>
+                            </div>
+
+                            <!-- MBA 601 -->
+                            <div class="accordion-item accent-primary">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mod601">
+                                        <span class="module-code me-3">MBA 601</span>
+                                        <span class="flex-grow-1">Leadership &amp; Innovation Management</span>
+                                        <span class="ect-badge bg-color-primary text-white ms-3">6 ECT</span>
+                                    </button>
+                                </h2>
+                                <div id="mod601" class="accordion-collapse collapse" data-bs-parent="#modulesAccordion">
+                                    <div class="accordion-body"><i class="fa-solid fa-circle-dot me-2" style="color:var(--accent-color);"></i>Focuses on transformational leadership strategies and managing both technological and organizational innovation cycles.</div>
+                                </div>
+                            </div>
+
+                            <!-- MBA 602 -->
+                            <div class="accordion-item accent-primary">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mod602">
+                                        <span class="module-code me-3">MBA 602</span>
+                                        <span class="flex-grow-1">Managerial Competencies</span>
+                                        <span class="ect-badge bg-color-primary text-white ms-3">6 ECT</span>
+                                    </button>
+                                </h2>
+                                <div id="mod602" class="accordion-collapse collapse" data-bs-parent="#modulesAccordion">
+                                    <div class="accordion-body"><i class="fa-solid fa-circle-dot me-2" style="color:var(--accent-color);"></i>Developing and evaluating key soft and hard skills required by modern leaders to foster business agility and ethical governance.</div>
+                                </div>
+                            </div>
+
+                            <!-- MBA 603 -->
+                            <div class="accordion-item accent-primary">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mod603">
+                                        <span class="module-code me-3">MBA 603</span>
+                                        <span class="flex-grow-1">Digitalization &amp; E-commerce</span>
+                                        <span class="ect-badge bg-color-primary text-white ms-3">6 ECT</span>
+                                    </button>
+                                </h2>
+                                <div id="mod603" class="accordion-collapse collapse" data-bs-parent="#modulesAccordion">
+                                    <div class="accordion-body"><i class="fa-solid fa-circle-dot me-2" style="color:var(--accent-color);"></i>Navigating the transition to global digitalization, online retail ecosystems, e-commerce channels, and digital transformation strategy.</div>
+                                </div>
+                            </div>
+
+                            <!-- MBA 676 -->
+                            <div class="accordion-item accent-primary">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mod676">
+                                        <span class="module-code me-3">MBA 676</span>
+                                        <span class="flex-grow-1">Global Hospitality and Tourism Operations</span>
+                                        <span class="ect-badge bg-color-primary text-white ms-3">6 ECT</span>
+                                    </button>
+                                </h2>
+                                <div id="mod676" class="accordion-collapse collapse" data-bs-parent="#modulesAccordion">
+                                    <div class="accordion-body"><i class="fa-solid fa-circle-dot me-2" style="color:var(--accent-color);"></i>Unpacking the operational mechanisms and management techniques specific to global hospitality networks and tourism enterprises.</div>
+                                </div>
+                            </div>
+
+                            <!-- MBA 677 -->
+                            <div class="accordion-item accent-primary">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mod677">
+                                        <span class="module-code me-3">MBA 677</span>
+                                        <span class="flex-grow-1">Hospitality Marketing and Brand Management</span>
+                                        <span class="ect-badge bg-color-primary text-white ms-3">6 ECT</span>
+                                    </button>
+                                </h2>
+                                <div id="mod677" class="accordion-collapse collapse" data-bs-parent="#modulesAccordion">
+                                    <div class="accordion-body"><i class="fa-solid fa-circle-dot me-2" style="color:var(--accent-color);"></i>Strategies for building strong, recognizable hospitality brands and creating campaigns tailored to affluent tourism segments.</div>
+                                </div>
+                            </div>
+
+                            <!-- MBA 678 -->
+                            <div class="accordion-item accent-primary">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mod678">
+                                        <span class="module-code me-3">MBA 678</span>
+                                        <span class="flex-grow-1">Hospitality Technology and Innovation</span>
+                                        <span class="ect-badge bg-color-primary text-white ms-3">6 ECT</span>
+                                    </button>
+                                </h2>
+                                <div id="mod678" class="accordion-collapse collapse" data-bs-parent="#modulesAccordion">
+                                    <div class="accordion-body"><i class="fa-solid fa-circle-dot me-2" style="color:var(--accent-color);"></i>Evaluating modern software ecosystems, automated guest touchpoints, and technical innovation within hotel groups and airlines.</div>
+                                </div>
+                            </div>
+
+                            <!-- MBA 701 — Capstone (pre-expanded) -->
+                            <div class="accordion-item accent-capstone mt-3">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#mod701" aria-expanded="true">
+                                        <span class="module-code me-3" style="color:var(--accent-color);">MBA 701</span>
+                                        <span class="flex-grow-1">Action Research Paper</span>
+                                        <span class="ect-badge bg-white text-dark ms-3">18 ECT</span>
+                                    </button>
+                                </h2>
+                                <div id="mod701" class="accordion-collapse collapse show" data-bs-parent="#modulesAccordion">
+                                    <div class="accordion-body">
+                                        <h6 class="fw-bold mb-2" style="color:var(--accent-color);"><i class="fa-solid fa-graduation-cap me-2"></i>Program Capstone</h6>
+                                        <p class="mb-0">One comprehensive Action Research Paper is a mandatory requirement for graduation. This 18 ECT paper synthesizes all theories acquired across your 12 modules into an actionable, real-world business analysis.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 4. COURSE OVERVIEW -->
+        <!-- ========================================== -->
+        <section class="course-overview-section py-5 position-relative overflow-hidden" style="background-color: var(--navy-dark);">
+            <!-- Background Texture -->
+            <div class="position-absolute start-0 top-0 w-100 h-100" style="background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px); background-size: 30px 30px; pointer-events: none;"></div>
+
+            <div class="container py-lg-4 position-relative z-1">
+                <!-- Section Header -->
+                <div class="row mb-5 pb-2">
+                    <div class="col-lg-7">
+                        <div class="d-inline-flex align-items-center gap-2 mb-3 px-3 py-1 rounded-pill" style="background-color: rgba(255,255,255,0.08); color: var(--accent-color);">
+                            <i class="fa-solid fa-clipboard-list"></i> <span class="fw-bold tracking-wider fs-6 text-uppercase">Course Structure</span>
+                        </div>
+                        <h2 class="display-5 fw-bold font-heading mb-3">Course Overview</h2>
+                        <p class="fs-5 mb-0" style="opacity: 0.75;">A comprehensive breakdown of the program structure, assessment methodology, and grading criteria.</p>
+                    </div>
+                </div>
+
+                <!-- ===== KEY STATS STRIP (6 cards) ===== -->
+                <div class="row g-3 g-lg-4 mb-5">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="text-center p-4 rounded-0 hover-lift transition-all h-100" style="background-color: rgba(0,0,0,0.6); border-left: 4px solid var(--accent-color);">
+                            <div class="fw-bold display-4 font-heading text-white mb-1">7</div>
+                            <div class="text-uppercase tracking-wider small" style="color: var(--accent-color);">Course Level</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="text-center p-4 rounded-0 hover-lift transition-all h-100" style="background-color: rgba(0,0,0,0.6); border-left: 4px solid var(--secondary-color);">
+                            <div class="fw-bold display-4 font-heading text-white mb-1">12</div>
+                            <div class="text-uppercase tracking-wider small" style="color: var(--accent-color);">Subject Modules</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="text-center p-4 rounded-0 hover-lift transition-all h-100" style="background-color: rgba(0,0,0,0.6); border-left: 4px solid var(--accent-color);">
+                            <div class="fw-bold display-4 font-heading text-white mb-1">6</div>
+                            <div class="text-uppercase tracking-wider small" style="color: var(--accent-color);">Units / Module</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="text-center p-4 rounded-0 hover-lift transition-all h-100" style="background-color: rgba(0,0,0,0.6); border-left: 4px solid var(--secondary-color);">
+                            <div class="fw-bold display-4 font-heading text-white mb-1">72</div>
+                            <div class="text-uppercase tracking-wider small" style="color: var(--accent-color);">Total Units</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="text-center p-4 rounded-0 hover-lift transition-all h-100" style="background-color: rgba(0,0,0,0.6); border-left: 4px solid var(--accent-color);">
+                            <div class="fw-bold display-4 font-heading text-white mb-1">90</div>
+                            <span class="small text-white" style="opacity:0.6;">[12×6=72 + ARP 18]</span>
+                            <div class="text-uppercase tracking-wider small" style="color: var(--accent-color);">Total ECT</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="text-center p-4 rounded-0 hover-lift transition-all h-100" style="background-color: rgba(0,0,0,0.6); border-left: 4px solid var(--secondary-color);">
+                            <div class="fw-bold display-4 font-heading text-white mb-1">1 Yr</div>
+                            <span class="small text-white" style="opacity:0.6;">+6 mos extension</span>
+                            <div class="text-uppercase tracking-wider small" style="color: var(--accent-color);">Duration</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== DETAIL CARDS ROW ===== -->
+                <div class="row g-4 g-lg-5">
+
+                    <!-- Left Column: Study Mode, Assignment, ARP -->
+                    <div class="col-lg-6 d-flex flex-column gap-4">
+
+                        <!-- Study Mode Card -->
+                        <div class="p-4 rounded-0 d-flex align-items-start gap-3" style="background-color: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-left: 4px solid var(--primary-color);">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 50px; height: 50px; background-color: rgba(255,255,255,0.08);">
+                                <i class="fa-solid fa-laptop-house fs-5" style="color: var(--accent-color);"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">Study Mode</h5>
+                                <p class="mb-0" style="opacity: 0.75;">Self-Paced Learning System <strong>(Online-Distance Learning)</strong></p>
+                            </div>
+                        </div>
+
+                        <!-- Assignment Card -->
+                        <div class="p-4 rounded-0 d-flex align-items-start gap-3" style="background-color: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-left: 4px solid var(--accent-color);">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 50px; height: 50px; background-color: rgba(255,255,255,0.08);">
+                                <i class="fa-solid fa-pen-to-square fs-5" style="color: var(--accent-color);"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">Assignments</h5>
+                                <p class="mb-0" style="opacity: 0.75;">Each Unit has <strong>01 (One) Final Assignment</strong>.</p>
+                            </div>
+                        </div>
+
+                        <!-- ARP Card -->
+                        <div class="p-4 rounded-0 d-flex align-items-start gap-3 position-relative overflow-hidden" style="background: linear-gradient(135deg, var(--secondary-color), #6b1a33); border: 1px solid rgba(255,255,255,0.1);">
+                            <div class="position-absolute end-0 bottom-0" style="width: 200px; height: 200px; background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%); pointer-events: none;"></div>
+                            <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 position-relative z-1" style="width: 50px; height: 50px; background-color: rgba(255,255,255,0.15);">
+                                <i class="fa-solid fa-graduation-cap fs-5 text-white"></i>
+                            </div>
+                            <div class="position-relative z-1">
+                                <h5 class="fw-bold text-white mb-1">Action Research Paper</h5>
+                                <p class="mb-0 text-white" style="opacity: 0.85;">One Action Research Paper needs to be submitted as a <strong>mandatory requirement</strong> for graduation.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Right Column: Grading Scale -->
+                    <div class="col-lg-6">
+                        <div class="p-4 p-lg-5 h-100 rounded-0" style="background-color: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+                            <h5 class="fw-bold font-heading mb-4" style="color: var(--accent-color);"><i class="fa-solid fa-chart-column me-2"></i>Assessment &amp; Grading Scale</h5>
+                            <div class="d-flex flex-column gap-2">
+                                <div class="d-flex justify-content-between align-items-center py-2 px-3 rounded-1" style="background-color: rgba(40,167,69,0.12);">
+                                    <span class="d-flex align-items-center gap-2"><i class="fa-solid fa-star text-success"></i> Higher Distinction</span>
+                                    <span class="fw-bold text-success">90–100%</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center py-2 px-3 rounded-1" style="background-color: rgba(40,167,69,0.08);">
+                                    <span class="d-flex align-items-center gap-2"><i class="fa-regular fa-star text-success"></i> Distinction</span>
+                                    <span class="fw-bold text-success">80–89%</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center py-2 px-3 rounded-1" style="background-color: rgba(13,110,253,0.1);">
+                                    <span class="d-flex align-items-center gap-2"><i class="fa-solid fa-medal" style="color: #6ea8fe;"></i> First Division</span>
+                                    <span class="fw-bold" style="color: #6ea8fe;">70–79%</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center py-2 px-3 rounded-1" style="background-color: rgba(13,110,253,0.06);">
+                                    <span class="d-flex align-items-center gap-2"><i class="fa-solid fa-award" style="color: #6ea8fe;"></i> Second Division</span>
+                                    <span class="fw-bold" style="color: #6ea8fe;">60–69%</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center py-2 px-3 rounded-1" style="background-color: rgba(255,193,7,0.1);">
+                                    <span class="d-flex align-items-center gap-2"><i class="fa-solid fa-check text-warning"></i> Satisfactory</span>
+                                    <span class="fw-bold text-warning">50–59%</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center py-2 px-3 rounded-1" style="background-color: rgba(220,53,69,0.1);">
+                                    <span class="d-flex align-items-center gap-2"><i class="fa-solid fa-triangle-exclamation text-danger"></i> Fail / Unsatisfactory</span>
+                                    <span class="fw-bold text-danger">Below 49%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 4.5 ASSESSMENT INFORMATION -->
+        <!-- ========================================== -->
+        <section class="assessment-info-section py-5 position-relative overflow-hidden">
+            <!-- Background Texture -->
+            <div class="position-absolute start-0 top-0 w-100 h-100 opacity-10"></div>
+            
+            <div class="container py-lg-4 position-relative z-1">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8 text-center">
+                        <div class="d-inline-flex align-items-center gap-2 mb-3 px-3 py-1 rounded-pill" style="background-color: rgba(212, 175, 55, 0.1); border: 1px solid rgba(212, 175, 55, 0.2);">
+                            <i class="fa-solid fa-file-signature text-gold"></i>
+                            <span class="fw-bold tracking-wider fs-6 text-uppercase text-gold">Evaluation Method</span>
+                        </div>
+                        <h2 class="display-5 fw-bold font-heading mb-3">Assessment Information</h2>
+                        <p class="fs-5" style="opacity: 0.8;">Understand how your learning progress will be evaluated throughout the program.</p>
+                    </div>
+                </div>
+
+                <div class="row g-4 mb-5">
+                    <!-- Unit Assignments -->
+                    <div class="col-lg-6">
+                        <div class="p-4 p-md-5 h-100 rounded-0 d-flex flex-column bg-color-primary" style="border: 1px solid rgba(255,255,255,0.08); border-top: 4px solid var(--accent-color);">
+                            <div class="d-flex align-items-center gap-3 mb-4">
+                                <div class="icon-wrap rounded-circle bg-gold-light d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                    <i class="fa-solid fa-pen-clip text-gold fs-3"></i>
+                                </div>
+                                <h3 class="fw-bold font-heading text-white mb-0">Unit Assignments</h3>
+                            </div>
+                            <div class="mb-4">
+                                <p class="text-white-50 fs-5 mb-2">Each Unit has <strong>01 (One) Final Assignment</strong>.</p>
+                                <div class="d-flex align-items-center gap-2 py-3 px-4 rounded-3" style="background-color: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.05);">
+                                    <span class="text-white opacity-50">Total Assignments:</span>
+                                    <span class="display-6 fw-bold text-gold font-heading">48</span>
+                                    <span class="text-white-50 small mt-2">Assignments</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Research Paper -->
+                    <div class="col-lg-6">
+                        <div class="p-4 p-md-5 h-100 rounded-0 d-flex flex-column bg-color-secondary" style="border: 1px solid rgba(255,255,255,0.08); border-top: 4px solid var(--primary-color);">
+                            <div class="d-flex align-items-center gap-3 mb-4">
+                                <div class="icon-wrap rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: rgba(133, 35, 65, 0.1);">
+                                    <i class="fa-solid fa-scroll text-color-secondary fs-3"></i>
+                                </div>
+                                <h3 class="fw-bold font-heading text-white mb-0">Action Research Paper</h3>
+                            </div>
+                            <div class="mb-4">
+                                <p class="text-white-50 fs-5 mb-3">One Action Research Paper needs to be submitted as a capstone project.</p>
+                                <div class="p-3 rounded-3 d-flex align-items-center justify-content-between" style="background-color: rgba(0, 0, 0, 0.15); border: 1px solid rgba(133, 35, 65, 0.3); backdrop-filter: blur(10px);">
+                                    <span class="text-white-50">Requirement:</span>
+                                    <span class="badge bg-color-secondary text-white px-3 py-2 text-uppercase tracking-wider">Mandatory</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-auto pt-4 text-center">
+                    <a href="#" class="btn-assessment-link d-inline-flex align-items-center gap-2 text-gold text-decoration-none fw-bold hover-lift transition-all">
+                        <span>To know more about</span>
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 5. UNIVERSITY ACCREDITATION -->
+        <!-- ========================================== -->
+        <section class="accreditation-section py-5 position-relative overflow-hidden" style="background-color: var(--primary-color); border-top: 1px solid rgba(255,255,255,0.1);">
+            <!-- Background Elements -->
+            <div class="position-absolute start-0 top-0 w-100 h-100 opacity-25" style="background-image: radial-gradient(var(--accent-color) 0.5px, transparent 0.5px); background-size: 30px 30px; pointer-events: none;"></div>
+            <div class="position-absolute end-0 top-0 w-50 h-100" style="background: radial-gradient(circle at 70% 30%, rgba(212, 175, 55, 0.08) 0%, transparent 70%); pointer-events: none;"></div>
+
+            <div class="container py-lg-5 position-relative z-1">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8 text-center text-white">
+                        <h2 class="display-5 fw-bold font-heading mb-3">Accreditation & Recognition</h2>
+                        <p class="fs-5" style="opacity: 0.8;">Global Validation of the European International University (EIU-Paris)</p>
+                    </div>
+                </div>
+
+                <div class="row g-4 align-items-center mb-5">
+                    <!-- Featured: ASIC-UK -->
+                    <div class="col-lg-12">
+                        <div class="featured-acc-card p-4 rounded-0 position-relative overflow-hidden" style="background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%); border: 1px solid rgba(255,255,255,0.08); border-left: 5px solid var(--accent-color);">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 text-center mb-4 mb-md-0">
+                                    <div class="p-1 bg-white rounded-3 shadow-lg d-inline-block hover-lift transition-all" style="max-width: 150px;">
+                                        <img src="images/premier-accr.webp" alt="ASIC Premier Status" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-9 text-white">
+                                    <div class="d-flex align-items-center gap-3 mb-3 flex-wrap">
+                                        <h3 class="fw-bold font-heading mb-0 fs-3">ASIC-UK</h3>
+                                    </div>
+                                    <p class="mb-0" style="opacity: 0.85; line-height: 1.6;">
+                                        The University has earned <strong>Premier status</strong> with the Accreditation Service for International Schools, Colleges and Universities (ASIC-UK) for its commendable areas of operation. This recognition is a testament to our commitment to maintaining the highest standards in international education.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="featured-acc-card p-4 rounded-0 position-relative overflow-hidden" style="background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%); border: 1px solid rgba(255,255,255,0.08); border-left: 5px solid var(--accent-color);">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 text-center mb-4 mb-md-0">
+                                    <div class="p-1 bg-white rounded-3 shadow-lg d-inline-block hover-lift transition-all" style="max-width: 150px;">
+                                        <img src="images/premier-accr.webp" alt="ASIC Premier Status" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-9 text-white">
+                                    <div class="d-flex align-items-center gap-3 mb-3 flex-wrap">
+                                        <h3 class="fw-bold font-heading mb-0 fs-3">ASIC-UK</h3>
+                                    </div>
+                                    <p class="mb-0" style="opacity: 0.85; line-height: 1.6;">
+                                        The University has earned <strong>Premier status</strong> with the Accreditation Service for International Schools, Colleges and Universities (ASIC-UK) for its commendable areas of operation. This recognition is a testament to our commitment to maintaining the highest standards in international education.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="featured-acc-card p-4 rounded-0 position-relative overflow-hidden" style="background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%); border: 1px solid rgba(255,255,255,0.08); border-left: 5px solid var(--accent-color);">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 text-center mb-4 mb-md-0">
+                                    <div class="p-1 bg-white rounded-3 shadow-lg d-inline-block hover-lift transition-all" style="max-width: 150px;">
+                                        <img src="images/premier-accr.webp" alt="ASIC Premier Status" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-9 text-white">
+                                    <div class="d-flex align-items-center gap-3 mb-3 flex-wrap">
+                                        <h3 class="fw-bold font-heading mb-0 fs-3">ASIC-UK</h3>
+                                    </div>
+                                    <p class="mb-0" style="opacity: 0.85; line-height: 1.6;">
+                                        The University has earned <strong>Premier status</strong> with the Accreditation Service for International Schools, Colleges and Universities (ASIC-UK) for its commendable areas of operation. This recognition is a testament to our commitment to maintaining the highest standards in international education.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 6. HOW TO APPLY & REQUIRED DOCUMENTS -->
+        <!-- ========================================== -->
+        <section id="how-to-apply" class="apply-docs-section py-5 bg-navy border-top border-bottom">
+            <div class="container py-lg-5">
+                <div class="row justify-content-center mb-5 pb-3">
+                    <div class="col-lg-8 text-center border-bottom pb-4" style="border-color: rgba(255,255,255,0.1) !important;">
+                        <h2 class="display-5 fw-bold font-heading mb-3">Admission Process &amp; Documents</h2>
+                        <p class="fs-5">Follow these steps and prepare standard documentation to successfully enroll.</p>
+                    </div>
+                </div>
+
+                <div class="row g-5">
+                    <!-- Left: Process Timeline -->
+                    <div class="col-lg-6">
+                        <h3 class="font-heading fw-bold text-gold mb-4"><i class="fa-solid fa-list-ol me-2"></i> How to Apply</h3>
+                        <div class="apply-timeline ps-3 ps-md-4 position-relative" style="border-left: 2px dashed rgba(212, 175, 55, 0.3);">
+                            
+                            <div class="timeline-step position-relative mb-4">
+                                <span class="step-num bg-color-secondary text-white fw-bold rounded-circle d-flex align-items-center justify-content-center position-absolute" style="width: 35px; height: 35px; left: -54px; top: 0;">1</span>
+                                <h5 class="fw-bold mb-1">Submit Documents</h5>
+                                <p class="small mb-0">Submit all required documents.</p>
+                            </div>
+                            <div class="timeline-step position-relative mb-4">
+                                <span class="step-num bg-color-secondary text-white fw-bold rounded-circle d-flex align-items-center justify-content-center position-absolute" style="width: 35px; height: 35px; left: -54px; top: 0;">2</span>
+                                <h5 class="fw-bold mb-1">Initial Review</h5>
+                                <p class="small mb-0">Initial review for eligibility.</p>
+                            </div>
+                            <div class="timeline-step position-relative mb-4">
+                                <span class="step-num bg-color-secondary text-white fw-bold rounded-circle d-flex align-items-center justify-content-center position-absolute" style="width: 35px; height: 35px; left: -54px; top: 0;">3</span>
+                                <h5 class="fw-bold mb-1">Application Form</h5>
+                                <p class="small mb-0">If selected then receive the application form.</p>
+                            </div>
+                            <div class="timeline-step position-relative mb-4">
+                                <span class="step-num bg-color-secondary text-white fw-bold rounded-circle d-flex align-items-center justify-content-center position-absolute" style="width: 35px; height: 35px; left: -54px; top: 0;">4</span>
+                                <h5 class="fw-bold mb-1">Offer &amp; Invoice Issued</h5>
+                                <p class="small mb-0">Offer Letter and enrollment Invoice issued to those who are found eligible by WARD.</p>
+                            </div>
+                            <div class="timeline-step position-relative mb-4">
+                                <span class="step-num bg-color-secondary text-white fw-bold rounded-circle d-flex align-items-center justify-content-center position-absolute" style="width: 35px; height: 35px; left: -54px; top: 0;">5</span>
+                                <h5 class="fw-bold mb-1">Fee Payment &amp; Acceptance</h5>
+                                <p class="small mb-0">Make fee payment. Official Acceptance Letter issued by EIU-Paris.</p>
+                            </div>
+                            <div class="timeline-step position-relative mb-4">
+                                <span class="step-num bg-color-secondary text-white fw-bold rounded-circle d-flex align-items-center justify-content-center position-absolute" style="width: 35px; height: 35px; left: -54px; top: 0;">6</span>
+                                <h5 class="fw-bold mb-1">Orientation</h5>
+                                <p class="small mb-0">Academic Orientation.</p>
+                            </div>
+                            <div class="timeline-step position-relative">
+                                <span class="step-num bg-color-secondary text-white fw-bold rounded-circle d-flex align-items-center justify-content-center position-absolute" style="width: 35px; height: 35px; left: -54px; top: 0;">7</span>
+                                <h5 class="fw-bold mb-1">Portal Access</h5>
+                                <p class="small mb-0">Get access to WARD's Learning Management System (Learning Portal).</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Right: Required Docs -->
+                    <div class="col-lg-6">
+                        <h3 class="font-heading fw-bold text-gold mb-4"><i class="fa-solid fa-folder-open me-2"></i> Required Documents</h3>
+                        
+                        <div class="accordion required-docs-accordion" id="docsAccordion">
+                            <!-- Doc 1 -->
+                            <div class="accordion-item bg-transparent border-0 border-bottom pb-3" style="border-color: rgba(255,255,255,0.1) !important;">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-color-primary fw-bold shadow-none text-white p-2" type="button" data-bs-toggle="collapse" data-bs-target="#doc1">
+                                        <i class="fa-solid fa-graduation-cap text-gold me-3"></i> Previous Education Certificates
+                                    </button>
+                                </h2>
+                                <div id="doc1" class="accordion-collapse collapse" data-bs-parent="#docsAccordion">
+                                    <div class="accordion-body px-0 pt-2 pb-0 small">
+                                        Previous Education Certificates (Bachelor’s degree/PGD/diploma) &amp; transcripts. (PDF file format). Degree certificate(s) with transcript(s) are required based on your entry route logic (e.g. 1 year to 8 years working experience depending on prior degree level).
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Doc 2 -->
+                            <div class="accordion-item bg-transparent border-0 border-bottom pb-3" style="border-color: rgba(255,255,255,0.1) !important;">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-color-primary text-white fw-bold shadow-none p-2" type="button" data-bs-toggle="collapse" data-bs-target="#doc2">
+                                        <i class="fa-solid fa-file-pdf text-gold me-3"></i> Latest CV / Resume
+                                    </button>
+                                </h2>
+                                <div id="doc2" class="accordion-collapse collapse" data-bs-parent="#docsAccordion">
+                                    <div class="accordion-body px-0 pt-2 pb-0 small">
+                                        Latest CV / Resume (PDF file format). Candidates need to submit a latest and complete CV including all the academic, personal and professional information.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Doc 3 -->
+                            <div class="accordion-item bg-transparent border-0 border-bottom pb-3" style="border-color: rgba(255,255,255,0.1) !important;">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-color-primary text-white fw-bold shadow-none p-2" type="button" data-bs-toggle="collapse" data-bs-target="#doc3">
+                                        <i class="fa-solid fa-image text-gold me-3"></i> Passport Sized Photo
+                                    </button>
+                                </h2>
+                                <div id="doc3" class="accordion-collapse collapse" data-bs-parent="#docsAccordion">
+                                    <div class="accordion-body px-0 pt-2 pb-0 small">
+                                        Passport Sized Photo (JPG or PNG file format). A passport sized/clear photo is needed for the application form.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Doc 4 -->
+                            <div class="accordion-item bg-transparent border-0 border-bottom pb-3" style="border-color: rgba(255,255,255,0.1) !important;">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-color-primary text-white fw-bold shadow-none p-2" type="button" data-bs-toggle="collapse" data-bs-target="#doc4">
+                                        <i class="fa-solid fa-envelope-open-text text-gold me-3"></i> Reference Letter(s)
+                                    </button>
+                                </h2>
+                                <div id="doc4" class="accordion-collapse collapse" data-bs-parent="#docsAccordion">
+                                    <div class="accordion-body px-0 pt-2 pb-0 small">
+                                        Reference Letter(s). (PDF file format). At least two reference letters from current or previous workplace or university professor to check professional authenticity or study background.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Doc 5 -->
+                            <div class="accordion-item bg-transparent border-0 border-bottom pb-3" style="border-color: rgba(255,255,255,0.1) !important;">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-color-primary text-white fw-bold shadow-none p-2" type="button" data-bs-toggle="collapse" data-bs-target="#doc5">
+                                        <i class="fa-solid fa-id-card text-gold me-3"></i> Identification Card
+                                    </button>
+                                </h2>
+                                <div id="doc5" class="accordion-collapse collapse" data-bs-parent="#docsAccordion">
+                                    <div class="accordion-body px-0 pt-2 pb-0 small">
+                                        Passport copy or National ID card (JPG or PNG format).
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Doc 6 -->
+                            <div class="accordion-item bg-transparent border-0" style="border-color: rgba(255,255,255,0.1) !important;">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-color-primary text-white fw-bold shadow-none p-2" type="button" data-bs-toggle="collapse" data-bs-target="#doc6">
+                                        <i class="fa-solid fa-pen-nib text-gold me-3"></i> Personal Statement
+                                    </button>
+                                </h2>
+                                <div id="doc6" class="accordion-collapse collapse" data-bs-parent="#docsAccordion">
+                                    <div class="accordion-body px-0 pt-2 pb-0 small">
+                                        Personal Statement (Minimum 500 words). Addressing: what do you believe you will benefit from the program at this stage of your career? How would you like to see your career develop over the next 5 years? What are your career objectives?
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Application Tips Box -->
+                        <div class="bg-gold-light p-4 rounded-4 mt-4" style="background-color: rgba(212, 175, 55, 0.1);">
+                            <h5 class="text-gold fw-bold mb-3"><i class="fa-solid fa-lightbulb me-2"></i> Application Tips</h5>
+                            <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
+                                <li><i class="fa-solid fa-circle-dot opacity-50 me-2" style="font-size: 8px;"></i> Submit your application early to secure your preferred start date.</li>
+                                <li><i class="fa-solid fa-circle-dot opacity-50 me-2" style="font-size: 8px;"></i> Ensure all documents are clear, complete, and properly formatted.</li>
+                                <li><i class="fa-solid fa-circle-dot opacity-50 me-2" style="font-size: 8px;"></i> Contact our admissions team if you have any questions.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+                .step-num.bg-gold { background-color: var(--accent-color) !important; color: var(--navy-dark) !important; }
+                .required-docs-accordion .accordion-button::after { filter: invert(1); opacity: 0.5; }
+            </style>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 7. HOW YOU WILL LEARN -->
+        <!-- ========================================== -->
+        <section class="learning-methods-section py-5 bg-white">
+            <div class="container py-lg-5">
+                <div class="row justify-content-center mb-5 pb-3">
+                    <div class="col-lg-8 text-center">
+                        <div class="badge-premium-modern mb-2 d-inline-flex align-items-center gap-2">
+                            <i class="fa-solid fa-laptop-file text-navy"></i>
+                            <span class="fw-semibold text-uppercase tracking-wider">The Experience</span>
+                        </div>
+                        <h2 class="display-5 fw-bold text-navy font-heading mb-3">How You Will Learn</h2>
+                        <p class="fs-5 text-muted">A modern, flexible, and fully supported digital learning environment.</p>
+                    </div>
+                </div>
+
+                <!-- BENTO BOX LAYOUT -->
+                <!-- DYNAMIC REPEATABLE LOOP LAYOUT -->
+                <div class="row g-4 staggered-grid-wrapper pt-lg-2 pb-lg-5 mb-lg-4">
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="bg-white p-4 p-lg-5 rounded-4 shadow-sm h-100 hover-lift-premium d-flex flex-column align-items-center text-center border-top border-4 border-accent position-relative" style="border-top-color: var(--accent-color) !important;">
+                            <div class="icon-wrap rounded-circle bg-light d-flex align-items-center justify-content-center mb-4 position-relative z-1" style="width: 80px; height: 80px;">
+                                <i class="fa-solid fa-video text-gold glow-icon fs-2"></i>
+                            </div>
+                            <h4 class="fw-bold text-navy mb-3 position-relative z-1">Interactive Video Lectures</h4>
+                            <p class="text-muted mb-0 position-relative z-1">Immerse yourself in complex management algorithms and concepts.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="bg-white p-4 p-lg-5 rounded-4 shadow-sm h-100 hover-lift-premium d-flex flex-column align-items-center text-center border-top border-4 border-accent position-relative" style="border-top-color: var(--accent-color) !important;">
+                            <div class="icon-wrap rounded-circle bg-light d-flex align-items-center justify-content-center mb-4 position-relative z-1" style="width: 80px; height: 80px;">
+                                <i class="fa-solid fa-file-pdf text-gold glow-icon fs-2"></i>
+                            </div>
+                            <h4 class="fw-bold text-navy mb-3 position-relative z-1">Text Materials</h4>
+                            <p class="text-muted mb-0 position-relative z-1">Downloadable PDFs detailing cutting edge course frameworks.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="bg-white p-4 p-lg-5 rounded-4 shadow-sm h-100 hover-lift-premium d-flex flex-column align-items-center text-center border-top border-4 border-accent position-relative" style="border-top-color: var(--accent-color) !important;">
+                            <div class="icon-wrap rounded-circle bg-light d-flex align-items-center justify-content-center mb-4 position-relative z-1" style="width: 80px; height: 80px;">
+                                <i class="fa-solid fa-book-open text-gold glow-icon fs-2"></i>
+                            </div>
+                            <h4 class="fw-bold text-navy mb-3 position-relative z-1">Reference Books</h4>
+                            <p class="text-muted mb-0 position-relative z-1">Gain uninhibited access to free e-libraries to fuel your curiosity.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="bg-white p-4 p-lg-5 rounded-4 shadow-sm h-100 hover-lift-premium d-flex flex-column align-items-center text-center border-top border-4 border-accent position-relative" style="border-top-color: var(--accent-color) !important;">
+                            <div class="icon-wrap rounded-circle bg-light d-flex align-items-center justify-content-center mb-4 position-relative z-1" style="width: 80px; height: 80px;">
+                                <i class="fa-solid fa-user-tie text-gold glow-icon fs-2"></i>
+                            </div>
+                            <h4 class="fw-bold text-navy mb-3 position-relative z-1">Expert Output</h4>
+                            <p class="text-muted mb-0 position-relative z-1">Get realtime mentorship directly from industry veterans.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="bg-white p-4 p-lg-5 rounded-4 shadow-sm h-100 hover-lift-premium d-flex flex-column align-items-center text-center border-top border-4 border-accent position-relative" style="border-top-color: var(--accent-color) !important;">
+                            <div class="icon-wrap rounded-circle bg-light d-flex align-items-center justify-content-center mb-4 position-relative z-1" style="width: 80px; height: 80px;">
+                                <i class="fa-solid fa-users text-gold glow-icon fs-2"></i>
+                            </div>
+                            <h4 class="fw-bold text-navy mb-3 position-relative z-1">Student Forum</h4>
+                            <p class="text-muted mb-0 position-relative z-1">Connect and debate concepts in a globally active peer network.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="bg-white p-4 p-lg-5 rounded-4 shadow-sm h-100 hover-lift-premium d-flex flex-column align-items-center text-center border-top border-4 border-accent position-relative" style="border-top-color: var(--accent-color) !important;">
+                            <div class="icon-wrap rounded-circle bg-light d-flex align-items-center justify-content-center mb-4 position-relative z-1" style="width: 80px; height: 80px;">
+                                <i class="fa-solid fa-headset text-gold glow-icon fs-2"></i>
+                            </div>
+                            <h4 class="fw-bold text-navy mb-3 position-relative z-1">24/7 Technical Support</h4>
+                            <p class="text-muted mb-0 position-relative z-1">Directly chat with our engineers anytime, instantly resolving hiccups.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+            <!-- Main Footer Content -->
+            <div class="footer-content">
+                <div class="container">
+                    <div class="row">
+                        <!-- Brand & About -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="footer-brand">
+                                <div class="brand-logo">
+                                    <div class="logo-symbol">
+                                        <img loading="lazy" src="./images/MBA-Final-Logo.png" alt="logo">
+                                    </div>
+                                    <div class="brand-text">
+                                        <h4>Master's & M.B.A</h4>
+                                        
+                                    </div>
+                                </div>
+                                <p class="brand-description">
+                                    Leading provider of Distance Learning MBA, Master's, and Doctorate programmes. We empower Graduates and working professionals with flexible, world-class education that fits their lifestyle.
+                                </p>
+                                <div class="achievement-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-number text-white">10K+</span>
+                                        <span class="stat-label text-white">Graduates</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number text-white">40+</span>
+                                        <span class="stat-label text-white">Specializations</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number text-white">17+</span>
+                                        <span class="stat-label text-white">Years Experience</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Academic Programs -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="footer-section">
+                                <h5 class="section-title">Academic programmes</h5>
+                                <ul class="footer-menu">
+                                    <li><a href="mba.html">MBA programmes</a></li>
+                                    <li><a href="#">Master's Degrees</a></li>
+                                    <li><a href="#">DBA programmes</a></li>
+                                    <li><a href="#">Practitioners Doctorate</a></li>
+                                    <li><a href="#">Honorary Doctorate</a></li>
+                                    <li><a href="#">Professional Certificates</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Contact & Connect -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="footer-section">
+                                <h5 class="section-title">Get In Touch</h5>
+                                
+                                <!-- Contact Information -->
+                                <div class="contact-details">
+                                    <div class="contact-item">
+                                        <i class="fas fa-envelope"></i>
+                                        <div class="contact-info">
+                                            <span class="contact-label text-white">Email Us</span>
+                                            <a href="mailto:info@mba-edu.uk">info@mba-edu.uk</a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-phone"></i>
+                                        <div class="contact-info">
+                                            <span class="contact-label text-white">Call Us</span>
+                                            <a href="tel:+447478085900">+44 7478085900</a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-comments"></i>
+                                        <div class="contact-info">
+                                            <span class="contact-label text-white">Live Chat</span>
+                                            <span>Available 24/7</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="bottom-content">
+                        <div class="social-media">
+                            <span class="social-label">Follow Us:</span>
+                            <div class="social-links">
+                                <a href="#" class="social-link facebook" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-link instagram" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link twitter" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="footer-legal">
+                            <div class="legal-links">
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Terms & Conditions</a>
+                                <a href="#">Cookie Policy</a>
+                                <a href="#">Accessibility</a>
+                            </div>
+                            <div class="copyright">
+                                <p>&copy; 2024 MBA-EDU. All Rights Reserved. | Empowering Education Worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
