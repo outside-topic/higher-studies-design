@@ -4592,8 +4592,8 @@ body {
     font-size: 4.5rem;
     font-weight: 900;
     line-height: 1;
-    color: transparent;
-    -webkit-text-stroke: 2px rgba(39, 81, 96, 0.15);
+    /* color: transparent; */
+    /* -webkit-text-stroke: 2px rgba(39, 81, 96, 0.15); */
     font-family: var(--font-heading), sans-serif;
     transition: all 0.5s ease;
 }
@@ -6246,6 +6246,13 @@ body {
     line-height: 1.7;
     font-size: 1.05rem;
     padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.course_accr_items_list{
+    max-height: 400px;
+    overflow-x: scroll;
+    --webkit-scrollbar: none;
+    scrollbar-width: none;
 }
 
 /* course details page css end */
