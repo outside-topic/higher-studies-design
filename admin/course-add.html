@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Course - Premium Panel</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-box">
+                    <i class="bi bi-shield-fill-check text-primary fs-3 me-2"></i>
+                    <h4 class="mb-0 fw-bold">AdminPanel</h4>
+                </div>
+            </div>
+
+            <div class="sidebar-user text-center">
+                <img src="https://ui-avatars.com/api/?name=Admin+User&background=0D8ABC&color=fff&rounded=true" alt="Admin" class="rounded-circle profile-img mb-2">
+                <h6 class="text-white mb-0 fw-semibold">Admin User</h6>
+                <p class="text-muted small mb-0">Super Admin</p>
+            </div>
+
+            <ul class="list-unstyled components mt-4">
+                <li class="sidebar-label">Main Menu</li>
+                <li>
+                    <a href="index.html">
+                        <i class="bi bi-grid-1x2-fill"></i> Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="#adminSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="bi bi-person-badge-fill"></i> Admin Users
+                    </a>
+                    <ul class="collapse list-unstyled" id="adminSubmenu">
+                        <li><a href="admin-list.html"><i class="bi bi-dash"></i> All Admins</a></li>
+                        <li><a href="admin-add.html"><i class="bi bi-dash"></i> Add New Admin</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#coursesSubmenu" data-bs-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
+                        <i class="bi bi-journal-text"></i> Courses & Modules
+                    </a>
+                    <ul class="collapse show list-unstyled" id="coursesSubmenu">
+                        <li><a href="course-list.html"><i class="bi bi-dash"></i> All Courses</a></li>
+                        <li class="active"><a href="course-add.html" style="color:var(--sidebar-text-active);"><i class="bi bi-dash" style="color:var(--primary-color);"></i> Add New Course</a></li>
+                        <li><a href="course-categories.html"><i class="bi bi-dash"></i> Course Categories</a></li>
+                        <li><a href="course-utilities.html"><i class="bi bi-dash"></i> Course Modes</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="application-list.html">
+                        <i class="bi bi-envelope-paper-fill"></i> Applications
+                    </a>
+                </li>
+
+                <li class="sidebar-label mt-4">University Profiles</li>
+                <li>
+                    <a href="universities.html">
+                        <i class="bi bi-building"></i> Universities
+                    </a>
+                </li>
+                <li>
+                    <a href="#accreditationSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="bi bi-award-fill"></i> Accreditations
+                    </a>
+                    <ul class="collapse list-unstyled" id="accreditationSubmenu">
+                        <li><a href="accreditation-list.html"><i class="bi bi-dash"></i> All Accreditations</a></li>
+                        <li><a href="accreditation-add.html"><i class="bi bi-dash"></i> Add New</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-label mt-4">Settings & Tools</li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-gear-fill"></i> General Settings
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-shield-lock-fill"></i> Security
+                    </a>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <a href="#" class="btn btn-logout w-100 text-start">
+                    <i class="bi bi-box-arrow-left me-2"></i> Logout
+                </a>
+            </div>
+        </nav>
+
+        <!-- Page Content -->
+        <div id="content" class="content-area">
+            
+            <!-- Topbar (Same as index.html) -->
+            <nav class="navbar navbar-expand-lg topbar mb-4">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-toggle d-lg-none">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <!-- ... Search and Settings ... -->
+                    <div class="ms-auto d-flex align-items-center topbar-actions">
+                        <div class="dropdown me-3">
+                            <a class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-bell fs-5 text-secondary"></i>
+                                <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle notification-badge"></span>
+                            </a>
+                        </div>
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://ui-avatars.com/api/?name=Admin+User&background=0D8ABC&color=fff&rounded=true" alt="Admin" width="32" height="32" class="rounded-circle me-2">
+                                <span class="d-none d-md-inline fw-medium text-dark">Admin User</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Main Content Area -->
+            <div class="container-fluid px-4 py-2 main-dashboard-content">
+                
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <h2 class="h4 fw-bold mb-1">Add New Course</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a href="course-list.html" class="text-decoration-none">Courses</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Add New</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <a href="course-list.html" class="btn btn-outline-secondary d-flex align-items-center px-4 shadow-sm bg-white">
+                        <i class="bi bi-arrow-left me-2"></i> Back to List
+                    </a>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 col-xl-10 mx-auto">
+                        <form>
+                            <div class="card border-0 shadow-sm mb-4">
+                                <div class="card-header bg-white border-0 pt-4 pb-0 px-4 px-md-5">
+                                    <h5 class="fw-bold text-dark mb-0">Basic Details</h5>
+                                </div>
+                                <div class="card-body p-4 p-md-5">
+                                    <div class="mb-4">
+                                        <label class="form-label fw-medium text-muted small">Course / Program Full Title</label>
+                                        <input type="text" class="form-control bg-light" placeholder="e.g. Master of Business Administration in Tourism Design" required>
+                                    </div>
+
+                                    <div class="row g-4 mb-4">
+
+                                        <!-- course level -->
+                                        <div class="col-md-4">
+                                            <label class="form-label fw-medium text-muted small">Course Level</label>
+                                            <select class="form-select bg-light" required>
+                                                <option selected disabled value="">Choose Level...</option>
+                                                <option value="7">Level-7</option>
+                                                <option value="6">Level-6</option>
+                                                <option value="5">Level-5</option>
+                                                <option value="4">Level-4</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- duration -->
+                                        <div class="col-md-4">
+                                            <label class="form-label fw-medium text-muted small">Duration (Months)</label>
+                                            <input type="text" class="form-control bg-light" placeholder="e.g. 12 - 18" required>
+                                        </div>
+
+                                        <!-- intake -->
+                                        <div class="col-md-4">
+                                            <label class="form-label fw-medium text-muted small">Intake (Months) </label>
+                                            <input type="text" class="form-control bg-light" placeholder="e.g. 6" required>
+                                        </div>
+
+                                        <!-- Awarded -->
+                                        <div class="col-md-4">
+                                            <label class="form-label fw-medium text-muted small">Awarded By </label>
+                                            <input type="text" class="form-control bg-light" placeholder="e.g. University of Technology Sydney" required>
+                                        </div>
+
+                                        <!-- Language -->
+                                        <div class="col-md-4">
+                                            <label class="form-label fw-medium text-muted small">Language </label>
+                                            <input type="text" class="form-control bg-light" placeholder="e.g. English" required>
+                                        </div>
+
+                                        <!-- Category -->
+                                        <div class="col-md-4">
+                                            <label class="form-label fw-medium text-muted small">Course Category</label>
+                                            <select class="form-select bg-light" required>
+                                                <option selected disabled value="">Select Category...</option>
+                                                <option value="business">Business Administration</option>
+                                                <option value="it">Information Technology</option>
+                                                <option value="tourism">Tourism & Hospitality</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- Mode -->
+                                        <div class="col-md-4">
+                                            <label class="form-label fw-medium text-muted small">Course Mode</label>
+                                            <select class="form-select bg-light" required>
+                                                <option selected disabled value="">Select Mode...</option>
+                                                <option value="self-paced">Self-Paced</option>
+                                                <option value="online">Live Online</option>
+                                                <option value="offline">Offline Campus</option>
+                                                <option value="hybrid">Hybrid</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- Total Assignments -->
+                                        <div class="col-md-4">
+                                            <label class="form-label fw-medium text-muted small">Total Assignments </label>
+                                            <input type="text" class="form-control bg-light" placeholder="e.g. 20" required>
+                                        </div>
+
+                                        <!-- Unites Per Module -->
+                                        <div class="col-md-4">
+                                            <label class="form-label fw-medium text-muted small">Unites Per Module </label>
+                                            <input type="text" class="form-control bg-light" placeholder="e.g. 4">
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-4 mb-4">
+
+                                        <!-- total units -->
+                                        <div class="col-md-6">
+                                            <label class="form-label fw-medium text-muted small">Total Units</label>
+                                            <div class="input-group">
+                                                <input type="number" class="form-control bg-light" placeholder="72" required>
+                                                <span class="input-group-text bg-white text-muted">Units</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- total ects -->
+                                        <div class="col-md-6">
+                                            <label class="form-label fw-medium text-muted small">Total ECTS</label>
+                                            <div class="input-group">
+                                                <input type="number" class="form-control bg-light" placeholder="90" required>
+                                                <span class="input-group-text bg-white text-muted">ECTS</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- short descripton -->
+                                    <div class="mb-4">
+                                        <label class="form-label fw-medium text-muted small">Short Description</label>
+                                        <textarea class="form-control bg-light" rows="5" placeholder="Enter full course description overview..." required></textarea>
+                                    </div>
+
+                                    <!-- course introduction -->
+                                    <div class="mb-4">
+                                        <label class="form-label fw-medium text-muted small">Introduction</label>
+                                        <textarea class="form-control bg-light" rows="5" placeholder="Enter full course description overview..." required></textarea>
+                                    </div>
+                                    
+                                    <!-- course introduction -->
+                                    <div class="mb-4">
+                                        <label class="form-label fw-medium text-muted small">Action Research Paper</label>
+                                        <input type="text" class="form-control bg-light" placeholder="Enter full course description overview...">
+                                    </div>
+
+                                    <!-- Assignment Details -->
+                                    <div class="mb-4">
+                                        <label class="form-label fw-medium text-muted small">Assignment Details</label>
+                                        <input type="text" class="form-control bg-light" placeholder="Each Unit contains 01 (One) Final Assignment">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <!-- modules curriculum -->
+                            <div class="card border-0 shadow-sm mb-4">
+
+                                <div class="card-header bg-white border-0 pt-4 pb-0 px-4 px-md-5 d-flex justify-content-between align-items-center">
+                                    <h5 class="fw-bold text-dark mb-0">Modules Curriculum</h5>
+                                    <button type="button" id="addModuleBtn" class="btn btn-sm btn-outline-primary"><i class="bi bi-plus"></i> Add Module</button>
+                                </div>
+
+                                <div class="card-body p-4 p-md-5" id="modulesContainer">
+                                    <p class="text-muted small mb-4">You can define the specific modules and core subjects belonging to this course below.</p>
+                                    
+                                    <div class="module-item bg-light p-4 rounded border mb-4 position-relative">
+                                        <button type="button" class="btn btn-sm btn-link text-danger position-absolute top-0 end-0 mt-2 me-2 remove-module-btn"><i class="bi bi-trash fs-5"></i></button>
+                                        <div class="row g-3">
+                                            <div class="col-md-9">
+                                                <label class="form-label fw-medium text-muted small">Module Title</label>
+                                                <input type="text" class="form-control bg-white shadow-sm border-0" placeholder="e.g. Strategic Management" required>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label class="form-label fw-medium text-muted small">Order</label>
+                                                <input type="number" class="form-control bg-white shadow-sm border-0" placeholder="e.g. 1" value="1" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label fw-medium text-muted small">Module Description</label>
+                                                <textarea class="form-control bg-white shadow-sm border-0" rows="3" placeholder="Brief overview of module contents..."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                            <!-- Standard Entry Route -->
+                            <div class="card border-0 shadow-sm mb-4">
+                                <div class="card-header bg-white border-0 pt-4 pb-0 px-4 px-md-5 d-flex justify-content-between align-items-center">
+                                    <h5 class="fw-bold text-dark mb-0">Standard Entry Route</h5>
+                                    <button type="button" class="btn btn-sm btn-outline-primary add-dynamic-btn" data-container="standardEntryContainer" data-placeholder="e.g. A Bachelor’s degree from a recognized institution..."><i class="bi bi-plus"></i> Add Route</button>
+                                </div>
+                                <div class="card-body p-4 p-md-5" id="standardEntryContainer">
+                                    <div class="dynamic-item bg-light p-3 rounded border mb-2 position-relative">
+                                        <button type="button" class="btn btn-sm btn-link text-danger position-absolute top-0 end-0 mt-1 me-1 remove-dynamic-btn"><i class="bi bi-trash"></i></button>
+                                        <input type="text" class="form-control bg-white shadow-sm border-0" placeholder="e.g. A Bachelor’s degree from a recognized institution..." required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mature Entry Route -->
+                            <div class="card border-0 shadow-sm mb-4">
+                                <div class="card-header bg-white border-0 pt-4 pb-0 px-4 px-md-5 d-flex justify-content-between align-items-center">
+                                    <h5 class="fw-bold text-dark mb-0">Mature Entry Route</h5>
+                                    <button type="button" class="btn btn-sm btn-outline-primary add-dynamic-btn" data-container="matureEntryContainer" data-placeholder="e.g. High school diploma with 5+ years of relevant experience..."><i class="bi bi-plus"></i> Add Route</button>
+                                </div>
+                                <div class="card-body p-4 p-md-5" id="matureEntryContainer">
+                                    <div class="dynamic-item bg-light p-3 rounded border mb-2 position-relative">
+                                        <button type="button" class="btn btn-sm btn-link text-danger position-absolute top-0 end-0 mt-1 me-1 remove-dynamic-btn"><i class="bi bi-trash"></i></button>
+                                        <input type="text" class="form-control bg-white shadow-sm border-0" placeholder="e.g. High school diploma with 5+ years of relevant experience..." required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Program Goals -->
+                            <div class="card border-0 shadow-sm mb-4">
+                                <div class="card-header bg-white border-0 pt-4 pb-0 px-4 px-md-5 d-flex justify-content-between align-items-center">
+                                    <h5 class="fw-bold text-dark mb-0">Program Goals</h5>
+                                    <button type="button" class="btn btn-sm btn-outline-primary add-dynamic-btn" data-container="programGoalsContainer" data-placeholder="e.g. Develop strategic leadership skills..."><i class="bi bi-plus"></i> Add Goal</button>
+                                </div>
+                                <div class="card-body p-4 p-md-5" id="programGoalsContainer">
+                                    <div class="dynamic-item bg-light p-3 rounded border mb-2 position-relative">
+                                        <button type="button" class="btn btn-sm btn-link text-danger position-absolute top-0 end-0 mt-1 me-1 remove-dynamic-btn"><i class="bi bi-trash"></i></button>
+                                        <input type="text" class="form-control bg-white shadow-sm border-0" placeholder="e.g. Develop strategic leadership skills..." required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Course Objectives -->
+                            <div class="card border-0 shadow-sm mb-4">
+                                <div class="card-header bg-white border-0 pt-4 pb-0 px-4 px-md-5 d-flex justify-content-between align-items-center">
+                                    <h5 class="fw-bold text-dark mb-0">Course Objectives</h5>
+                                    <button type="button" class="btn btn-sm btn-outline-primary add-dynamic-btn" data-container="courseObjectivesContainer" data-placeholder="e.g. Master the principles of global tourism management..."><i class="bi bi-plus"></i> Add Objective</button>
+                                </div>
+                                <div class="card-body p-4 p-md-5" id="courseObjectivesContainer">
+                                    <div class="dynamic-item bg-light p-3 rounded border mb-2 position-relative">
+                                        <button type="button" class="btn btn-sm btn-link text-danger position-absolute top-0 end-0 mt-1 me-1 remove-dynamic-btn"><i class="bi bi-trash"></i></button>
+                                        <input type="text" class="form-control bg-white shadow-sm border-0" placeholder="e.g. Master the principles of global tourism management..." required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-end gap-3 mb-5">
+                                <button type="button" class="btn btn-light px-4 bg-white shadow-sm border">Save as Draft</button>
+                                <button type="submit" class="btn btn-primary px-5 shadow-sm">Publish Course</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>

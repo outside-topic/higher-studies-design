@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Admin - Premium Panel</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-box">
+                    <i class="bi bi-shield-fill-check text-primary fs-3 me-2"></i>
+                    <h4 class="mb-0 fw-bold">AdminPanel</h4>
+                </div>
+            </div>
+
+            <div class="sidebar-user text-center">
+                <img src="https://ui-avatars.com/api/?name=Admin+User&background=0D8ABC&color=fff&rounded=true" alt="Admin" class="rounded-circle profile-img mb-2">
+                <h6 class="text-white mb-0 fw-semibold">Admin User</h6>
+                <p class="text-muted small mb-0">Super Admin</p>
+            </div>
+
+            <ul class="list-unstyled components mt-4">
+                <li class="sidebar-label">Main Menu</li>
+                <li>
+                    <a href="index.html">
+                        <i class="bi bi-grid-1x2-fill"></i> Dashboard
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#adminSubmenu" data-bs-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
+                        <i class="bi bi-person-badge-fill"></i> Admin Users
+                    </a>
+                    <ul class="collapse show list-unstyled" id="adminSubmenu">
+                        <li><a href="admin-list.html"><i class="bi bi-dash"></i> All Admins</a></li>
+                        <li class="active"><a href="admin-add.html" style="color:var(--sidebar-text-active);"><i class="bi bi-dash" style="color:var(--primary-color);"></i> Add New Admin</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#coursesSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="bi bi-journal-text"></i> Courses & Modules
+                    </a>
+                    <ul class="collapse list-unstyled" id="coursesSubmenu">
+                        <li><a href="course-list.html"><i class="bi bi-dash"></i> All Courses</a></li>
+                        <li><a href="course-add.html"><i class="bi bi-dash"></i> Add New Course</a></li>
+                        <li><a href="course-categories.html"><i class="bi bi-dash"></i> Course Categories</a></li>
+                        <li><a href="course-utilities.html"><i class="bi bi-dash"></i> Course Modes</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="application-list.html">
+                        <i class="bi bi-envelope-paper-fill"></i> Applications
+                    </a>
+                </li>
+
+                <li class="sidebar-label mt-4">University Profiles</li>
+                <li>
+                    <a href="universities.html">
+                        <i class="bi bi-building"></i> Universities
+                    </a>
+                </li>
+                <li>
+                    <a href="#accreditationSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="bi bi-award-fill"></i> Accreditations
+                    </a>
+                    <ul class="collapse list-unstyled" id="accreditationSubmenu">
+                        <li><a href="accreditation-list.html"><i class="bi bi-dash"></i> All Accreditations</a></li>
+                        <li><a href="accreditation-add.html"><i class="bi bi-dash"></i> Add New</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-label mt-4">Settings & Tools</li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-gear-fill"></i> General Settings
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-shield-lock-fill"></i> Security
+                    </a>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <a href="#" class="btn btn-logout w-100 text-start">
+                    <i class="bi bi-box-arrow-left me-2"></i> Logout
+                </a>
+            </div>
+        </nav>
+
+        <!-- Page Content -->
+        <div id="content" class="content-area">
+            
+            <!-- Topbar (Same as index.html) -->
+            <nav class="navbar navbar-expand-lg topbar mb-4">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-toggle d-lg-none">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <!-- ... Search and Settings ... -->
+                    <div class="ms-auto d-flex align-items-center topbar-actions">
+                        <div class="dropdown me-3">
+                            <a class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-bell fs-5 text-secondary"></i>
+                                <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle notification-badge"></span>
+                            </a>
+                        </div>
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://ui-avatars.com/api/?name=Admin+User&background=0D8ABC&color=fff&rounded=true" alt="Admin" width="32" height="32" class="rounded-circle me-2">
+                                <span class="d-none d-md-inline fw-medium text-dark">Admin User</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Main Content Area -->
+            <div class="container-fluid px-4 py-2 main-dashboard-content">
+                
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <h2 class="h4 fw-bold mb-1">Add New Admin</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a href="admin-list.html" class="text-decoration-none">Admin Users</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Add New</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <a href="admin-list.html" class="btn btn-outline-secondary d-flex align-items-center px-4 shadow-sm bg-white">
+                        <i class="bi bi-arrow-left me-2"></i> Back to List
+                    </a>
+                </div>
+
+                <!-- Add Admin Form Card -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-body p-4 p-md-5">
+                                <h5 class="fw-bold mb-4 text-dark">Administrator Details</h5>
+                                
+                                <form>
+                                    <div class="row g-3 mb-4">
+                                        <div class="col-md-6">
+                                            <label class="form-label fw-medium text-muted small">First Name</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text bg-white"><i class="bi bi-person text-muted"></i></span>
+                                                <input type="text" class="form-control bg-light border-start-0 ps-0" placeholder="e.g. John" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label fw-medium text-muted small">Last Name</label>
+                                            <input type="text" class="form-control bg-light" placeholder="e.g. Doe" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label class="form-label fw-medium text-muted small">Email Address</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-white"><i class="bi bi-envelope text-muted"></i></span>
+                                            <input type="email" class="form-control bg-light border-start-0 ps-0" placeholder="admin@university.edu" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-3 mb-4">
+                                        <div class="col-md-6">
+                                            <label class="form-label fw-medium text-muted small">Temporary Password</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text bg-white"><i class="bi bi-key text-muted"></i></span>
+                                                <input type="password" class="form-control bg-light border-start-0 ps-0" placeholder="••••••••" required>
+                                                <button class="btn btn-outline-secondary border-start-0 bg-white" type="button"><i class="bi bi-eye"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label fw-medium text-muted small">Confirm Password</label>
+                                            <input type="password" class="form-control bg-light" placeholder="••••••••" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <hr class="my-4 border-light">
+                                    <h5 class="fw-bold mb-4 text-dark">Role & Permissions</h5>
+
+                                    <div class="mb-4">
+                                        <label class="form-label fw-medium text-muted small">Select Role</label>
+                                        <select class="form-select bg-light" aria-label="Role select" required>
+                                            <option selected disabled value="">Choose a designated role...</option>
+                                            <option value="1">Super Admin (Full Access)</option>
+                                            <option value="2">Admissions Officer (Applications & Students)</option>
+                                            <option value="3">Content Editor (Courses & Page Management)</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <div class="form-check form-switch p-0 d-flex justify-content-between align-items-center rounded bg-light border p-3">
+                                            <div>
+                                                <label class="form-check-label fw-semibold text-dark mb-1" for="emailNotifySwitch">Send Welcome Email</label>
+                                                <div class="small text-muted">Automatically send login credentials and instructions.</div>
+                                            </div>
+                                            <input class="form-check-input fs-4 ms-0 mt-0" type="checkbox" role="switch" id="emailNotifySwitch" checked>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-end gap-2 mt-5">
+                                        <button type="reset" class="btn btn-light px-4">Cancel</button>
+                                        <button type="submit" class="btn btn-primary px-5 shadow-sm">Save Administrator</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>

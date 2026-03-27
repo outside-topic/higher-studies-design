@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Accreditation - Premium Panel</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-box">
+                    <i class="bi bi-shield-fill-check text-primary fs-3 me-2"></i>
+                    <h4 class="mb-0 fw-bold">AdminPanel</h4>
+                </div>
+            </div>
+
+            <div class="sidebar-user text-center">
+                <img src="https://ui-avatars.com/api/?name=Admin+User&background=0D8ABC&color=fff&rounded=true" alt="Admin" class="rounded-circle profile-img mb-2">
+                <h6 class="text-white mb-0 fw-semibold">Admin User</h6>
+                <p class="text-muted small mb-0">Super Admin</p>
+            </div>
+
+            <ul class="list-unstyled components mt-4">
+                <li class="sidebar-label">Main Menu</li>
+                <li>
+                    <a href="index.html">
+                        <i class="bi bi-grid-1x2-fill"></i> Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="#adminSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="bi bi-person-badge-fill"></i> Admin Users
+                    </a>
+                    <ul class="collapse list-unstyled" id="adminSubmenu">
+                        <li><a href="admin-list.html"><i class="bi bi-dash"></i> All Admins</a></li>
+                        <li><a href="admin-add.html"><i class="bi bi-dash"></i> Add New Admin</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#coursesSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="bi bi-journal-text"></i> Courses & Modules
+                    </a>
+                    <ul class="collapse list-unstyled" id="coursesSubmenu">
+                        <li><a href="course-list.html"><i class="bi bi-dash"></i> All Courses</a></li>
+                        <li><a href="course-add.html"><i class="bi bi-dash"></i> Add New Course</a></li>
+                        <li><a href="course-categories.html"><i class="bi bi-dash"></i> Course Categories</a></li>
+                        <li><a href="course-utilities.html"><i class="bi bi-dash"></i> Course Modes</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="application-list.html">
+                        <i class="bi bi-envelope-paper-fill"></i> Applications
+                    </a>
+                </li>
+
+                <li class="sidebar-label mt-4">University Profiles</li>
+                <li>
+                    <a href="universities.html">
+                        <i class="bi bi-building"></i> Universities
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#accreditationSubmenu" data-bs-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
+                        <i class="bi bi-award-fill"></i> Accreditations
+                    </a>
+                    <ul class="collapse show list-unstyled" id="accreditationSubmenu">
+                        <li><a href="accreditation-list.html"><i class="bi bi-dash"></i> All Accreditations</a></li>
+                        <li class="active"><a href="accreditation-add.html" style="color:var(--sidebar-text-active);"><i class="bi bi-dash" style="color:var(--primary-color);"></i> Add New</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-label mt-4">Settings & Tools</li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-gear-fill"></i> General Settings
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-shield-lock-fill"></i> Security
+                    </a>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <a href="#" class="btn btn-logout w-100 text-start">
+                    <i class="bi bi-box-arrow-left me-2"></i> Logout
+                </a>
+            </div>
+        </nav>
+
+        <!-- Page Content -->
+        <div id="content" class="content-area">
+            
+            <!-- Topbar (Same as index.html) -->
+            <nav class="navbar navbar-expand-lg topbar mb-4">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-toggle d-lg-none">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <!-- ... Search and Settings ... -->
+                    <div class="ms-auto d-flex align-items-center topbar-actions">
+                        <div class="dropdown me-3">
+                            <a class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-bell fs-5 text-secondary"></i>
+                                <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle notification-badge"></span>
+                            </a>
+                        </div>
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://ui-avatars.com/api/?name=Admin+User&background=0D8ABC&color=fff&rounded=true" alt="Admin" width="32" height="32" class="rounded-circle me-2">
+                                <span class="d-none d-md-inline fw-medium text-dark">Admin User</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Main Content Area -->
+            <div class="container-fluid px-4 py-2 main-dashboard-content">
+                
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <h2 class="h4 fw-bold mb-1">Add New Accreditation</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a href="accreditation-list.html" class="text-decoration-none">Accreditations</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Add New</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <a href="accreditation-list.html" class="btn btn-outline-secondary d-flex align-items-center px-4 shadow-sm bg-white">
+                        <i class="bi bi-arrow-left me-2"></i> Back to List
+                    </a>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-10 col-xl-8 mx-auto">
+                        <form>
+                            <div class="card border-0 shadow-sm mb-4">
+                                <div class="card-header bg-white border-0 pt-4 pb-0 px-4 px-md-5">
+                                    <h5 class="fw-bold text-dark mb-0">Accreditation Details</h5>
+                                </div>
+                                <div class="card-body p-4 p-md-5">
+                                    
+                                    <div class="mb-4">
+                                        <label class="form-label fw-medium text-muted small">Accreditation Title</label>
+                                        <input type="text" class="form-control bg-light" placeholder="e.g. ASIC UK Accreditation" required>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label class="form-label fw-medium text-muted small">Organization Website (URL)</label>
+                                        <input type="url" class="form-control bg-light" placeholder="https://www.asic.org.uk">
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label class="form-label fw-medium text-muted small">Description</label>
+                                        <textarea class="form-control bg-light" rows="5" placeholder="Enter detailed information about this accreditation or partnership..." required></textarea>
+                                    </div>
+                                    
+                                    <div class="mb-4">
+                                        <label class="form-label fw-medium text-muted small">Logo / Badge Image</label>
+                                        <div class="border border-2 border-dashed rounded p-5 text-center bg-light">
+                                            <i class="bi bi-cloud-arrow-up text-primary fs-1 mb-2"></i>
+                                            <p class="mb-1 fw-medium text-dark">Click to upload or drag and drop</p>
+                                            <p class="small text-muted mb-0">SVG, PNG, or WEBP transparent logo (max. 2MB)</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <div class="form-check form-switch p-0 d-flex justify-content-between align-items-center rounded bg-light border p-3">
+                                            <div>
+                                                <label class="form-check-label fw-semibold text-dark mb-1" for="statusSwitch">Publish Status</label>
+                                                <div class="small text-muted">Make this accreditation visible to the public immediately.</div>
+                                            </div>
+                                            <input class="form-check-input fs-4 ms-0 mt-0" type="checkbox" role="switch" id="statusSwitch" checked>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="card-footer bg-white border-0 py-4 px-4 px-md-5 d-flex justify-content-end gap-3 border-top">
+                                    <button type="reset" class="btn btn-light px-4 bg-white shadow-sm border">Clear Form</button>
+                                    <button type="submit" class="btn btn-primary px-5 shadow-sm">Save Accreditation</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>

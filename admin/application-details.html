@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Details - Premium Panel</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-box">
+                    <i class="bi bi-shield-fill-check text-primary fs-3 me-2"></i>
+                    <h4 class="mb-0 fw-bold">AdminPanel</h4>
+                </div>
+            </div>
+
+            <div class="sidebar-user text-center">
+                <img src="https://ui-avatars.com/api/?name=Admin+User&background=0D8ABC&color=fff&rounded=true" alt="Admin" class="rounded-circle profile-img mb-2">
+                <h6 class="text-white mb-0 fw-semibold">Admin User</h6>
+                <p class="text-muted small mb-0">Super Admin</p>
+            </div>
+
+            <ul class="list-unstyled components mt-4">
+                <li class="sidebar-label">Main Menu</li>
+                <li>
+                    <a href="index.html">
+                        <i class="bi bi-grid-1x2-fill"></i> Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="#adminSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="bi bi-person-badge-fill"></i> Admin Users
+                    </a>
+                    <ul class="collapse list-unstyled" id="adminSubmenu">
+                        <li><a href="admin-list.html"><i class="bi bi-dash"></i> All Admins</a></li>
+                        <li><a href="admin-add.html"><i class="bi bi-dash"></i> Add New Admin</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#coursesSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="bi bi-journal-text"></i> Courses & Modules
+                    </a>
+                    <ul class="collapse list-unstyled" id="coursesSubmenu">
+                        <li><a href="course-list.html"><i class="bi bi-dash"></i> All Courses</a></li>
+                        <li><a href="course-add.html"><i class="bi bi-dash"></i> Add New Course</a></li>
+                        <li><a href="course-categories.html"><i class="bi bi-dash"></i> Course Categories</a></li>
+                        <li><a href="course-utilities.html"><i class="bi bi-dash"></i> Course Modes</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="application-list.html" style="color:var(--sidebar-text-active); background:var(--sidebar-hover); border-left:3px solid var(--primary-color);">
+                        <i class="bi bi-envelope-paper-fill"></i> Applications
+                    </a>
+                </li>
+
+                <li class="sidebar-label mt-4">University Profiles</li>
+                <li>
+                    <a href="universities.html">
+                        <i class="bi bi-building"></i> Universities
+                    </a>
+                </li>
+                <li>
+                    <a href="#accreditationSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="bi bi-award-fill"></i> Accreditations
+                    </a>
+                    <ul class="collapse list-unstyled" id="accreditationSubmenu">
+                        <li><a href="accreditation-list.html"><i class="bi bi-dash"></i> All Accreditations</a></li>
+                        <li><a href="accreditation-add.html"><i class="bi bi-dash"></i> Add New</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-label mt-4">Settings & Tools</li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-gear-fill"></i> General Settings
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-shield-lock-fill"></i> Security
+                    </a>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <a href="#" class="btn btn-logout w-100 text-start">
+                    <i class="bi bi-box-arrow-left me-2"></i> Logout
+                </a>
+            </div>
+        </nav>
+
+        <!-- Page Content -->
+        <div id="content" class="content-area">
+            
+            <!-- Topbar -->
+            <nav class="navbar navbar-expand-lg topbar mb-4">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-toggle d-lg-none">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <!-- ... Search and Settings ... -->
+                    <div class="ms-auto d-flex align-items-center topbar-actions">
+                        <div class="dropdown me-3">
+                            <a class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-bell fs-5 text-secondary"></i>
+                                <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle notification-badge"></span>
+                            </a>
+                        </div>
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://ui-avatars.com/api/?name=Admin+User&background=0D8ABC&color=fff&rounded=true" alt="Admin" width="32" height="32" class="rounded-circle me-2">
+                                <span class="d-none d-md-inline fw-medium text-dark">Admin User</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Main Content Area -->
+            <div class="container-fluid px-4 py-2 main-dashboard-content">
+                
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <h2 class="h4 fw-bold mb-1">Application Summary</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a href="application-list.html" class="text-decoration-none">Applications</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">#APP-2026-809</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <a href="application-list.html" class="btn btn-outline-secondary d-flex align-items-center px-4 shadow-sm bg-white">
+                        <i class="bi bi-arrow-left me-2"></i> Back to List
+                    </a>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Left Column: Applicant Overview & Details -->
+                    <div class="col-lg-8">
+                        <!-- Applicant Profile Card -->
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-body p-4 d-flex align-items-start border-bottom flex-column flex-md-row gap-4">
+                                <img src="https://ui-avatars.com/api/?name=Michael+Chen&background=0284c7&color=fff&rounded=true&size=100" alt="Applicant" class="rounded-circle shadow-sm border border-light border-4">
+                                <div class="w-100">
+                                    <div class="d-flex justify-content-between align-items-start w-100 flex-wrap">
+                                        <div>
+                                            <h3 class="fw-bold text-dark mb-1">Michael Chen</h3>
+                                            <p class="text-muted mb-2"><i class="bi bi-envelope me-1"></i> michael.c@examplestudent.com</p>
+                                        </div>
+                                        <span class="badge bg-warning-soft text-warning px-3 py-2 rounded-pill fs-6"><i class="bi bi-clock-history me-1"></i> Pending Review</span>
+                                    </div>
+                                    <div class="d-flex flex-wrap gap-4 mt-3">
+                                        <div>
+                                            <small class="text-muted d-block text-uppercase fw-semibold" style="font-size:0.7rem; letter-spacing:0.5px;">Phone</small>
+                                            <span class="fw-medium text-dark">+1 (555) 123-4567</span>
+                                        </div>
+                                        <div>
+                                            <small class="text-muted d-block text-uppercase fw-semibold" style="font-size:0.7rem; letter-spacing:0.5px;">Location</small>
+                                            <span class="fw-medium text-dark">Toronto, Canada</span>
+                                        </div>
+                                        <div>
+                                            <small class="text-muted d-block text-uppercase fw-semibold" style="font-size:0.7rem; letter-spacing:0.5px;">Date Applied</small>
+                                            <span class="fw-medium text-dark">Oct 26, 2026</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Application Details -->
+                            <div class="card-body p-4 p-md-5">
+                                <h5 class="fw-bold mb-4 text-dark border-bottom pb-2">Academic Information</h5>
+                                
+                                <div class="row mb-3">
+                                    <div class="col-sm-4 text-muted fw-medium">Requested Program:</div>
+                                    <div class="col-sm-8 fw-semibold text-primary">MBA in Tourism Design</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-sm-4 text-muted fw-medium">Term / Semester:</div>
+                                    <div class="col-sm-8 text-dark">Fall 2027</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-sm-4 text-muted fw-medium">Prior Education:</div>
+                                    <div class="col-sm-8 text-dark">Bachelor of Arts in Economics, University of Toronto</div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4 text-muted fw-medium">GPA / Grade:</div>
+                                    <div class="col-sm-8 text-dark">3.8 / 4.0</div>
+                                </div>
+
+                                <h5 class="fw-bold mb-4 mt-5 text-dark border-bottom pb-2">Uploaded Documents</h5>
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="d-flex align-items-center justify-content-between bg-light p-3 rounded border">
+                                        <div class="d-flex align-items-center">
+                                            <i class="bi bi-file-earmark-pdf-fill text-danger fs-3 me-3"></i>
+                                            <div>
+                                                <h6 class="mb-0 fw-semibold text-dark">Undergraduate Transcript.pdf</h6>
+                                                <small class="text-muted">1.2 MB</small>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-download"></i></button>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between bg-light p-3 rounded border">
+                                        <div class="d-flex align-items-center">
+                                            <i class="bi bi-file-earmark-word-fill text-primary fs-3 me-3"></i>
+                                            <div>
+                                                <h6 class="mb-0 fw-semibold text-dark">Motivation Letter.docx</h6>
+                                                <small class="text-muted">45 KB</small>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-download"></i></button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Admin Actions -->
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-sm mb-4 position-sticky" style="top: 20px;">
+                            <div class="card-header bg-white border-0 py-3">
+                                <h6 class="mb-0 fw-bold">Admin Actions</h6>
+                            </div>
+                            <div class="card-body p-4 pt-2">
+                                <p class="small text-muted mb-4">Review the application documents and assign an outcome. Once processed, the user will be notified via email.</p>
+                                
+                                <div class="d-grid gap-3">
+                                    <button class="btn btn-success d-flex justify-content-center align-items-center shadow-sm py-2">
+                                        <i class="bi bi-check-circle-fill me-2 fs-5"></i> Approve Application
+                                    </button>
+                                    <button class="btn btn-outline-warning d-flex justify-content-center align-items-center py-2 bg-white">
+                                        <i class="bi bi-info-circle-fill me-2"></i> Request More Info
+                                    </button>
+                                    <button class="btn btn-outline-danger d-flex justify-content-center align-items-center py-2 bg-white">
+                                        <i class="bi bi-x-circle-fill me-2"></i> Reject Application
+                                    </button>
+                                </div>
+                                
+                                <hr class="my-4 border-light">
+                                <label class="fw-semibold text-dark small mb-2">Internal Note (Hidden from applicant)</label>
+                                <textarea class="form-control bg-light mb-3" rows="3" placeholder="Add remarks here..."></textarea>
+                                <button class="btn btn-sm btn-secondary w-100">Save Note</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
