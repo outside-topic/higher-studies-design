@@ -1,6 +1,5 @@
-
 document.addEventListener('DOMContentLoaded', () => {
-    
+
 
     const navbar = document.querySelector('.premium-navbar');
     const searchInput = document.querySelector('.unique-search');
@@ -8,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const updateStickyOffset = () => {
         const topNav = document.querySelector('.navbar-top');
         if (!topNav || !navbar) return;
-        
+
         if (window.innerWidth >= 992) {
             // Push header up by the height of the top navigation + top padding
             const style = window.getComputedStyle(navbar);
@@ -86,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
         horizontalSections.forEach((sec) => {
             // Get all items within the container
             const items = sec.querySelectorAll('.horizontal-scroll-item');
-            
+
             gsap.to(sec, {
                 x: () => -(sec.scrollWidth - window.innerWidth),
                 ease: "none",
@@ -96,7 +95,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     scrub: 1,
                     snap: {
                         snapTo: 1 / (items.length - 1),
-                        duration: { min: 0.2, max: 0.8 },
+                        duration: {
+                            min: 0.2,
+                            max: 0.8
+                        },
                         ease: "power1.inOut"
                     },
                     // Scroll distance proportional to the width to scroll
@@ -104,10 +106,126 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         });
-        
+
         return () => {
             // Optional cleanup if necessary when matching media query fails
         };
     });
-    
+
+
+    // Animate Learning Methods Spread Flow
+    const learningSect = document.querySelector('.learning-methods-section');
+    if (learningSect) {
+        // Title Animation
+        gsap.from(learningSect.querySelectorAll('h2, .badge-premium-modern, p.fs-5'), {
+            scrollTrigger: {
+                trigger: learningSect,
+                start: "top 85%",
+                toggleActions: "play none none reverse"
+            },
+            y: 30,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.1,
+            ease: "power2.out"
+        });
+
+        // Cards and Chevrons Animation
+        const flowCards = learningSect.querySelectorAll('.flow-col');
+        gsap.from(flowCards, {
+            scrollTrigger: {
+                trigger: learningSect,
+                start: "top 75%",
+                toggleActions: "play none none reverse"
+            },
+            x: -50,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.15,
+            ease: "back.out(1.2)"
+        });
+    }
+
+    // Animate "How to Apply" Timeline Steps
+    const applySect = document.querySelector('.apply-docs-section');
+    if (applySect) {
+        const timelineSteps = applySect.querySelectorAll('.timeline-step');
+        gsap.from(timelineSteps, {
+            scrollTrigger: {
+                trigger: applySect.querySelector('.apply-timeline'),
+                start: "top 85%",
+                toggleActions: "play none none reverse"
+            },
+            x: -30,
+            opacity: 0,
+            duration: 0.6,
+            stagger: 0.15,
+            ease: "power2.out"
+        });
+
+        // Optional: Animate the accordion items on the right side too!
+        const accordionItems = applySect.querySelectorAll('.accordion-item');
+        if (accordionItems.length > 0) {
+            gsap.from(accordionItems, {
+                scrollTrigger: {
+                    trigger: applySect.querySelector('.required-docs-accordion'),
+                    start: "top 85%",
+                    toggleActions: "play none none reverse"
+                },
+                y: 20,
+                opacity: 0,
+                duration: 0.5,
+                stagger: 0.1,
+                ease: "power2.out"
+            });
+        }
+    }
+
+    // Initialize Reviews Swiper
+    const reviewsSwiperElement = document.querySelector('.reviewsSwiper');
+    if (reviewsSwiperElement) {
+        new Swiper('.reviewsSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            grabCursor: true,
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+            }
+        });
+
+        // GSAP animation for Reviews section entering
+        const reviewsSect = document.querySelector('.reviews-section');
+        if (reviewsSect) {
+            gsap.from(reviewsSect.querySelectorAll('.swiper-slide'), {
+                scrollTrigger: {
+                    trigger: reviewsSect,
+                    start: "top 80%",
+                    toggleActions: "play none none reverse"
+                },
+                y: 40,
+                opacity: 0,
+                duration: 0.8,
+                stagger: 0.15,
+                ease: "power3.out"
+            });
+        }
+    }
+
 });

@@ -6255,4 +6255,9 @@ body {
     scrollbar-width: none;
 }
 
+.cd_app_docs{
+    .step-num.bg-gold { background-color: var(--accent-color) !important; color: var(--navy-dark) !important; }
+    .required-docs-accordion .accordion-button::after { filter: invert(1); opacity: 0.5; }
+}
+
 /* course details page css end */
