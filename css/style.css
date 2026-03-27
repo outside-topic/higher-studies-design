@@ -4164,14 +4164,14 @@ body {
 }
 
 /* Admission Steps CSS */
-.admission-steps {
+.mba-admission-steps {
     background-color: #f8f9fa;
     position: relative;
     overflow: hidden;
 }
 
 /* Premium Vertical Timeline */
-.premium-timeline {
+.mba-admission-steps .premium-timeline {
     position: relative;
     max-width: 900px;
     margin: 0 auto;
@@ -4179,7 +4179,7 @@ body {
 }
 
 /* Center Line */
-.premium-timeline::before {
+.mba-admission-steps .premium-timeline::before {
     content: '';
     position: absolute;
     top: 0;
@@ -4191,7 +4191,7 @@ body {
     border-radius: 10px;
 }
 
-.timeline-item {
+.mba-admission-steps .timeline-item {
     position: relative;
     width: 100%;
     /* margin-bottom: 25px; */
@@ -4200,17 +4200,17 @@ body {
     /* Default right alignment */
 }
 
-.timeline-item:last-child {
+.mba-admission-steps .timeline-item:last-child {
     margin-bottom: 0;
 }
 
 /* Left items */
-.timeline-item.left {
+.mba-admission-steps .timeline-item.left {
     justify-content: flex-start;
 }
 
 /* Timeline center icon / number */
-.timeline-icon {
+.mba-admission-steps .timeline-icon {
     position: absolute;
     left: 50%;
     top: 15px;
@@ -4229,7 +4229,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.timeline-item:hover .timeline-icon {
+.mba-admission-steps .timeline-item:hover .timeline-icon {
     transform: translateX(-50%) scale(1.08);
     box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
 }
@@ -5793,14 +5793,14 @@ body {
 /* =========================================
    RE-DESIGN: Admission Process (Vertical Timeline)
    ========================================= */
-.timeline-wrapper {
+.doctorate-process-section .timeline-wrapper {
     position: relative;
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px 0;
 }
 
-.timeline-line {
+.doctorate-process-section .timeline-line {
     position: absolute;
     left: 50%;
     top: 0;
@@ -5811,7 +5811,7 @@ body {
     z-index: 0;
 }
 
-.timeline-item {
+.doctorate-process-section .timeline-item {
     display: flex;
     justify-content: flex-end;
     padding-right: 50%;
@@ -5820,13 +5820,13 @@ body {
     width: 100%;
 }
 
-.timeline-right {
+.doctorate-process-section .timeline-right {
     justify-content: flex-start;
     padding-right: 0;
     padding-left: 50%;
 }
 
-.timeline-node {
+.doctorate-process-section .timeline-node {
     position: absolute;
     left: 50%;
     top: 0;
@@ -5848,19 +5848,19 @@ body {
     transition: all 0.3s ease;
 }
 
-.timeline-item:hover .timeline-node {
+.doctorate-process-section .timeline-item:hover .timeline-node {
     background: var(--accent-color);
     color: var(--primary-color);
     transform: translateX(-50%) scale(1.15);
     box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
 }
 
-.timeline-content {
+.doctorate-process-section .timeline-content {
     width: 90%;
     padding: 0 30px;
 }
 
-.timeline-card {
+.doctorate-process-section .timeline-card {
     background: #f8f9fa;
     padding: 15px 1.5rem;
     border-radius: 1.5rem;
@@ -5869,7 +5869,7 @@ body {
     position: relative;
 }
 
-.timeline-card:hover {
+.doctorate-process-section .timeline-card:hover {
     background: #ffffff;
     transform: translateY(-5px);
     box-shadow: 0 15px 35px rgba(39, 81, 96, 0.1);
