@@ -47,12 +47,16 @@ document.addEventListener('DOMContentLoaded', function () {
                         </div>
                         <div class="col-12">
                             <label class="form-label fw-medium text-muted small">Module Description</label>
-                            <textarea class="form-control bg-white shadow-sm border-0" rows="3" placeholder="Brief overview of module contents..."></textarea>
+                            <textarea id="add_module_description" class="form-control bg-white shadow-sm border-0" rows="3" placeholder="Brief overview of module contents..."></textarea>
                         </div>
                     </div>
                 </div>
             `;
             modulesContainer.insertAdjacentHTML('beforeend', moduleHTML);
+            const allModuleDescriptionItems = document.querySelectorAll('#add_module_description')
+            allModuleDescriptionItems.forEach(item => {
+                const editor2 = Jodit.make(item);
+            })
         });
 
         // Event delegation for module removal
